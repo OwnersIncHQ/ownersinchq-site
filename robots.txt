@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ownersinchq.com/sitemap.xml
