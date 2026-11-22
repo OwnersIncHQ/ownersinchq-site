@@ -58,6 +58,27 @@ Every find shows its price, its store, and the date the price was checked.
 - Office Supplies: https://ownersinchq.com/office-supplies/
 - Landscaping Supplies: https://ownersinchq.com/landscaping-supplies/
 - Tax Prep & Money Tools: https://ownersinchq.com/tax-prep/
+- Home & Kitchen Finds: https://ownersinchq.com/home-kitchen-finds/
+- Deck Supplies: https://ownersinchq.com/deck-supplies/
+- Refrigerators: https://ownersinchq.com/refrigerators/
+- Freezers: https://ownersinchq.com/freezers/
+- Ovens & Ranges: https://ownersinchq.com/ovens-and-ranges/
+- Washers & Dryers: https://ownersinchq.com/washers-and-dryers/
+- Heating & Cooling: https://ownersinchq.com/heating-and-cooling/
+- Safety Equipment Finds (Work Store hub): https://ownersinchq.com/safety-equipment-finds/
+- Eye Protection Finds: https://ownersinchq.com/eye-protection-finds/
+- Foot Protection Finds: https://ownersinchq.com/foot-protection-finds/
+- Hearing Protection Finds: https://ownersinchq.com/hearing-protection-finds/
+- Respiratory Finds: https://ownersinchq.com/respiratory-finds/
+- Fall Protection Finds: https://ownersinchq.com/fall-protection-finds/
+- Hard Hats Finds: https://ownersinchq.com/hard-hats-finds/
+- Hi-Vis Apparel Finds: https://ownersinchq.com/hi-vis-apparel-finds/
+- Work Gloves Finds: https://ownersinchq.com/work-gloves-finds/
+- Heat & Cold Stress Gear Finds: https://ownersinchq.com/heat-cold-stress-gear-finds/
+- First Aid & Eyewash Finds: https://ownersinchq.com/first-aid-eyewash-finds/
+- Lockout Tagout Finds: https://ownersinchq.com/lockout-tagout-finds/
+- Jobsite Safety Finds: https://ownersinchq.com/jobsite-safety-finds/
+- Fire & EMS Finds: https://ownersinchq.com/fire-ems-finds/
 - Share Owners Inc.: https://ownersinchq.com/share/
 
 Prices change; the checked date on each find is the date Owners Inc. last
