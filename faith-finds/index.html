@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Faith Finds — Owners Inc. | Owners Inc HQ</title>
-<meta name="description" content="Faith Finds — Bibles, devotionals and gifts of faith, checked by hand. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody&#x27;s doing it.">
-<link rel="canonical" href="https://ownersinchq.com/faith-finds/">
+<meta content="Faith Finds — Bibles, devotionals and gifts of faith, checked by hand. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody's doing it." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Faith Finds — Owners Inc." property="og:title"/>
+<meta content="Faith Finds — Bibles, devotionals and gifts of faith, checked by hand. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody's doing it." property="og:description"/>
+<meta content="https://ownersinchq.com/faith-finds/" property="og:url"/>
+<meta content="https://ownersinchq.com/assets/faith-finds/hero-kjv-large-print.jpg" property="og:image"/>
+<link href="https://ownersinchq.com/faith-finds/" rel="canonical"/>
 <link rel="icon" type="image/png" href="/assets/brand/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Faith Finds — Owners Inc.">
-<meta property="og:description" content="Faith Finds — Bibles, devotionals and gifts of faith, checked by hand. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody&#x27;s doing it.">
-<meta property="og:url" content="https://ownersinchq.com/faith-finds/">
-<meta property="og:image" content="https://ownersinchq.com/assets/faith-finds/hero-kjv-large-print.jpg">
 <script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
@@ -445,46 +445,139 @@ a{color:var(--green-d)}
 .topnav{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
 .topnav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--ink)}
 .topnav a:hover{color:var(--green)}
-.hero{position:relative;min-height:430px;display:flex;align-items:flex-end;background-size:cover;background-position:center}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(255,255,255,.94) 0%,rgba(255,255,255,.55) 34%,rgba(255,255,255,0) 62%)}
-.hero-in{position:relative;max-width:1180px;margin:0 auto;padding:34px 18px 30px;width:100%}
-.hero h1{font-size:2.5rem;line-height:1.12;max-width:720px;color:var(--ink)}
-.hero .tag{font-size:1.12rem;margin-top:10px;max-width:640px;color:#243528}
-.slogan{display:inline-block;margin-top:14px;background:var(--yellow);color:#111;font-weight:900;padding:7px 14px;border-radius:999px;font-size:.98rem;box-shadow:0 3px 10px rgba(0,0,0,.18)}
-.ftc-top{max-width:1180px;margin:14px auto 0;padding:0 18px;font-size:.85rem;color:#4a554d}
+.hero{position:relative;background:#fff}
+.hero-photo-wrap{position:relative;overflow:hidden;padding:38px 18px;background:#111}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.hero-photo{position:relative;z-index:2;display:block;margin:0 auto;width:min(620px,74%);height:auto;object-fit:contain;filter:drop-shadow(0 16px 26px rgba(0,0,0,.55))}
+.hero-lights{position:absolute;top:0;left:0;width:100%;height:auto;mix-blend-mode:screen;z-index:1;pointer-events:none}
+.hero-glow{position:absolute;top:0;left:0;right:0;height:48%;background:radial-gradient(ellipse 68% 100% at 50% 0%,rgba(255,166,55,.17),rgba(255,166,55,0) 70%);z-index:1;pointer-events:none}
+.hero-corner{position:absolute;top:0;width:min(235px,36%);aspect-ratio:1/1;overflow:hidden;z-index:3;pointer-events:none}
+.hero-corner.left{left:0}
+.hero-corner.right{right:0}
+.hero-corner .strip{position:absolute;top:30%;width:165%;height:clamp(24px,8.2vw,38px);background:url('/assets/brand/ribbon-strip.webp') center/auto 100% repeat-x;filter:drop-shadow(0 7px 9px rgba(0,0,0,.45))}
+.hero-corner.left .strip{left:30%;transform:translate(-50%,-50%) rotate(-45deg)}
+.hero-corner.right .strip{right:30%;transform:translate(50%,-50%) rotate(45deg)}
+.hero-ribbon-bow{position:absolute;top:-6px;right:0;width:clamp(96px,24vw,188px);height:auto;z-index:4;filter:drop-shadow(0 10px 14px rgba(0,0,0,.5));pointer-events:none}
+.hero-shade{display:none}
+.hero-in{position:relative;padding:16px 18px 20px;max-width:1180px;margin:0 auto}
+.hero h1{font-size:3.5rem;font-weight:900;line-height:1.05;letter-spacing:-.5px;max-width:760px;color:var(--ink)}
+.slogan{display:inline-block;margin-top:16px;background:var(--yellow);color:#111;font-weight:900;padding:10px 20px;border-radius:999px;font-size:1.08rem;box-shadow:0 5px 16px rgba(0,0,0,.25)}
+.ftc-top{max-width:1180px;margin:12px auto 0;padding:0 18px;font-size:.92rem;color:#4a554d;font-weight:600}
 .wrap{max-width:1180px;margin:0 auto;padding:10px 18px 8px}
-.sec-title{font-size:1.65rem;margin:30px 0 6px;color:var(--ink)}
-.sec-sub{color:#435347;margin-bottom:14px;max-width:760px}
-.band{position:relative;border-radius:22px;overflow:hidden;margin:22px 0;box-shadow:0 10px 30px rgba(20,40,25,.16);background:#e9efe9}
-.band img.photo{width:100%;height:420px;object-fit:contain;background:#fff}
-.band-body{position:relative;background:#fff;padding:20px 22px 22px;margin-top:0;border-radius:0 0 22px 22px}
-.band h3{font-size:1.3rem;line-height:1.25;margin-bottom:6px}
-.band .note{color:#33453a;max-width:820px}
+.sec-title{font-size:2.05rem;font-weight:900;margin:24px 0 8px;color:var(--ink)}
+.sec-title::after{content:"";display:block;width:74px;height:6px;border-radius:3px;background:var(--yellow);margin-top:8px;box-shadow:0 0 0 2px rgba(20,92,43,.85)}
+.sec-sub{color:#435347;margin-bottom:14px;max-width:760px;font-size:1rem}
+.band{position:relative;border-radius:24px;overflow:hidden;margin:10px 0;box-shadow:0 16px 38px rgba(20,40,25,.22);background:#e9efe9}
+.photo-wrap{position:relative;overflow:hidden;background:#fff}
+.band img.photo{position:relative;width:100%;height:100%;object-fit:contain}
+.photo-shade{position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(to top,rgba(255,255,255,.55),rgba(255,255,255,0))}
+.price-pop{position:absolute;left:18px;bottom:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fff;border-radius:18px;padding:10px 18px 12px;box-shadow:0 12px 30px rgba(10,25,15,.35);border:3px solid var(--yellow)}
+.price-pop .price{font-size:2.15rem;font-weight:900;color:var(--green-d);line-height:1}
+.price-pop .was{font-size:1.15rem;color:#7a857c;text-decoration:line-through;font-weight:700}
+.price-pop .save{background:#c8102e;color:#fff;font-weight:900;font-size:1rem;padding:5px 13px;border-radius:999px;box-shadow:0 4px 12px rgba(200,16,46,.4)}
+.h-xl .photo-wrap{height:440px}.h-lg .photo-wrap{height:390px}.h-md .photo-wrap{height:340px}.h-sm .photo-wrap{height:290px}
+.band-body{position:relative;background:#fff;padding:13px 20px 15px;margin-top:0;border-radius:0 0 24px 24px}
+.band h3{font-size:1.5rem;font-weight:900;line-height:1.22;margin-bottom:6px}
+.band .note{color:#33453a;max-width:820px;font-size:1rem}
 .price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:12px}
 .price{font-size:1.55rem;font-weight:900;color:var(--green-d)}
 .was{font-size:1.05rem;color:#7a857c;text-decoration:line-through}
 .save{background:#c8102e;color:#fff;font-weight:800;font-size:.85rem;padding:3px 10px;border-radius:999px}
-.prov{font-size:.9rem;color:#4a554d}
-.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 24px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+.prov{font-size:.95rem;color:#4a554d;font-weight:600;margin-top:10px}
+.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;font-size:1.05rem;text-decoration:none;padding:14px 30px;border-radius:999px;box-shadow:0 6px 18px rgba(29,122,58,.4)}
 .buy:hover{background:var(--green-d)}
-.storeband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:20px 0;text-decoration:none;box-shadow:0 10px 30px rgba(20,40,25,.16)}
-.storeband img{width:100%;height:250px;object-fit:cover}
+.storeband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:10px 0;text-decoration:none;box-shadow:0 12px 30px rgba(20,40,25,.2)}
+.storeband img{width:100%;height:190px;object-fit:cover}
+.storeband.sb-hero img{height:240px}.storeband.sb-tall img{height:215px}.storeband.sb-short img{height:160px}.storeband.sb-finale img{height:225px}
 .storeband .sb-in{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;background:linear-gradient(to top,rgba(255,255,255,.95),rgba(255,255,255,0))}
-.storeband h3{font-size:1.45rem;color:var(--ink)}
-.storeband p{color:#33453a}
-footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
+.storeband h3{font-size:1.6rem;font-weight:900;color:var(--ink)}
+.storeband p{color:#33453a;font-size:1rem}
+footer{background:#ffffff;margin-top:28px;border-top:6px solid var(--green)}
 .foot-in{max-width:1180px;margin:0 auto;padding:28px 18px 34px}
 .foot-in .slogan{margin:0 0 12px}
 .fine{font-size:.85rem;color:#5a665d;max-width:820px;margin-top:10px}
 .foot-links{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
 .foot-links a{font-weight:700;text-decoration:none}
-@media (max-width:640px){.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.band img.photo{height:300px}.price{font-size:1.3rem}}
+.capture{position:relative;border-radius:22px;overflow:hidden;margin:24px 0 6px;box-shadow:0 10px 30px rgba(20,40,25,.16);background:#e9f2ea}
+.capture-in{position:relative;padding:24px 22px}
+.missionline{font-size:1.05rem;font-weight:600;color:#243528;margin:20px 0 2px}
+.jumprow{max-width:1180px;margin:14px auto 0;padding:0 18px;display:flex;gap:9px;flex-wrap:wrap}
+.jump{flex:1 1 auto;text-align:center;background:var(--green);color:#fff !important;font-weight:800;font-size:.98rem;text-decoration:none;padding:12px 10px;border-radius:999px;box-shadow:0 5px 14px rgba(29,122,58,.30);white-space:nowrap}
+.jump.alt{background:#fff;color:var(--green-d) !important;border:2px solid var(--green);box-shadow:0 4px 12px rgba(20,40,25,.12)}
+.hubrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:6px 0 4px}
+.hub{position:relative;border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 10px 24px rgba(20,40,25,.18);display:block}
+.hub img{width:100%;height:150px;object-fit:cover}
+.hub span{position:absolute;left:0;right:0;bottom:0;padding:20px 14px 10px;background:linear-gradient(to top,rgba(255,255,255,.96),rgba(255,255,255,0));font-weight:900;font-size:1.12rem;color:var(--ink)}
+.capture h2{font-size:1.5rem;margin-bottom:6px;color:var(--ink)}
+.capture p{max-width:640px;color:#243528}
+.capture-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.btn-sub{background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+.btn-sub:hover{background:var(--green-d)}
+.btn-group{background:#fff;color:var(--green-d) !important;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:999px;border:2px solid var(--green);box-shadow:0 4px 14px rgba(20,40,25,.15)}
+.capture .small{font-size:.85rem;color:#4a554d;margin-top:10px}
+.trustline{display:flex;gap:8px 22px;flex-wrap:wrap;margin:16px 0 4px;padding:14px 18px;background:#fff;border-radius:16px;box-shadow:0 6px 18px rgba(20,40,25,.10);font-size:.95rem}
+.trustline b{color:var(--green-d)}
+.chips{display:flex;gap:10px;overflow-x:auto;padding:8px 2px 12px;-webkit-overflow-scrolling:touch}
+.chip{flex:0 0 auto;display:flex;align-items:center;gap:9px;background:#fff;border-radius:999px;padding:5px 16px 5px 5px;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem;box-shadow:0 4px 12px rgba(20,40,25,.12)}
+.chip img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+.badge{display:inline-block;background:var(--green);color:#fff;font-weight:800;font-size:.95rem;padding:3px 11px;border-radius:999px;margin-bottom:8px;letter-spacing:.2px}
+.searchrow{margin:2px 0 6px}
+.searchrow label{font-weight:700;display:block;margin-bottom:8px}
+.searchbox{width:100%;max-width:520px;padding:13px 18px;border:2px solid #cfe0d2;border-radius:999px;font-size:1rem;font-family:inherit;background:#fff;color:var(--ink)}
+.searchbox:focus{outline:none;border-color:var(--green)}
+.nomatch{display:none;color:#7a2d1d;font-weight:700;margin-top:10px}
+.soc{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
+.soc a{font-weight:700;text-decoration:none}
+@media (max-width:640px){.hero-photo{width:71%;height:auto}.hero-photo-wrap{padding:24px 12px}.hero h1{font-size:2.3rem}.h-xl .photo-wrap{height:300px}.h-lg .photo-wrap{height:270px}.h-md .photo-wrap{height:245px}.h-sm .photo-wrap{height:215px}.price-pop{left:10px;bottom:10px;padding:8px 13px 9px;gap:8px;border-width:2px}.price-pop .price{font-size:1.6rem}.price-pop .was{font-size:1rem}.price-pop .save{font-size:.95rem}.storeband img{height:140px}.storeband.sb-hero img{height:165px}.storeband.sb-tall img{height:150px}.storeband.sb-short img{height:115px}.storeband.sb-finale img{height:160px}.hub img{height:104px}.hub span{font-size:.98rem;padding:16px 10px 8px}.jump{font-size:.92rem;padding:11px 6px}
+.topnav{display:none}.topbar-in{padding:8px 14px}.hero-photo{width:71%}.hero-in{padding:12px 18px 14px}.slogan{margin-top:10px}.band h3{font-size:1.28rem}.buy{padding:11px 24px;margin-top:9px}.band-body{padding:11px 16px 13px}.capture-in{padding:18px 16px}.sec-title{margin:20px 0 6px;font-size:1.6rem}.storeband h3{font-size:1.22rem}.storeband p{font-size:.95rem}.storeband h3{font-size:1.35rem}.sec-title{font-size:1.7rem}.band img.photo{height:100%}.price{font-size:1.3rem}.capture-in{padding:20px 16px}.capture h2{font-size:1.3rem}.trustline{font-size:.9rem}}
 .brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
 
+.photo-wrap .photo-frame{height:100%}
+.photo-wrap>img.photo{width:100%;height:100%;object-fit:contain}
+.band .photo-frame img.photo{height:100%}
+.h-xs .photo-wrap{height:215px}
+@media (max-width:640px){.h-xs .photo-wrap{height:180px}}
+.hero .tag{font-size:1.12rem;color:#33453a;max-width:640px;margin-top:10px}
+:root{--green:#1d7a3a;--green-d:#145c2b;--yellow:#ffd21f;--ink:#14201a;--paper:#f7f7f2;--card:#ffffff}
+.hero .tag{font-size:1.12rem;margin-top:10px;max-width:640px;color:#243528}
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:18px 0}
+.dl-card{background:#fff;border-radius:18px;box-shadow:0 8px 24px rgba(20,40,25,.12);padding:18px 20px}
+.dl-card h3{font-size:1.15rem;margin-bottom:8px;color:var(--green-d)}
+.dl-card p{color:#33453a;font-size:.97rem;margin-bottom:6px}
+.dl-card .d{font-weight:800;color:var(--ink)}
 .photo-frame{position:relative;overflow:hidden;background:#fff}
 .photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
 .band .photo-frame img.photo{position:relative;background:transparent}
-</style>
+.code-note{display:block;margin-top:8px;background:#ffd21f;color:#111;font-weight:700;font-size:.9rem;line-height:1.45;padding:7px 11px;border-radius:8px;max-width:560px}
+
+
+/* photo-band melt pattern: sharp photo on top; the text zone is a blurred,
+   darkened melt of the same photo carrying the words — zero white cards */
+.photo-wrap{height:auto}
+.photo{position:static;width:100%;height:auto;object-fit:fill}
+.band-body{position:relative;z-index:3;margin-top:-48px;padding:56px 20px 16px;background:#0d1f13;color:#fff;overflow:hidden}
+.band-body::before{content:"";position:absolute;inset:-28px;background-image:var(--bimg);background-size:cover;background-position:center;filter:blur(24px) brightness(.48) saturate(1.15);z-index:-1}
+.band-body h3{color:#fff;font-size:1.3rem;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.band-body .note{color:rgba(255,255,255,.94);text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.band-body .prov{background:#fff;color:var(--green-d)}
+.price-pop{top:12px;bottom:auto;z-index:4}
+.verdict{margin-top:12px;background:rgba(8,18,11,.7);border-left:4px solid var(--yellow);border-radius:10px;padding:10px 14px;font-size:.93rem;color:#eef5ee}
+.verdict p{margin:3px 0}
+.verdict strong{color:var(--yellow)}
+.buycheck{background:#fff6cf;border:1px solid #ecd24f;border-radius:14px;padding:12px 16px;margin:14px 0 6px;font-size:1rem;color:#3d3a1a}
+.buycheck strong{color:#7a5b00}
+.ship-callout{max-width:1180px;margin:14px auto 0;padding:14px 20px;background:#fff6cf;border:2px solid var(--yellow);border-radius:16px;box-shadow:0 6px 18px rgba(20,40,25,.12);font-size:1.06rem;font-weight:700;color:#243528}
+.ship-callout strong{color:var(--green-d)}
+.ship-note{display:block;margin-top:8px;font-weight:800;color:#ffe97a;font-size:.95rem;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.frame-band .photo-wrap{background:#111}
+.frame-band .photo{width:auto;height:100%;margin:0 auto}
+@media (max-width:640px){.band-body{padding:54px 16px 14px}.band-body h3{font-size:1.16rem}}
+
+/* wave2 hero geometry: painting whole, bottom-anchored; product top-anchored over the wedge; OWNERS INC lettering fully clear */
+.hero-photo-wrap{height:calc(100vw*.56346 + 64px);padding:0}
+.hero-bg{top:auto;bottom:0;height:auto}
+.hero-photo{position:absolute;left:50%;transform:translateX(-50%);top:36px;margin:0;width:min(420px,36%)}
+@media (max-width:640px){.hero-photo-wrap{height:calc(100vw*.56346 + 100px)}.hero-photo{top:8px;width:48%}}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7BY95H3C7"></script>
 <script>
@@ -498,256 +591,270 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <body>
 <div class="topbar"><div class="topbar-in">
 <a class="brand" href="/"><img class="brandlogo" src="/assets/brand/logo-painting.jpg" alt="Owners Inc. logo">Owners <span class="inc">Inc.</span></a>
-<nav class="topnav"><a href="/">Home</a><a href="/christmas-finds/">Christmas</a><a href="/tools/">Tools</a><a href="/kids-toys/">Kids Toys</a><a href="/gaming/">Gaming</a></nav>
+<nav class="topnav"><a href="/christmas-finds/">Christmas</a><a href="/tools/">Tools</a><a href="/kids-toys/">Kids Toys</a><a href="/gaming/">Gaming</a><a href="/faith-finds/">Faith</a><a href="/tax-prep/">Tax Prep</a><a href="/ice-fishing/">Ice Fishing</a><a href="/#stores">All stores</a><a href="/#deals-email">Deals by email</a></nav>
 </div></div>
-<header class="hero" style="background-image:url('/assets/faith-finds/hero-kjv-large-print.jpg')">
-<div class="hero-shade"></div>
+<header class="hero">
+<div class="hero-photo-wrap">
+<img class="hero-bg" src="/assets/brand/logo-painting.jpg" alt="" aria-hidden="true">
+<img class="hero-lights" src="/assets/brand/hero-lights.jpg" alt="" aria-hidden="true">
+<div class="hero-glow" aria-hidden="true"></div>
+<div class="hero-corner left" aria-hidden="true"><div class="strip"></div></div>
+<div class="hero-corner right" aria-hidden="true"><div class="strip"></div></div>
+<img class="hero-photo" src="/assets/faith-finds/nativity-cutout.webp" alt="Hand-Carved Olive Wood Nativity Set — 12-Piece" fetchpriority="high">
+<img class="hero-ribbon-bow" src="/assets/brand/ribbon-bow.webp" alt="" aria-hidden="true">
+</div>
 <div class="hero-in">
 <h1>Faith Finds</h1>
 <p class="tag">Bibles, devotionals and gifts of faith, checked by hand.</p>
 <span class="slogan">Owners Inc. Everybody's doing it.</span>
 </div>
 </header>
-<p class="ftc-top">Affiliate disclosure: Owners Inc. is an affiliate page. If you buy through a link on this page, Owners Inc. may earn a commission — and it costs you nothing extra; the price is the same as going straight to the store.</p>
+<nav class="jumprow" aria-label="Jump to a section">
+<a class="jump" href="#today-s-finds">Today's finds</a>
+<a class="jump" href="#more-owners-inc-stores">More Owners Inc. stores</a>
+<a class="jump alt" href="/bookkeeping-services/">Bookkeeping</a>
+<a class="jump alt" href="/#deals-email">Deals by Email</a>
+</nav>
+<p class="ftc-top">Owners Inc. may earn a commission on purchases through our links — it never changes your price.</p>
+<p class="ship-callout">SHIPPING, HONESTLY — <strong>Christianbook</strong> has no standing free shipping: standard runs $4.99 up to a $20 order and takes 1–2 weeks, so order faith gifts early · <strong>Baker Book House</strong> and the other shops here set their rates at checkout — checked Nov 21, 2026</p>
 <main class="wrap">
-<h2 class="sec-title">Today's finds</h2>
+<h2 class="sec-title" id="today-s-finds">Today's finds</h2>
 <p class="sec-sub">Every find below shows the price, the store, and the date we checked it. Prices move — the store page always has the final word.</p>
-
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/kjv-large-print.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/kjv-large-print.jpg" alt="KJV Large-Print Bible — Imitation Leather, Burgundy" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/kjv-large-print.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/kjv-large-print.jpg" alt="KJV Large-Print Bible — Imitation Leather, Burgundy" loading="lazy"></div><div class="price-pop"><span class="price">$23.50</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/kjv-large-print.jpg')">
     <h3>KJV Large-Print Bible — Imitation Leather, Burgundy</h3>
     <p class="note">The King James text set in large, comfortable type — made for daily reading without straining. Look for 12-point type or larger, a lay-flat binding, and a cover that will take years of use.</p>
-    <div class="price-row"><span class="price">$23.50</span><span class="prov">at Christianbook — checked Nov 21, 2026</span></div>
+    <p class="prov">at Christianbook — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.christianbook.com/kjv-print-bible-imitation-leather-burgundy/9781432132880/pd/2132880" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/kjv-study.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/kjv-study.jpg" alt="KJV Study Bible — Full-Color, Saddle Brown (Holman)" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/kjv-study.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/kjv-study.jpg" alt="KJV Study Bible — Full-Color, Saddle Brown (Holman)" loading="lazy"></div><div class="price-pop"><span class="price">$61.48</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/kjv-study.jpg')">
     <h3>KJV Study Bible — Full-Color, Saddle Brown (Holman)</h3>
-    <p class="note">The full KJV text with study notes, maps, cross-references, and background articles alongside it. The pick for readers who want help understanding what they&#x27;re reading, right on the page.</p>
-    <div class="price-row"><span class="price">$61.48</span><span class="prov">at Christianbook — checked Nov 21, 2026</span></div>
+    <p class="note">The full KJV text with study notes, maps, cross-references, and background articles alongside it. The pick for readers who want help understanding what they're reading, right on the page.</p>
+    <p class="prov">at Christianbook — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.christianbook.com/kjv-bible-color-leather-saddle-brown/9781087721958/pd/721958" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/faith-finds/kjv-thompson-chain.jpg" alt="KJV Thompson Chain-Reference Bible — Handy Size, Bonded Leather (Zondervan)" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/kjv-thompson-chain.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/kjv-thompson-chain.jpg" alt="KJV Thompson Chain-Reference Bible — Handy Size, Bonded Leather (Zondervan)" loading="lazy"></div><div class="price-pop"><span class="price">$74.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/kjv-thompson-chain.jpg')">
     <h3>KJV Thompson Chain-Reference Bible — Handy Size, Bonded Leather (Zondervan)</h3>
-    <p class="note">A named publisher edition: Zondervan&#x27;s Thompson Chain-Reference Bible in the King James text — over 100,000 chain references across more than 8,000 topics, handy size in black European bonded leather, red-letter, Comfort Print. Specific edition priced at $74.99 at Baker Book House — checked Nov 16, 2026 (shown as both ends of the range because it is one checked price, not a range).</p>
-    <div class="price-row"><span class="price">$74.99</span><span class="prov">at Baker Book House — checked Nov 16, 2026</span></div>
+    <p class="note">A named publisher edition: Zondervan's Thompson Chain-Reference Bible in the King James text — over 100,000 chain references across more than 8,000 topics, handy size in black European bonded leather, red-letter, Comfort Print. Specific edition priced at $74.99 at Baker Book House — checked Nov 16, 2026 (shown as both ends of the range because it is one checked price, not a range).</p>
+    <p class="prov">at Baker Book House — checked Nov 16, 2026</p>
     <a class="buy" href="https://bakerbookhouse.com/products/9780310459125_kjv-thompson-chain-reference-bible-handy-size-european-bonded-leather-black-red-letter-comfort-print?variant=40702251171889" target="_blank" rel="sponsored noopener">See it at Baker Book House</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/faith-finds/kjv-nelson-thinline.jpg" alt="KJV Large Print Thinline Bible — Brown Leathersoft (Thomas Nelson)" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/kjv-nelson-thinline.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/kjv-nelson-thinline.jpg" alt="KJV Large Print Thinline Bible — Brown Leathersoft (Thomas Nelson)" loading="lazy"></div><div class="price-pop"><span class="price">$29.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/kjv-nelson-thinline.jpg')">
     <h3>KJV Large Print Thinline Bible — Brown Leathersoft (Thomas Nelson)</h3>
-    <p class="note">A named publisher edition: Thomas Nelson&#x27;s KJV in a large-print thinline — the full King James text in Comfort Print, red-letter, brown Leathersoft cover, slim enough to carry every day. Specific edition priced at $29.99 at Baker Book House — checked Nov 16, 2026 (shown as both ends of the range because it is one checked price, not a range).</p>
-    <div class="price-row"><span class="price">$29.99</span><span class="prov">at Baker Book House — checked Nov 16, 2026</span></div>
+    <p class="note">A named publisher edition: Thomas Nelson's KJV in a large-print thinline — the full King James text in Comfort Print, red-letter, brown Leathersoft cover, slim enough to carry every day. Specific edition priced at $29.99 at Baker Book House — checked Nov 16, 2026 (shown as both ends of the range because it is one checked price, not a range).</p>
+    <p class="prov">at Baker Book House — checked Nov 16, 2026</p>
     <a class="buy" href="https://bakerbookhouse.com/products/9780785241904_kjv-holy-bible-large-print-thinline-brown-leathersoft-red-letter-comfort-print-king-james-version?variant=40702427594801" target="_blank" rel="sponsored noopener">See it at Baker Book House</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/faith-finds/childrens-bible.jpg" alt="The Big Picture Story Bible — New Edition" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/childrens-bible.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/childrens-bible.jpg" alt="The Big Picture Story Bible — New Edition" loading="lazy"></div><div class="price-pop"><span class="price">$17.14</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/childrens-bible.jpg')">
     <h3>The Big Picture Story Bible — New Edition</h3>
     <p class="note">The major Bible stories retold in simple words with full illustrations, in a sturdy edition built for small hands. A baptism and first-communion staple.</p>
-    <div class="price-row"><span class="price">$17.14</span><span class="prov">at Christianbook — checked Nov 21, 2026</span></div>
+    <p class="prov">at Christianbook — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.christianbook.com/big-picture-story-bible-new-edition/david-helm/9781433543111/pd/543111" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/one-year-bible.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/one-year-bible.jpg" alt="The One Year Bible KJV — Tyndale" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/one-year-bible.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/one-year-bible.jpg" alt="The One Year Bible KJV — Tyndale" loading="lazy"></div><div class="price-pop"><span class="price">$12.22</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/one-year-bible.jpg')">
     <h3>The One Year Bible KJV — Tyndale</h3>
     <p class="note">The whole Bible arranged into dated daily readings — Old Testament, New Testament, Psalms, and Proverbs each day — so you read through it in a year without planning a thing.</p>
-    <div class="price-row"><span class="price">$12.22</span><span class="prov">at Christianbook — checked Nov 21, 2026</span></div>
+    <p class="prov">at Christianbook — checked Nov 21, 2026</p>
     <a class="buy" href="https://maxlucado.christianbook.com/one-year-bible-kjv/9780842325769/pd/232576X" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/hymnal.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/hymnal.jpg" alt="Lutheran Service Book — Deluxe Edition" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/hymnal.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/hymnal.jpg" alt="Lutheran Service Book — Deluxe Edition" loading="lazy"></div><div class="price-pop"><span class="price">$49.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/hymnal.jpg')">
     <h3>Lutheran Service Book — Deluxe Edition</h3>
     <p class="note">A traditional hardcover hymnal with the classic hymns in four-part harmony. For the home piano, family singing, and anyone whose church went to screens and misses the book.</p>
-    <div class="price-row"><span class="price">$49.99</span><span class="prov">at Concordia Publishing House — checked Nov 21, 2026</span></div>
+    <p class="prov">at Concordia Publishing House — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.cph.org/lutheran-service-book-deluxe-edition" target="_blank" rel="sponsored noopener">See it at Concordia Publishing House</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/bible-encyclopedia.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/bible-encyclopedia.jpg" alt="New International Encyclopedia of Bible Characters" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/bible-encyclopedia.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/bible-encyclopedia.jpg" alt="New International Encyclopedia of Bible Characters" loading="lazy"></div><div class="price-pop"><span class="price">$14.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/bible-encyclopedia.jpg')">
     <h3>New International Encyclopedia of Bible Characters</h3>
     <p class="note">People, places, customs, and terms of the Bible explained in one illustrated reference volume. The book that answers the questions a sermon raises.</p>
-    <div class="price-row"><span class="price">$14.99</span><span class="prov">at ChurchSource — checked Nov 21, 2026</span></div>
+    <p class="prov">at ChurchSource — checked Nov 21, 2026</p>
     <a class="buy" href="https://churchsource.com/products/new-international-encyclopedia-of-bible-characters-the-complete-whos-who-in-the-bible" target="_blank" rel="sponsored noopener">See it at ChurchSource</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/morning-evening.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/morning-evening.jpg" alt="Morning and Evening — Spurgeon&#x27;s 365-Day Devotional" loading="lazy"></div>
-  <div class="band-body">
-    <h3>Morning and Evening — Spurgeon&#x27;s 365-Day Devotional</h3>
-    <p class="note">Charles Spurgeon&#x27;s beloved devotional: a short reading for every morning and every evening of the year. In print for well over a century because the readings hold up.</p>
-    <div class="price-row"><span class="price">$20.86</span><span class="prov">at Christianbook — checked Nov 21, 2026</span></div>
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/morning-evening.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/morning-evening.jpg" alt="Morning and Evening — Spurgeon's 365-Day Devotional" loading="lazy"></div><div class="price-pop"><span class="price">$20.86</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/morning-evening.jpg')">
+    <h3>Morning and Evening — Spurgeon's 365-Day Devotional</h3>
+    <p class="note">Charles Spurgeon's beloved devotional: a short reading for every morning and every evening of the year. In print for well over a century because the readings hold up.</p>
+    <p class="prov">at Christianbook — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.christianbook.com/new-edition-devotional-english-standard-version/9781433598661/pd/598661" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/prayer-journal.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/prayer-journal.jpg" alt="Faith Love Forgiveness Devotional Journal — DaySpring" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/prayer-journal.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/prayer-journal.jpg" alt="Faith Love Forgiveness Devotional Journal — DaySpring" loading="lazy"></div><div class="price-pop"><span class="price">$17.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/prayer-journal.jpg')">
     <h3>Faith Love Forgiveness Devotional Journal — DaySpring</h3>
     <p class="note">Dated pages with prompts for prayer requests, gratitude, and answered prayers — so a year from now you can see the record. A thoughtful confirmation or new-believer gift.</p>
-    <div class="price-row"><span class="price">$17.99</span><span class="prov">at DaySpring — checked Nov 21, 2026</span></div>
+    <p class="prov">at DaySpring — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.dayspring.com/susan-goss-faith-love-forgiveness-devotional-journal" target="_blank" rel="sponsored noopener">See it at DaySpring</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/couples-devotional.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/couples-devotional.jpg" alt="The Meaning of Marriage: A Couple's Devotional" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/couples-devotional.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/couples-devotional.jpg" alt="The Meaning of Marriage: A Couple's Devotional" loading="lazy"></div><div class="price-pop"><span class="price">$21.03</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/couples-devotional.jpg')">
     <h3>The Meaning of Marriage: A Couple's Devotional</h3>
     <p class="note">One short reading a day written for two people to read together, with a question or prayer to close. Built for five minutes at the kitchen table or bedside.</p>
-    <div class="price-row"><span class="price">$21.03</span><span class="prov">at Christianbook — checked Nov 21, 2026</span></div>
+    <p class="prov">at Christianbook — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.christianbook.com/meaning-marriage-couples-devotional-daily-devotions/timothy-keller/9780525560777/pd/560777" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/teens-devotional.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/teens-devotional.jpg" alt="Press Pause — Teen Devotional" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/teens-devotional.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/teens-devotional.jpg" alt="Press Pause — Teen Devotional" loading="lazy"></div><div class="price-pop"><span class="price">$6.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/teens-devotional.jpg')">
     <h3>Press Pause — Teen Devotional</h3>
     <p class="note">Short daily readings written in plain language for teenagers — real-life topics, one page a day, no lectures. Sized for a backpack and a busy school year.</p>
-    <div class="price-row"><span class="price">$6.99</span><span class="prov">at LifeWay — checked Nov 21, 2026</span></div>
+    <p class="prov">at LifeWay — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.lifeway.com/en/product/press-pause-teen-devotional-P005842359" target="_blank" rel="sponsored noopener">See it at LifeWay</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/faith-finds/classic-prayers.jpg" alt="The Book of a Thousand Prayers" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/classic-prayers.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/classic-prayers.jpg" alt="The Book of a Thousand Prayers" loading="lazy"></div><div class="price-pop"><span class="price">$11.19</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/classic-prayers.jpg')">
     <h3>The Book of a Thousand Prayers</h3>
-    <p class="note">A collected book of classic prayers from across church history — for morning, evening, hard days, and gratitude. The book people reach for when they can&#x27;t find their own words.</p>
-    <div class="price-row"><span class="price">$11.19</span><span class="prov">at ChurchSource — checked Nov 21, 2026</span></div>
+    <p class="note">A collected book of classic prayers from across church history — for morning, evening, hard days, and gratitude. The book people reach for when they can't find their own words.</p>
+    <p class="prov">at ChurchSource — checked Nov 21, 2026</p>
     <a class="buy" href="https://churchsource.com/products/the-book-of-a-thousand-prayers" target="_blank" rel="sponsored noopener">See it at ChurchSource</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/gift-bible-occasions.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/gift-bible-occasions.jpg" alt="NRSV Catholic Bible — Gift Edition" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/gift-bible-occasions.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/gift-bible-occasions.jpg" alt="NRSV Catholic Bible — Gift Edition" loading="lazy"></div><div class="price-pop"><span class="price">$20 – $50</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/gift-bible-occasions.jpg')">
     <h3>NRSV Catholic Bible — Gift Edition</h3>
     <p class="note">Presentation editions made for the occasion, with a presentation page for the name and date. Pick the edition for the day — baptism, confirmation, and first communion editions differ in size and helps.</p>
-    <div class="price-row"><span class="price">$20 – $50</span><span class="prov">at Christianbook — checked Nov 16, 2026</span></div>
+    <p class="prov">at Christianbook — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.christianbook.com/nrsv-catholic-gift-edition-comfort-leathersoft/9780785230410/pd/230411" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/mustard-seed-necklace.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/mustard-seed-necklace.jpg" alt="Mustard Seed Necklace" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/mustard-seed-necklace.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/mustard-seed-necklace.jpg" alt="Mustard Seed Necklace" loading="lazy"></div><div class="price-pop"><span class="price">$21.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/mustard-seed-necklace.jpg')">
     <h3>Mustard Seed Necklace</h3>
-    <p class="note">A single mustard seed in a clear pendant — a small, wearable reminder that faith doesn&#x27;t have to be big to be real. A longtime first-communion and confirmation gift.</p>
-    <div class="price-row"><span class="price">$21.99</span><span class="prov">at Pink Salt Riot — checked Nov 21, 2026</span></div>
+    <p class="note">A single mustard seed in a clear pendant — a small, wearable reminder that faith doesn't have to be big to be real. A longtime first-communion and confirmation gift.</p>
+    <p class="prov">at Pink Salt Riot — checked Nov 21, 2026</p>
     <a class="buy" href="https://pinksaltriot.com/collections/new-christian-jewelry-gifts/products/mustard-seed-necklace" target="_blank" rel="sponsored noopener">See it at Pink Salt Riot</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/scripture-cards.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/scripture-cards.jpg" alt="Praying for You Boxed Cards — 12 KJV Cards" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/scripture-cards.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/scripture-cards.jpg" alt="Praying for You Boxed Cards — 12 KJV Cards" loading="lazy"></div><div class="price-pop"><span class="price">$6.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/scripture-cards.jpg')">
     <h3>Praying for You Boxed Cards — 12 KJV Cards</h3>
     <p class="note">A boxed assortment of cards with verses for encouragement, sympathy, thanks, and birthdays. The sympathy card you write at midnight is the one you already had in the drawer.</p>
-    <div class="price-row"><span class="price">$6.99</span><span class="prov">at DaySpring — checked Nov 21, 2026</span></div>
+    <p class="prov">at DaySpring — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.dayspring.com/highlights/our-favorite-cards/praying-for-you-gardening-12-boxed-cards-kjv" target="_blank" rel="sponsored noopener">See it at DaySpring</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/family-game.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/family-game.jpg" alt="Choose Your Clues Card Game" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/family-game.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/family-game.jpg" alt="Choose Your Clues Card Game" loading="lazy"></div><div class="price-pop"><span class="price">$10.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/family-game.jpg')">
     <h3>Choose Your Clues Card Game</h3>
-    <p class="note">Bible-trivia and story-based games the whole family can play together — questions scaled so kids and grandparents both have a game. A gift that gets used the day it&#x27;s opened.</p>
-    <div class="price-row"><span class="price">$10.99</span><span class="prov">at Mardel — checked Nov 21, 2026</span></div>
+    <p class="note">Bible-trivia and story-based games the whole family can play together — questions scaled so kids and grandparents both have a game. A gift that gets used the day it's opened.</p>
+    <p class="prov">at Mardel — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.mardel.com/children/games/christian-games/choose-your-clues-card-game/p/225292" target="_blank" rel="sponsored noopener">See it at Mardel</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/wedding-gift-bible.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/wedding-gift-bible.jpg" alt="NABRE Catholic Wedding Edition Bible — White Bonded Leather" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/wedding-gift-bible.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/wedding-gift-bible.jpg" alt="NABRE Catholic Wedding Edition Bible — White Bonded Leather" loading="lazy"></div><div class="price-pop"><span class="price">$59.28</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/wedding-gift-bible.jpg')">
     <h3>NABRE Catholic Wedding Edition Bible — White Bonded Leather</h3>
-    <p class="note">A keepsake edition with a presentation page for the couple&#x27;s names and wedding date, made to be kept and used for decades. The wedding gift that outlasts everything else on the registry.</p>
-    <div class="price-row"><span class="price">$59.28</span><span class="prov">at Christianbook — checked Nov 21, 2026</span></div>
+    <p class="note">A keepsake edition with a presentation page for the couple's names and wedding date, made to be kept and used for decades. The wedding gift that outlasts everything else on the registry.</p>
+    <p class="prov">at Christianbook — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.christianbook.com/catholic-wedding-edition-white-bonded-leather/9781556657870/pd/657870" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/wooden-cross.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/wooden-cross.jpg" alt="Flower and Beaded Wood Wall Cross" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/wooden-cross.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/wooden-cross.jpg" alt="Flower and Beaded Wood Wall Cross" loading="lazy"></div><div class="price-pop"><span class="price">$8.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/wooden-cross.jpg')">
     <h3>Flower and Beaded Wood Wall Cross</h3>
     <p class="note">A solid-wood cross for a wall at home or at church, in sizes from a hallway piece to a statement over a mantel. Check the hanging hardware before you buy — the good ones include it.</p>
-    <div class="price-row"><span class="price">$8.99</span><span class="prov">at Mardel — checked Nov 21, 2026</span></div>
+    <p class="prov">at Mardel — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.mardel.com/gifts-decor/crosses/wall-crosses/flower-and-beaded-wood-wall-cross-7-3-4-x-11-3-4-x-3-4-inches/p/3897113" target="_blank" rel="sponsored noopener">See it at Mardel</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/scripture-canvas.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/scripture-canvas.jpg" alt="Living Faith Framed Scripture Art" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/scripture-canvas.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/scripture-canvas.jpg" alt="Living Faith Framed Scripture Art" loading="lazy"></div><div class="price-pop"><span class="price">$16.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/scripture-canvas.jpg')">
     <h3>Living Faith Framed Scripture Art</h3>
     <p class="note">Canvas and framed prints carrying a verse in lettering designed to be read across a room. Measure your wall first — these range from small shelf pieces to full mantel widths.</p>
-    <div class="price-row"><span class="price">$16.99</span><span class="prov">at DaySpring — checked Nov 21, 2026</span></div>
+    <p class="prov">at DaySpring — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.dayspring.com/god-has-blessed-this-season-floating-framed-art" target="_blank" rel="sponsored noopener">See it at DaySpring</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/votive-candles.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/votive-candles.jpg" alt="Hobnail Votive Candle Holder" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/votive-candles.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/votive-candles.jpg" alt="Hobnail Votive Candle Holder" loading="lazy"></div><div class="price-pop"><span class="price">$3.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/votive-candles.jpg')">
     <h3>Hobnail Votive Candle Holder</h3>
     <p class="note">Votive and altar candles in home-size quantities — for a prayer corner, a table centerpiece, or a small chapel. Churches buying by the case: see the For Churches section instead.</p>
-    <div class="price-row"><span class="price">$3.99</span><span class="prov">at CTA — checked Nov 21, 2026</span></div>
+    <p class="prov">at CTA — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.ctainc.com/products/8857245417634" target="_blank" rel="sponsored noopener">See it at CTA</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/faith-finds/nativity.jpg" alt="Olive Wood Nativity Box Set — 12 Pieces" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/nativity.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/nativity.jpg" alt="Olive Wood Nativity Box Set — 12 Pieces" loading="lazy"></div><div class="price-pop"><span class="price">$124.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/nativity.jpg')">
     <h3>Olive Wood Nativity Box Set — 12 Pieces</h3>
-    <p class="note">Nativity figures hand-carved from olivewood in the Bethlehem tradition — each set a little different because it&#x27;s real carved wood, not molded resin. The wide range is size and figure count.</p>
-    <div class="price-row"><span class="price">$124.99</span><span class="prov">at Museum of the Bible store — checked Nov 21, 2026</span></div>
+    <p class="note">Nativity figures hand-carved from olivewood in the Bethlehem tradition — each set a little different because it's real carved wood, not molded resin. The wide range is size and figure count.</p>
+    <p class="prov">at Museum of the Bible store — checked Nov 21, 2026</p>
     <a class="buy" href="https://store.museumofthebible.org/copy-of-nativity-olive-wood-bark-roof-stable-set/" target="_blank" rel="sponsored noopener">See it at Museum of the Bible store</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/faith-finds/hymn-collection.jpg" alt="Best Hymn Songs Ever — 2-CD Set" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/hymn-collection.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/hymn-collection.jpg" alt="Best Hymn Songs Ever — 2-CD Set" loading="lazy"></div><div class="price-pop"><span class="price">$13.84</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/hymn-collection.jpg')">
     <h3>Best Hymn Songs Ever — 2-CD Set</h3>
     <p class="note">Recordings of the classic hymns — congregational singing and choir arrangements. Available on CD and, increasingly, vinyl reissues for the record-player crowd.</p>
-    <div class="price-row"><span class="price">$13.84</span><span class="prov">at Christianbook — checked Nov 21, 2026</span></div>
+    <p class="prov">at Christianbook — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.christianbook.com/best-hymn-songs-ever-cd/pd/CD82314" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/worship-album.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/worship-album.jpg" alt="Until the Whole World Hears — Listening CD" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/worship-album.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/worship-album.jpg" alt="Until the Whole World Hears — Listening CD" loading="lazy"></div><div class="price-pop"><span class="price">$16.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/worship-album.jpg')">
     <h3>Until the Whole World Hears — Listening CD</h3>
     <p class="note">Current worship music on CD or digital download — the songs churches are singing now, for the car and the kitchen. Check the format before you buy: some releases are digital-only.</p>
-    <div class="price-row"><span class="price">$16.99</span><span class="prov">at LifeWay — checked Nov 21, 2026</span></div>
+    <p class="prov">at LifeWay — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.lifeway.com/en/product/until-the-whole-world-hears-listening-cd-P005290042" target="_blank" rel="sponsored noopener">See it at LifeWay</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/accompaniment.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/accompaniment.jpg" alt="Lutheran Service Book: Hymn Accompaniment Edition" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/accompaniment.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/accompaniment.jpg" alt="Lutheran Service Book: Hymn Accompaniment Edition" loading="lazy"></div><div class="price-pop"><span class="price">$74.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/accompaniment.jpg')">
     <h3>Lutheran Service Book: Hymn Accompaniment Edition</h3>
     <p class="note">Accompaniment editions and choir resources that match the standard hymnals — spiral-bound to lie flat on the piano, with arrangements a volunteer accompanist can actually play.</p>
-    <div class="price-row"><span class="price">$74.99</span><span class="prov">at Concordia Publishing House — checked Nov 21, 2026</span></div>
+    <p class="prov">at Concordia Publishing House — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.cph.org/lutheran-service-book-hymn-accompaniment-edition" target="_blank" rel="sponsored noopener">See it at Concordia Publishing House</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/piano-worship.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/piano-worship.jpg" alt="100 Piano Hymns — 3-CD Set" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/piano-worship.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/piano-worship.jpg" alt="100 Piano Hymns — 3-CD Set" loading="lazy"></div><div class="price-pop"><span class="price">$13.78</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/faith-finds/piano-worship.jpg')">
     <h3>100 Piano Hymns — 3-CD Set</h3>
     <p class="note">Hymns and worship songs played as solo piano instrumentals — for quiet mornings, reading, prayer time, and waiting rooms. No vocals, nothing jarring.</p>
-    <div class="price-row"><span class="price">$13.78</span><span class="prov">at Christianbook — checked Nov 21, 2026</span></div>
+    <p class="prov">at Christianbook — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.christianbook.com/100-piano-hymns-cd/pd/CD05124" target="_blank" rel="sponsored noopener">See it at Christianbook</a>
   </div>
 </section>
-<h2 class="sec-title">More Owners Inc. stores</h2>
+<h2 class="sec-title" id="more-owners-inc-stores">More Owners Inc. stores</h2>
 <nav class="foot-links"><a href="/christmas-finds/">Christmas Finds</a>
 <a href="/kids-toys/">Kids Toys Finds</a>
 <a href="/tools/">Tools &amp; Materials</a>

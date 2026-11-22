@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Preparedness Finds — Owners Inc. | Owners Inc HQ</title>
-<meta name="description" content="Preparedness Finds — A stocked shelf makes an outage a whole lot easier. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody&#x27;s doing it.">
-<link rel="canonical" href="https://ownersinchq.com/preparedness/">
+<meta content="Preparedness Finds — A stocked shelf makes an outage a whole lot easier. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody's doing it." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Preparedness Finds — Owners Inc." property="og:title"/>
+<meta content="Preparedness Finds — A stocked shelf makes an outage a whole lot easier. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody's doing it." property="og:description"/>
+<meta content="https://ownersinchq.com/preparedness/" property="og:url"/>
+<meta content="https://ownersinchq.com/assets/preparedness/hero-media-generation-hero-bg-0-3b95e0f0-b35e-411f-b080-03b2942b3fc0.webp" property="og:image"/>
+<link href="https://ownersinchq.com/preparedness/" rel="canonical"/>
 <link rel="icon" type="image/png" href="/assets/brand/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Preparedness Finds — Owners Inc.">
-<meta property="og:description" content="Preparedness Finds — A stocked shelf makes an outage a whole lot easier. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody&#x27;s doing it.">
-<meta property="og:url" content="https://ownersinchq.com/preparedness/">
-<meta property="og:image" content="https://ownersinchq.com/assets/preparedness/hero-media-generation-hero-bg-0-3b95e0f0-b35e-411f-b080-03b2942b3fc0.webp">
 <script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
@@ -490,52 +490,139 @@ a{color:var(--green-d)}
 .topnav{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
 .topnav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--ink)}
 .topnav a:hover{color:var(--green)}
-.hero{position:relative;min-height:430px;display:flex;align-items:flex-end;background-size:cover;background-position:center}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(255,255,255,.94) 0%,rgba(255,255,255,.55) 34%,rgba(255,255,255,0) 62%)}
-.hero-in{position:relative;max-width:1180px;margin:0 auto;padding:34px 18px 30px;width:100%}
-.hero h1{font-size:2.5rem;line-height:1.12;max-width:720px;color:var(--ink)}
-.hero .tag{font-size:1.12rem;margin-top:10px;max-width:640px;color:#243528}
-.slogan{display:inline-block;margin-top:14px;background:var(--yellow);color:#111;font-weight:900;padding:7px 14px;border-radius:999px;font-size:.98rem;box-shadow:0 3px 10px rgba(0,0,0,.18)}
-.ftc-top{max-width:1180px;margin:14px auto 0;padding:0 18px;font-size:.85rem;color:#4a554d}
+.hero{position:relative;background:#fff}
+.hero-photo-wrap{position:relative;overflow:hidden;padding:38px 18px;background:#111}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.hero-photo{position:relative;z-index:2;display:block;margin:0 auto;width:min(620px,74%);height:auto;object-fit:contain;filter:drop-shadow(0 16px 26px rgba(0,0,0,.55))}
+.hero-lights{position:absolute;top:0;left:0;width:100%;height:auto;mix-blend-mode:screen;z-index:1;pointer-events:none}
+.hero-glow{position:absolute;top:0;left:0;right:0;height:48%;background:radial-gradient(ellipse 68% 100% at 50% 0%,rgba(255,166,55,.17),rgba(255,166,55,0) 70%);z-index:1;pointer-events:none}
+.hero-corner{position:absolute;top:0;width:min(235px,36%);aspect-ratio:1/1;overflow:hidden;z-index:3;pointer-events:none}
+.hero-corner.left{left:0}
+.hero-corner.right{right:0}
+.hero-corner .strip{position:absolute;top:30%;width:165%;height:clamp(24px,8.2vw,38px);background:url('/assets/brand/ribbon-strip.webp') center/auto 100% repeat-x;filter:drop-shadow(0 7px 9px rgba(0,0,0,.45))}
+.hero-corner.left .strip{left:30%;transform:translate(-50%,-50%) rotate(-45deg)}
+.hero-corner.right .strip{right:30%;transform:translate(50%,-50%) rotate(45deg)}
+.hero-ribbon-bow{position:absolute;top:-6px;right:0;width:clamp(96px,24vw,188px);height:auto;z-index:4;filter:drop-shadow(0 10px 14px rgba(0,0,0,.5));pointer-events:none}
+.hero-shade{display:none}
+.hero-in{position:relative;padding:16px 18px 20px;max-width:1180px;margin:0 auto}
+.hero h1{font-size:3.5rem;font-weight:900;line-height:1.05;letter-spacing:-.5px;max-width:760px;color:var(--ink)}
+.slogan{display:inline-block;margin-top:16px;background:var(--yellow);color:#111;font-weight:900;padding:10px 20px;border-radius:999px;font-size:1.08rem;box-shadow:0 5px 16px rgba(0,0,0,.25)}
+.ftc-top{max-width:1180px;margin:12px auto 0;padding:0 18px;font-size:.92rem;color:#4a554d;font-weight:600}
 .wrap{max-width:1180px;margin:0 auto;padding:10px 18px 8px}
-.sec-title{font-size:1.65rem;margin:30px 0 6px;color:var(--ink)}
-.sec-sub{color:#435347;margin-bottom:14px;max-width:760px}
-.band{position:relative;border-radius:22px;overflow:hidden;margin:22px 0;box-shadow:0 10px 30px rgba(20,40,25,.16);background:#e9efe9}
-.band img.photo{width:100%;height:420px;object-fit:contain;background:#fff}
-.band-body{position:relative;background:#fff;padding:20px 22px 22px;margin-top:0;border-radius:0 0 22px 22px}
-.band h3{font-size:1.3rem;line-height:1.25;margin-bottom:6px}
-.band .note{color:#33453a;max-width:820px}
+.sec-title{font-size:2.05rem;font-weight:900;margin:24px 0 8px;color:var(--ink)}
+.sec-title::after{content:"";display:block;width:74px;height:6px;border-radius:3px;background:var(--yellow);margin-top:8px;box-shadow:0 0 0 2px rgba(20,92,43,.85)}
+.sec-sub{color:#435347;margin-bottom:14px;max-width:760px;font-size:1rem}
+.band{position:relative;border-radius:24px;overflow:hidden;margin:10px 0;box-shadow:0 16px 38px rgba(20,40,25,.22);background:#e9efe9}
+.photo-wrap{position:relative;overflow:hidden;background:#fff}
+.band img.photo{position:relative;width:100%;height:100%;object-fit:contain}
+.photo-shade{position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(to top,rgba(255,255,255,.55),rgba(255,255,255,0))}
+.price-pop{position:absolute;left:18px;bottom:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fff;border-radius:18px;padding:10px 18px 12px;box-shadow:0 12px 30px rgba(10,25,15,.35);border:3px solid var(--yellow)}
+.price-pop .price{font-size:2.15rem;font-weight:900;color:var(--green-d);line-height:1}
+.price-pop .was{font-size:1.15rem;color:#7a857c;text-decoration:line-through;font-weight:700}
+.price-pop .save{background:#c8102e;color:#fff;font-weight:900;font-size:1rem;padding:5px 13px;border-radius:999px;box-shadow:0 4px 12px rgba(200,16,46,.4)}
+.h-xl .photo-wrap{height:440px}.h-lg .photo-wrap{height:390px}.h-md .photo-wrap{height:340px}.h-sm .photo-wrap{height:290px}
+.band-body{position:relative;background:#fff;padding:13px 20px 15px;margin-top:0;border-radius:0 0 24px 24px}
+.band h3{font-size:1.5rem;font-weight:900;line-height:1.22;margin-bottom:6px}
+.band .note{color:#33453a;max-width:820px;font-size:1rem}
 .price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:12px}
 .price{font-size:1.55rem;font-weight:900;color:var(--green-d)}
 .was{font-size:1.05rem;color:#7a857c;text-decoration:line-through}
 .save{background:#c8102e;color:#fff;font-weight:800;font-size:.85rem;padding:3px 10px;border-radius:999px}
-.prov{font-size:.9rem;color:#4a554d}
-.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 24px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+.prov{font-size:.95rem;color:#4a554d;font-weight:600;margin-top:10px}
+.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;font-size:1.05rem;text-decoration:none;padding:14px 30px;border-radius:999px;box-shadow:0 6px 18px rgba(29,122,58,.4)}
 .buy:hover{background:var(--green-d)}
-.storeband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:20px 0;text-decoration:none;box-shadow:0 10px 30px rgba(20,40,25,.16)}
-.storeband img{width:100%;height:250px;object-fit:cover}
+.storeband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:10px 0;text-decoration:none;box-shadow:0 12px 30px rgba(20,40,25,.2)}
+.storeband img{width:100%;height:190px;object-fit:cover}
+.storeband.sb-hero img{height:240px}.storeband.sb-tall img{height:215px}.storeband.sb-short img{height:160px}.storeband.sb-finale img{height:225px}
 .storeband .sb-in{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;background:linear-gradient(to top,rgba(255,255,255,.95),rgba(255,255,255,0))}
-.storeband h3{font-size:1.45rem;color:var(--ink)}
-.storeband p{color:#33453a}
-footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
+.storeband h3{font-size:1.6rem;font-weight:900;color:var(--ink)}
+.storeband p{color:#33453a;font-size:1rem}
+footer{background:#ffffff;margin-top:28px;border-top:6px solid var(--green)}
 .foot-in{max-width:1180px;margin:0 auto;padding:28px 18px 34px}
 .foot-in .slogan{margin:0 0 12px}
 .fine{font-size:.85rem;color:#5a665d;max-width:820px;margin-top:10px}
 .foot-links{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
 .foot-links a{font-weight:700;text-decoration:none}
-@media (max-width:640px){.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.band img.photo{height:300px}.price{font-size:1.3rem}}
-
-.buycheck{background:#fff6cf;border:1px solid #ecd24f;border-radius:14px;padding:12px 16px;margin:14px 0 6px;font-size:1rem;color:#3d3a1a}
-.buycheck strong{color:#7a5b00}
-.verdict{margin-top:12px;background:#f1f7f1;border-left:4px solid var(--green);border-radius:10px;padding:10px 14px;font-size:.93rem;color:#243528}
-.verdict p{margin:3px 0}
-.verdict strong{color:var(--green-d)}
+.capture{position:relative;border-radius:22px;overflow:hidden;margin:24px 0 6px;box-shadow:0 10px 30px rgba(20,40,25,.16);background:#e9f2ea}
+.capture-in{position:relative;padding:24px 22px}
+.missionline{font-size:1.05rem;font-weight:600;color:#243528;margin:20px 0 2px}
+.jumprow{max-width:1180px;margin:14px auto 0;padding:0 18px;display:flex;gap:9px;flex-wrap:wrap}
+.jump{flex:1 1 auto;text-align:center;background:var(--green);color:#fff !important;font-weight:800;font-size:.98rem;text-decoration:none;padding:12px 10px;border-radius:999px;box-shadow:0 5px 14px rgba(29,122,58,.30);white-space:nowrap}
+.jump.alt{background:#fff;color:var(--green-d) !important;border:2px solid var(--green);box-shadow:0 4px 12px rgba(20,40,25,.12)}
+.hubrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:6px 0 4px}
+.hub{position:relative;border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 10px 24px rgba(20,40,25,.18);display:block}
+.hub img{width:100%;height:150px;object-fit:cover}
+.hub span{position:absolute;left:0;right:0;bottom:0;padding:20px 14px 10px;background:linear-gradient(to top,rgba(255,255,255,.96),rgba(255,255,255,0));font-weight:900;font-size:1.12rem;color:var(--ink)}
+.capture h2{font-size:1.5rem;margin-bottom:6px;color:var(--ink)}
+.capture p{max-width:640px;color:#243528}
+.capture-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.btn-sub{background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+.btn-sub:hover{background:var(--green-d)}
+.btn-group{background:#fff;color:var(--green-d) !important;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:999px;border:2px solid var(--green);box-shadow:0 4px 14px rgba(20,40,25,.15)}
+.capture .small{font-size:.85rem;color:#4a554d;margin-top:10px}
+.trustline{display:flex;gap:8px 22px;flex-wrap:wrap;margin:16px 0 4px;padding:14px 18px;background:#fff;border-radius:16px;box-shadow:0 6px 18px rgba(20,40,25,.10);font-size:.95rem}
+.trustline b{color:var(--green-d)}
+.chips{display:flex;gap:10px;overflow-x:auto;padding:8px 2px 12px;-webkit-overflow-scrolling:touch}
+.chip{flex:0 0 auto;display:flex;align-items:center;gap:9px;background:#fff;border-radius:999px;padding:5px 16px 5px 5px;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem;box-shadow:0 4px 12px rgba(20,40,25,.12)}
+.chip img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+.badge{display:inline-block;background:var(--green);color:#fff;font-weight:800;font-size:.95rem;padding:3px 11px;border-radius:999px;margin-bottom:8px;letter-spacing:.2px}
+.searchrow{margin:2px 0 6px}
+.searchrow label{font-weight:700;display:block;margin-bottom:8px}
+.searchbox{width:100%;max-width:520px;padding:13px 18px;border:2px solid #cfe0d2;border-radius:999px;font-size:1rem;font-family:inherit;background:#fff;color:var(--ink)}
+.searchbox:focus{outline:none;border-color:var(--green)}
+.nomatch{display:none;color:#7a2d1d;font-weight:700;margin-top:10px}
+.soc{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
+.soc a{font-weight:700;text-decoration:none}
+@media (max-width:640px){.hero-photo{width:71%;height:auto}.hero-photo-wrap{padding:24px 12px}.hero h1{font-size:2.3rem}.h-xl .photo-wrap{height:300px}.h-lg .photo-wrap{height:270px}.h-md .photo-wrap{height:245px}.h-sm .photo-wrap{height:215px}.price-pop{left:10px;bottom:10px;padding:8px 13px 9px;gap:8px;border-width:2px}.price-pop .price{font-size:1.6rem}.price-pop .was{font-size:1rem}.price-pop .save{font-size:.95rem}.storeband img{height:140px}.storeband.sb-hero img{height:165px}.storeband.sb-tall img{height:150px}.storeband.sb-short img{height:115px}.storeband.sb-finale img{height:160px}.hub img{height:104px}.hub span{font-size:.98rem;padding:16px 10px 8px}.jump{font-size:.92rem;padding:11px 6px}
+.topnav{display:none}.topbar-in{padding:8px 14px}.hero-photo{width:71%}.hero-in{padding:12px 18px 14px}.slogan{margin-top:10px}.band h3{font-size:1.28rem}.buy{padding:11px 24px;margin-top:9px}.band-body{padding:11px 16px 13px}.capture-in{padding:18px 16px}.sec-title{margin:20px 0 6px;font-size:1.6rem}.storeband h3{font-size:1.22rem}.storeband p{font-size:.95rem}.storeband h3{font-size:1.35rem}.sec-title{font-size:1.7rem}.band img.photo{height:100%}.price{font-size:1.3rem}.capture-in{padding:20px 16px}.capture h2{font-size:1.3rem}.trustline{font-size:.9rem}}
 .brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
 
+.photo-wrap .photo-frame{height:100%}
+.photo-wrap>img.photo{width:100%;height:100%;object-fit:contain}
+.band .photo-frame img.photo{height:100%}
+.h-xs .photo-wrap{height:215px}
+@media (max-width:640px){.h-xs .photo-wrap{height:180px}}
+.hero .tag{font-size:1.12rem;color:#33453a;max-width:640px;margin-top:10px}
+:root{--green:#1d7a3a;--green-d:#145c2b;--yellow:#ffd21f;--ink:#14201a;--paper:#f7f7f2;--card:#ffffff}
+.hero .tag{font-size:1.12rem;margin-top:10px;max-width:640px;color:#243528}
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:18px 0}
+.dl-card{background:#fff;border-radius:18px;box-shadow:0 8px 24px rgba(20,40,25,.12);padding:18px 20px}
+.dl-card h3{font-size:1.15rem;margin-bottom:8px;color:var(--green-d)}
+.dl-card p{color:#33453a;font-size:.97rem;margin-bottom:6px}
+.dl-card .d{font-weight:800;color:var(--ink)}
 .photo-frame{position:relative;overflow:hidden;background:#fff}
 .photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
 .band .photo-frame img.photo{position:relative;background:transparent}
-</style>
+.code-note{display:block;margin-top:8px;background:#ffd21f;color:#111;font-weight:700;font-size:.9rem;line-height:1.45;padding:7px 11px;border-radius:8px;max-width:560px}
+
+
+/* photo-band melt pattern: sharp photo on top; the text zone is a blurred,
+   darkened melt of the same photo carrying the words — zero white cards */
+.photo-wrap{height:auto}
+.photo{position:static;width:100%;height:auto;object-fit:fill}
+.band-body{position:relative;z-index:3;margin-top:-48px;padding:56px 20px 16px;background:#0d1f13;color:#fff;overflow:hidden}
+.band-body::before{content:"";position:absolute;inset:-28px;background-image:var(--bimg);background-size:cover;background-position:center;filter:blur(24px) brightness(.48) saturate(1.15);z-index:-1}
+.band-body h3{color:#fff;font-size:1.3rem;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.band-body .note{color:rgba(255,255,255,.94);text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.band-body .prov{background:#fff;color:var(--green-d)}
+.price-pop{top:12px;bottom:auto;z-index:4}
+.verdict{margin-top:12px;background:rgba(8,18,11,.7);border-left:4px solid var(--yellow);border-radius:10px;padding:10px 14px;font-size:.93rem;color:#eef5ee}
+.verdict p{margin:3px 0}
+.verdict strong{color:var(--yellow)}
+.buycheck{background:#fff6cf;border:1px solid #ecd24f;border-radius:14px;padding:12px 16px;margin:14px 0 6px;font-size:1rem;color:#3d3a1a}
+.buycheck strong{color:#7a5b00}
+.ship-callout{max-width:1180px;margin:14px auto 0;padding:14px 20px;background:#fff6cf;border:2px solid var(--yellow);border-radius:16px;box-shadow:0 6px 18px rgba(20,40,25,.12);font-size:1.06rem;font-weight:700;color:#243528}
+.ship-callout strong{color:var(--green-d)}
+.ship-note{display:block;margin-top:8px;font-weight:800;color:#ffe97a;font-size:.95rem;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.frame-band .photo-wrap{background:#111}
+.frame-band .photo{width:auto;height:100%;margin:0 auto}
+@media (max-width:640px){.band-body{padding:54px 16px 14px}.band-body h3{font-size:1.16rem}}
+
+/* wave2 hero geometry: painting whole, bottom-anchored; product top-anchored over the wedge; OWNERS INC lettering fully clear */
+.hero-photo-wrap{height:calc(100vw*.56346 + 36px);padding:0}
+.hero-bg{top:auto;bottom:0;height:auto}
+.hero-photo{position:absolute;left:50%;transform:translateX(-50%);top:38px;margin:0;width:min(620px,54%)}
+@media (max-width:640px){.hero-photo-wrap{height:calc(100vw*.56346 + 36px)}.hero-photo{top:10px;width:60%}}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7BY95H3C7"></script>
 <script>
@@ -549,450 +636,449 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <body>
 <div class="topbar"><div class="topbar-in">
 <a class="brand" href="/"><img class="brandlogo" src="/assets/brand/logo-painting.jpg" alt="Owners Inc. logo">Owners <span class="inc">Inc.</span></a>
-<nav class="topnav"><a href="/">Home</a><a href="/christmas-finds/">Christmas</a><a href="/tools/">Tools</a><a href="/kids-toys/">Kids Toys</a><a href="/gaming/">Gaming</a></nav>
+<nav class="topnav"><a href="/christmas-finds/">Christmas</a><a href="/tools/">Tools</a><a href="/kids-toys/">Kids Toys</a><a href="/gaming/">Gaming</a><a href="/faith-finds/">Faith</a><a href="/tax-prep/">Tax Prep</a><a href="/ice-fishing/">Ice Fishing</a><a href="/#stores">All stores</a><a href="/#deals-email">Deals by email</a></nav>
 </div></div>
-<header class="hero" style="background-image:url('/assets/preparedness/hero-media-generation-hero-bg-0-3b95e0f0-b35e-411f-b080-03b2942b3fc0.webp')">
-<div class="hero-shade"></div>
+<header class="hero">
+<div class="hero-photo-wrap">
+<img class="hero-bg" src="/assets/brand/logo-painting.jpg" alt="" aria-hidden="true">
+<img class="hero-lights" src="/assets/brand/hero-lights.jpg" alt="" aria-hidden="true">
+<div class="hero-glow" aria-hidden="true"></div>
+<div class="hero-corner left" aria-hidden="true"><div class="strip"></div></div>
+<div class="hero-corner right" aria-hidden="true"><div class="strip"></div></div>
+<img class="hero-photo" src="/assets/preparedness/solar-generator-cutout.webp" alt="Patriot Power Solar Generator 2200X" fetchpriority="high">
+<img class="hero-ribbon-bow" src="/assets/brand/ribbon-bow.webp" alt="" aria-hidden="true">
+</div>
 <div class="hero-in">
 <h1>Preparedness Finds</h1>
 <p class="tag">A stocked shelf makes an outage a whole lot easier.</p>
 <span class="slogan">Owners Inc. Everybody's doing it.</span>
 </div>
 </header>
-<p class="ftc-top">Affiliate disclosure: Owners Inc. is an affiliate page. If you buy through a link on this page, Owners Inc. may earn a commission — and it costs you nothing extra; the price is the same as going straight to the store.</p>
+<nav class="jumprow" aria-label="Jump to a section">
+<a class="jump" href="#today-s-finds">Today's finds</a>
+<a class="jump" href="#more-owners-inc-stores">More Owners Inc. stores</a>
+<a class="jump alt" href="/bookkeeping-services/">Bookkeeping</a>
+<a class="jump alt" href="/#deals-email">Deals by Email</a>
+</nav>
+<p class="ftc-top">Owners Inc. may earn a commission on purchases through our links — it never changes your price.</p>
+<p class="ship-callout">SHIPPING, HONESTLY — <strong>Harbor Freight</strong> has no free shipping ($6.99 flat rate) · <strong>Northern Tool</strong> marks many items “free shipping (lower 48)” with free ship-to-store · <strong>4Patriots</strong> and <strong>ReadyWise</strong> set their own rates at checkout — checked Nov 21, 2026</p>
 <main class="wrap">
-<h2 class="sec-title">Today's finds</h2>
+<h2 class="sec-title" id="today-s-finds">Today's finds</h2>
 <p class="sec-sub">Every find below shows the price, the store, and the date we checked it. Prices move — the store page always has the final word.</p>
 <p class="buycheck"><strong>The one check that matters most:</strong> Cover water before gear. Most survival food needs water — and heat — to prepare, and no generator matters if there's nothing to drink. Check your water plan first, then buy down the list. Every card below carries our verdict: why we picked it, who it's for, who should skip it, and what to watch out for.</p>
-
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-p72.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-p72.jpg" alt="4Patriots 72-Hour Survival Food Kit" loading="lazy"></div>
- <div class="band-body">
- <h3>4Patriots 72-Hour Survival Food Kit</h3>
- <p class="note">The starter size: three days of shelf-stable meals for one person, in a grab-and-go tote. Who it’s for: Anyone starting from zero — apartment dwellers, a first kit for the car or cabin. Check the label: most freeze-dried and dehydrated meals need water — and heat — to prepare.</p>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Three days of shelf-stable meals for one person in a grab-and-go tote — the step from zero to started.</p>
- <p><strong>Best for:</strong> Anyone starting from zero — apartment dwellers, a first kit for the car or cabin.</p>
- <p><strong>Skip if:</strong> You're covering a family — this is one person for three days; size up to the 4-week kit.</p>
- <p><strong>Watch out for:</strong> Most freeze-dried and dehydrated meals need water — and heat — to prepare. A food kit without a water plan is half a kit.</p>
- </div>
- <div class="price-row"><span class="price">$39</span><span class="prov">at 4Patriots — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://4patriots.com/products/72-hour-emergency-survival-food-kit" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
- </div>
-</section>
-<section class="band">
- <img class="photo" src="/assets/preparedness/card-p4wk.jpg" alt="4Patriots 4-Week Survival Food Kit" loading="lazy">
- <div class="band-body">
- <h3>4Patriots 4-Week Survival Food Kit</h3>
- <p class="note">A month of meals for one person — or a solid two weeks for two — in stackable storage totes. Who it’s for: Households that want real coverage for a long outage without a big spend. Check the label: most freeze-dried and dehydrated meals need water — and heat — to prepare.</p>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> A month of meals for one person — or a solid two weeks for two — in stackable storage totes.</p>
- <p><strong>Best for:</strong> Households that want real coverage for a long outage without a big spend.</p>
- <p><strong>Skip if:</strong> Storage space is your constraint — a month of food takes tote space.</p>
- <p><strong>Watch out for:</strong> Check the label for water and heat requirements, and note the best-by dates when it arrives.</p>
- </div>
- <div class="price-row"><span class="price">$299</span><span class="prov">at 4Patriots — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://4patriots.com/products/4-week-emergency-survival-food-kit" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-p3mo.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-p3mo.jpg" alt="4Patriots 3-Month Survival Food Kit" loading="lazy"></div>
- <div class="band-body">
- <h3>4Patriots 3-Month Survival Food Kit</h3>
- <p class="note">The deep pantry: about 90 days of meals for one person, or roughly a month for a household of three. Who it’s for: Families who want one purchase to settle the food question for the season. Check the label: most freeze-dried and dehydrated meals need water — and heat — to prepare.</p>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> About 90 days of meals for one person, or roughly a month for a household of three — one purchase settles the food question for the season.</p>
- <p><strong>Best for:</strong> Families who want the deep pantry handled in one buy.</p>
- <p><strong>Skip if:</strong> Your water isn't covered yet — water comes before a deep food pantry, every time.</p>
- <p><strong>Watch out for:</strong> It's the 704-serving kit at $799 — confirm servings and shelf life on the product page at 4Patriots.</p>
- </div>
- <div class="price-row"><span class="price">$799</span><span class="prov">at 4Patriots — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://4patriots.com/products/3-month-emergency-survival-food-kit" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-gen.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-gen.jpg" alt="Patriot Power Solar Generator 2200X &amp; Solar Panel — 4Patriots" loading="lazy"></div>
- <div class="band-body">
- <h3>Patriot Power Solar Generator 2200X & Solar Panel — 4Patriots</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Solar-charged backup power with no fuel to store — the quiet, indoor-safe way to keep essentials running.</p>
- <p><strong>Best for:</strong> Keeping a fridge, phones and lights alive through outages where storing gasoline is a problem.</p>
- <p><strong>Skip if:</strong> You need to run a furnace blower, well pump or other big motor loads — check the exact unit's wattage against your loads first.</p>
- <p><strong>Watch out for:</strong> The widest range on this page ($400 – $2,500) because it's a class, not one model — and. Pick the exact unit and confirm capacity and what's included at 4Patriots.</p>
- </div>
- <div class="price-row"><span class="price">$3,499</span><span class="prov">at 4Patriots — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://4patriots.com/products/patriot-power-solar-generator-2200x-solar-panel" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-bank.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-bank.jpg" alt="Patriot Power Cell-CX Solar Power Bank — 4Patriots" loading="lazy"></div>
- <div class="band-body">
- <h3>Patriot Power Cell-CX Solar Power Bank — 4Patriots</h3>
- <p class="note">A pocket-size battery with a solar panel top-up — keeps a phone alive through a multi-day outage. Who it’s for: Everyone.</p>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> A pocket-size battery with a solar panel top-up — it keeps a phone alive through a multi-day outage.</p>
- <p><strong>Best for:</strong> Everyone — the cheapest preparedness buy on this page.</p>
- <p><strong>Skip if:</strong> You need to run laptops or power stations — this is phone-size power.</p>
- <p><strong>Watch out for:</strong> Solar top-up is a trickle, not a charge — top it off from the wall before the storm.</p>
- </div>
- <div class="price-row"><span class="price">$29</span><span class="prov">at 4Patriots — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://4patriots.com/products/patriot-power-cell-cx-portable-solar-power-bank" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
- </div>
-</section>
-<section class="band">
- <img class="photo" src="/assets/preparedness/card-rwlong.jpg" alt="ReadyWise 1 Month Emergency Food Supply — 326 Servings" loading="lazy">
- <div class="band-body">
- <h3>ReadyWise 1 Month Emergency Food Supply — 326 Servings</h3>
- <p class="note">ReadyWise&#x27;s larger kits: weeks of freeze-dried and dehydrated meals in sealed buckets, made to sit on a shelf until needed. Who it’s for: Shoppers who want a second brand to compare against 4Patriots, portion by portion.</p>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Weeks of freeze-dried and dehydrated meals in sealed buckets, made to sit on a shelf until needed — a second brand to compare against 4Patriots, portion by portion.</p>
- <p><strong>Best for:</strong> Shoppers building a pantry who want a brand comparison before committing.</p>
- <p><strong>Skip if:</strong> You want grab-and-go — these are shelf buckets, not tote kits.</p>
- <p><strong>Watch out for:</strong> Compare servings and calories per dollar, not bucket weight — that's how food kits actually compare.</p>
- </div>
- <div class="price-row"><span class="price">$319.99</span><span class="prov">at readywise.com — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://readywise.com/products/emergency-1-month-supply-2-bucket-bundle" target="_blank" rel="sponsored noopener">See it at readywise.com</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-rwgo.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-rwgo.jpg" alt="ReadyWise 84-Serving Grab &amp; Go Food Bucket" loading="lazy"></div>
- <div class="band-body">
- <h3>ReadyWise 84-Serving Grab & Go Food Bucket</h3>
- <p class="note">The smaller ReadyWise bucket: a few days of meals in one handle-topped container that fits a closet shelf. Who it’s for: A starter kit, a gift for a new homeowner, or a backup for the car. Check the label: most freeze-dried and dehydrated meals need water — and heat — to prepare.</p>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> A few days of meals in one handle-topped bucket that fits a closet shelf.</p>
- <p><strong>Best for:</strong> A starter kit, a gift for a new homeowner, or a backup for the car.</p>
- <p><strong>Skip if:</strong> You're stocking for a household — it's a few days, sized small on purpose.</p>
- <p><strong>Watch out for:</strong> Meals need water and heat to prepare.</p>
- </div>
- <div class="price-row"><span class="price">$209.99</span><span class="prov">at readywise.com — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://readywise.com/products/84-serving-breakfast-entree-grab-go-bucket" target="_blank" rel="sponsored noopener">See it at readywise.com</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-grav.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-grav.jpg" alt="Patriot Pure Ultimate Water Filtration System — 2.25 Gal" loading="lazy"></div>
- <div class="band-body">
- <h3>Patriot Pure Ultimate Water Filtration System — 2.25 Gal</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Filters water with no power and no water pressure — the outage-proof way to make stored water drinkable.</p>
- <p><strong>Best for:</strong> Households whose outage plan leans on stored water.</p>
- <p><strong>Skip if:</strong> You only need trail water — the LifeStraw below is the portable pick.</p>
- <p><strong>Watch out for:</strong> Filter elements are consumables — price the replacements before you buy the system.</p>
- </div>
- <div class="price-row"><span class="price">$249</span><span class="prov">at 4Patriots — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://4patriots.com/products/patriot-pure-ultimate-water-filtration-system-nanomesh-filter" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-straw.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-straw.jpg" alt="LifeStraw Personal Water Filter" loading="lazy"></div>
- <div class="band-body">
- <h3>LifeStraw Personal Water Filter</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> The classic personal filter — drink straight from the source, one person at a time.</p>
- <p><strong>Best for:</strong> Hikers, car kits and go-bags — one per person.</p>
- <p><strong>Skip if:</strong> You're filtering for a family — one straw serves one drinker; a gravity system moves volume.</p>
- <p><strong>Watch out for:</strong> A straw filter is for water you're drinking now, not for filling storage — and check its rated lifespan at lifestraw.com.</p>
- </div>
- <div class="price-row"><span class="price">$17.95</span><span class="prov">at lifestraw.com — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://lifestraw.com/products/lifestraw" target="_blank" rel="sponsored noopener">See it at lifestraw.com</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-radio.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-radio.jpg" alt="Liberty Band Emergency Solar Weather Radio — 4Patriots" loading="lazy"></div>
- <div class="band-body">
- <h3>Liberty Band Emergency Solar Weather Radio — 4Patriots</h3>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> AM/FM and weather band with a flashlight and USB phone charging — hand crank, solar or battery, so it never depends on one power source.</p>
- <p><strong>Best for:</strong> Every household.</p>
- <p><strong>Skip if:</strong> You already own one that works — crank it and test the battery before buying a second.</p>
- <p><strong>Watch out for:</strong></p>
- </div>
- <div class="price-row"><span class="price">$49</span><span class="prov">at 4Patriots — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://4patriots.com/products/liberty-band-emergency-solar-weather-radio" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-bob.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-bob.jpg" alt="Food, Power &amp; Light Emergency Go-Bag Starter Package — 4Patriots" loading="lazy"></div>
- <div class="band-body">
- <h3>Food, Power & Light Emergency Go-Bag Starter Package — 4Patriots</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> A pre-packed basics kit — the fast start when building your own from scratch feels like homework.</p>
- <p><strong>Best for:</strong> Beginners who want a foundation to add to.</p>
- <p><strong>Skip if:</strong> You already own the basics piecemeal — a kit duplicates what you have.</p>
- <p><strong>Watch out for:</strong> Open it the day it arrives and learn what's inside; a kit you've never opened is a kit you can't use.</p>
- </div>
- <div class="price-row"><span class="price">$89</span><span class="prov">at 4Patriots — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://4patriots.com/products/food-power-light-emergency-go-bag-starter-package" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-pred9500.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-pred9500.jpg" alt="Predator 9500 Super Quiet Inverter Generator" loading="lazy"></div>
- <div class="band-body">
- <h3>Predator 9500 Super Quiet Inverter Generator</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> The big inverter class — serious wattage with electronics-safe output and inverter manners.</p>
- <p><strong>Best for:</strong> Serious backup power for a house full of electronics.</p>
- <p><strong>Skip if:</strong> A 3500-class unit covers your loads — this is roughly double the money.</p>
- <p><strong>Watch out for:</strong> Confirm starting vs. running watts and the noise rating at Harbor Freight;.</p>
- </div>
- <div class="price-row"><span class="price">$1,999.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/9500-watt-super-quiet-inverter-generator-with-co-secure-technology-49-state-compliant-71365.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-pred3500.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-pred3500.jpg" alt="Predator 3500 Inverter Generator" loading="lazy"></div>
- <div class="band-body">
- <h3>Predator 3500 Inverter Generator</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> The popular mid-size inverter class — quiet enough for a campground, strong enough for a fridge and lights.</p>
- <p><strong>Best for:</strong> RVs, camping and light home backup.</p>
- <p><strong>Skip if:</strong> You need 240V for a well pump — check the outlet panel on the exact model first.</p>
- <p><strong>Watch out for:</strong></p>
- </div>
- <div class="price-row"><span class="price">$799.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/3500-watt-super-quiet-inverter-generator-with-co-secure-technology-59137.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <img class="photo" src="/assets/preparedness/card-generacgp.jpg" alt="Generac GP6500 Portable Generator — 6,500 Watts" loading="lazy">
- <div class="band-body">
- <h3>Generac GP6500 Portable Generator — 6,500 Watts</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Name-brand portable power in the 6,500 class — the outage workhorse size.</p>
- <p><strong>Best for:</strong> Running the essentials through a multi-day outage.</p>
- <p><strong>Skip if:</strong> Noise matters — open-frame gas generators are loud; inverter models are the quiet route.</p>
- <p><strong>Watch out for:</strong> If it will feed the house panel, budget for the cord and inlet kit below — and an electrician.</p>
- </div>
- <div class="price-row"><span class="price">$809</span><span class="prov">at Northern Tool — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.northerntool.com/products/generac-gp6500-portable-generator-6500-watts-co-sense-technology-powerrush-model-7672-6859991" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-trifuel.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-trifuel.jpg" alt="Predator 13,000 Watt Tri-Fuel Portable Generator" loading="lazy"></div>
- <div class="band-body">
- <h3>Predator 13,000 Watt Tri-Fuel Portable Generator</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Runs on gas, propane or natural gas — when one fuel runs out or the gas station line is a mile long, you have options.</p>
- <p><strong>Best for:</strong> Households with propane or natural gas already on site.</p>
- <p><strong>Skip if:</strong> You'll only ever run gasoline — the tri-fuel premium buys flexibility you won't use.</p>
- <p><strong>Watch out for:</strong> Output ratings differ by fuel — confirm the per-fuel wattage at Harbor Freight before counting on a load.</p>
- </div>
- <div class="price-row"><span class="price">$1,299.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/13000-watt-tri-fuel-portable-generator-with-remote-start-and-co-secure-technology-49-state-compliant-71386.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-standby.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-standby.jpg" alt="Generac Guardian 14 kW Home Standby Generator" loading="lazy"></div>
- <div class="band-body">
- <h3>Generac Guardian 14 kW Home Standby Generator</h3>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Permanently installed, starts on its own when the power goes out, and runs the whole house — furnace included.</p>
- <p><strong>Best for:</strong> Homeowners who'd rather not wheel a portable out in the snow.</p>
- <p><strong>Skip if:</strong> The budget stops at the unit price — installation is a second, significant cost.</p>
- <p><strong>Watch out for:</strong> Get install quotes before you buy the unit.</p>
- </div>
- <div class="price-row"><span class="price">$4,479</span><span class="prov">at Northern Tool — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.northerntool.com/products/generac-guardian-series-air-cooled-home-standby-generator-14kw-lp-14kw-ng-model-7223-105878" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-gencord.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-gencord.jpg" alt="Reliance Generator Through-the-Wall Kit — 30-Amp Inlet Box" loading="lazy"></div>
- <div class="band-body">
- <h3>Reliance Generator Through-the-Wall Kit — 30-Amp Inlet Box</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> The safe connection between a portable generator and the house panel — no backfeeding, no cords through a window.</p>
- <p><strong>Best for:</strong> Anyone feeding a panel from a portable generator.</p>
- <p><strong>Skip if:</strong> You only ever plug appliances straight into the generator.</p>
- <p><strong>Watch out for:</strong> Panel work needs a licensed electrician in most places — the same rule as the transfer switch on the Tools page.</p>
- </div>
- <div class="price-row"><span class="price">$99.99</span><span class="prov">at Northern Tool — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.northerntool.com/products/reliance-portable-generator-through-the-wall-kit-model-wkpbn30-62095" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-solar100.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-solar100.jpg" alt="Thunderbolt Solar 100 Watt Solar Panel Kit" loading="lazy"></div>
- <div class="band-body">
- <h3>Thunderbolt Solar 100 Watt Solar Panel Kit</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Starter-size solar for keeping a 12V battery topped up — cabin, RV, boat or gate opener.</p>
- <p><strong>Best for:</strong> Off-grid battery maintenance.</p>
- <p><strong>Skip if:</strong> You expect household power from it — 100 watts maintains batteries; it doesn't run a house.</p>
- <p><strong>Watch out for:</strong> Confirm the charge controller is included and matches your battery at Harbor Freight;.</p>
- </div>
- <div class="price-row"><span class="price">$149.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/100-watt-monocrystalline-solar-panel-kit-70735.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <img class="photo" src="/assets/preparedness/card-solar200.jpg" alt="Yoshino 200W Foldable Solar Panel" loading="lazy">
- <div class="band-body">
- <h3>Yoshino 200W Foldable Solar Panel</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Folding solar sized for power stations — packs flat for storage and travel.</p>
- <p><strong>Best for:</strong> Power-station owners who camp or tailgate.</p>
- <p><strong>Skip if:</strong> Your power station takes a proprietary connector — check compatibility before ordering.</p>
- <p><strong>Watch out for:</strong> Confirm the connector type matches your power station at Northern Tool.</p>
- </div>
- <div class="price-row"><span class="price">$499</span><span class="prov">at Northern Tool — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.northerntool.com/products/yoshino-foldable-portable-solar-panel-200w-monocrystalline-etfe-lamination-ip67-water-resistant-model-sp200-5799093" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-drillkit.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-drillkit.jpg" alt="Bauer 20V Drill &amp; Impact Driver Kit" loading="lazy"></div>
- <div class="band-body">
- <h3>Bauer 20V Drill & Impact Driver Kit</h3>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> The two tools every house ends up needing during and after a storm — boarding a broken window, tightening what the wind loosened.</p>
- <p><strong>Best for:</strong> Every household.</p>
- <p><strong>Skip if:</strong> You're already deep in a name-brand battery platform — match the batteries you own.</p>
- <p><strong>Watch out for:</strong> Store-brand platforms are store-specific — batteries and tools come from that store only.</p>
- </div>
- <div class="price-row"><span class="price">$99.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/20v-2-tool-drill-impact-driver-kit-73238.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-mechset.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-mechset.jpg" alt="Pittsburgh 301-Piece Mechanics Tool Set" loading="lazy"></div>
- <div class="band-body">
- <h3>Pittsburgh 301-Piece Mechanics Tool Set</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> A full socket-and-wrench library in one case — the storm-repair and vehicle kit in a single buy.</p>
- <p><strong>Best for:</strong> Home garages building a first serious set.</p>
- <p><strong>Skip if:</strong> You own a good set already — a 301-piece case duplicates it.</p>
- <p><strong>Watch out for:</strong> Check the case latches and whether the sizes run metric, SAE or both at Harbor Freight.</p>
- </div>
- <div class="price-row"><span class="price">$199.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/mechanics-tool-set-301-piece-63464.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-jackset.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-jackset.jpg" alt="Daytona 3 Ton Low-Profile Floor Jack" loading="lazy"></div>
- <div class="band-body">
- <h3>Daytona 3 Ton Low-Profile Floor Jack</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> A pro-grade 3-ton low-profile jack with a rapid pump — the lift half of safe vehicle work. Matching Daytona jack stands are sold separately at Harbor Freight.</p>
- <p><strong>Best for:</strong> Home vehicle work and storm-cleanup lifting.</p>
- <p><strong>Skip if:</strong> Your vehicle's heaviest axle pushes past the 3-ton class — check the rating first.</p>
- <p><strong>Watch out for:</strong> Never work under a vehicle on a jack alone — stands hold, jacks lift.</p>
- </div>
- <div class="price-row"><span class="price">$199.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/3-ton-low-profile-professional-floor-jack-with-rapid-pump-black-64780.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-compressor.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-compressor.jpg" alt="McGraw 6 Gallon Pancake Air Compressor" loading="lazy"></div>
- <div class="band-body">
- <h3>McGraw 6 Gallon Pancake Air Compressor</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Compact air for tires, brad nailers and cleanup guns after a storm.</p>
- <p><strong>Best for:</strong> Small garages and portable air.</p>
- <p><strong>Skip if:</strong> You run high-demand air tools — a 6-gallon tank cycles constantly.</p>
- <p><strong>Watch out for:</strong> Drain the tank after use so it doesn't rust from inside.</p>
- </div>
- <div class="price-row"><span class="price">$139.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/6-gallon-150-psi-oil-free-pancake-jobsite-air-compressor-58636.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <img class="photo" src="/assets/preparedness/card-chainsaw.jpg" alt="Troy-Bilt 16-Inch Gas Chainsaw — 42cc" loading="lazy">
- <div class="band-body">
- <h3>Troy-Bilt 16-Inch Gas Chainsaw — 42cc</h3>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> When a storm drops a tree across the driveway, this is the tool that opens the road again — and cuts the firewood after.</p>
- <p><strong>Best for:</strong> Homeowners with trees.</p>
- <p><strong>Skip if:</strong> You've never run a saw — hire the first cleanup out or take a safety course first.</p>
- <p><strong>Watch out for:</strong> Budget for chaps, eye and ear protection and a spare chain — none of it is optional.</p>
- </div>
- <div class="price-row"><span class="price">$209</span><span class="prov">at Northern Tool — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.northerntool.com/products/troy-bilt-gas-powered-chainsaw-16in-bar-42cc-model-tb4216-105079" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-shopvac.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-shopvac.jpg" alt="Bauer 9 Gallon Wet/Dry Shop Vacuum" loading="lazy"></div>
- <div class="band-body">
- <h3>Bauer 9 Gallon Wet/Dry Shop Vacuum</h3>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Sucks up the water from a burst pipe or a flooded corner before it becomes a mold problem — and handles the sawdust the rest of the year.</p>
- <p><strong>Best for:</strong> Basement owners.</p>
- <p><strong>Skip if:</strong> Your water problem is a whole basement — that's a pump's job; this handles corners and spills.</p>
- <p><strong>Watch out for:</strong> Water pickup uses the wet filter setup — check what's included at Harbor Freight.</p>
- </div>
- <div class="price-row"><span class="price">$79.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/9-gallon-45-peak-hp-wetdry-vacuum-56202.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-welder.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-welder.jpg" alt="Titanium Easy-Flux 125 Amp Welder" loading="lazy"></div>
- <div class="band-body">
- <h3>Titanium Easy-Flux 125 Amp Welder</h3>
- 
- <div class="verdict">
- <p><strong>Why we picked it:</strong> No gas bottle needed and runs on a normal outlet — gates, trailers and storm repairs get welded at home.</p>
- <p><strong>Best for:</strong> First welders and farm fixes.</p>
- <p><strong>Skip if:</strong> You need clean finish welds — flux-core spatters.</p>
- <p><strong>Watch out for:</strong> A helmet and gloves are separate, non-optional purchases.</p>
- </div>
- <div class="price-row"><span class="price">$149.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="http://www.harborfreight.com/Easy-Flux-125-Amp-Welder-57861.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-worklight.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-worklight.jpg" alt="Braun 750 Lumen Rechargeable LED Floodlight" loading="lazy"></div>
- <div class="band-body">
- <h3>Braun 750 Lumen Rechargeable LED Floodlight</h3>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> A stand-up flood of light for the breaker panel, the crawl space or the 9 p.m. driveway repair — rechargeable, so no cord to trip over.</p>
- <p><strong>Best for:</strong> Anyone who's ever held a flashlight in their teeth.</p>
- <p><strong>Skip if:</strong> You need all-night runtime on one charge — check the runtime first and keep a corded backup.</p>
- <p><strong>Watch out for:</strong> Rechargeable means charge it before the storm, not during.</p>
- </div>
- <div class="price-row"><span class="price">$29.99</span><span class="prov">at Harbor Freight — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.harborfreight.com/750-lumen-rechargeable-ultracompact-magnetic-led-floodlight-green-59226.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
- </div>
-</section>
-<section class="band">
- <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-heater.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-heater.jpg" alt="Mr. Heater Portable Buddy Heater — 9,000 BTU" loading="lazy"></div>
- <div class="band-body">
- <h3>Mr. Heater Portable Buddy Heater — 9,000 BTU</h3>
- <div class="verdict">
- <p><strong>Why we picked it:</strong> Indoor-rated propane heat for one room when the furnace is down — the difference between a cold house and a livable one during a winter outage.</p>
- <p><strong>Best for:</strong> Households planning for winter-outage heat — priority #3 on the winter list.</p>
- <p><strong>Skip if:</strong> The plan is heating the whole house — this is a one-room heater.</p>
- <p><strong>Watch out for:</strong> Follow the indoor rating exactly: ventilation and a working CO detector are part of the setup, and propane is a separate purchase.</p>
- </div>
- <div class="price-row"><span class="price">$84.99</span><span class="prov">at Northern Tool — checked Nov 21, 2026</span></div>
- <a class="buy" href="https://www.northerntool.com/mr-heater-portable-buddy-propane-heater-9-000-btu-model-mh9bx-173690" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
- </div>
-</section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-tarps.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-tarps.jpg" alt="Heavy-Duty Tarps &amp; Ratchet Strap Bundle" loading="lazy"></div>
-  <div class="band-body">
-    <h3>Heavy-Duty Tarps &amp; Ratchet Strap Bundle</h3>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-p72.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-p72.jpg" alt="4Patriots 72-Hour Survival Food Kit" loading="lazy"></div><div class="price-pop"><span class="price">$39</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-p72.jpg')">
+    <h3>4Patriots 72-Hour Survival Food Kit</h3>
+    <p class="note">The starter size: three days of shelf-stable meals for one person, in a grab-and-go tote. Who it’s for: Anyone starting from zero — apartment dwellers, a first kit for the car or cabin. Check the label: most freeze-dried and dehydrated meals need water — and heat — to prepare.</p>
     <div class="verdict">
-      <p><strong>Why we picked it:</strong> Covers a damaged roof and secures the load — the cheapest storm-repair insurance on this page.</p>
-      <p><strong>Best for:</strong> Every homeowner and truck owner.</p>
-      <p><strong>Skip if:</strong> You need one specific heavy-duty tarp size — bundles run mixed sizes.</p>
-      <p><strong>Watch out for:</strong> Tarp sizes and strap ratings vary by bundle — confirm the contents at Harbor Freight.</p>
-    </div>
-    <div class="price-row"><span class="price">$25 – $50</span><span class="prov">at Harbor Freight — checked Nov 17, 2026</span></div>
+<p><strong>Why we picked it:</strong> Three days of shelf-stable meals for one person in a grab-and-go tote — the step from zero to started.</p>
+<p><strong>Best for:</strong> Anyone starting from zero — apartment dwellers, a first kit for the car or cabin.</p>
+<p><strong>Skip if:</strong> You're covering a family — this is one person for three days; size up to the 4-week kit.</p>
+<p><strong>Watch out for:</strong> Most freeze-dried and dehydrated meals need water — and heat — to prepare. A food kit without a water plan is half a kit.</p>
+</div>
+    <p class="prov">at 4Patriots — checked Nov 21, 2026</p>
+    <a class="buy" href="https://4patriots.com/products/72-hour-emergency-survival-food-kit" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-p4wk.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-p4wk.jpg" alt="4Patriots 4-Week Survival Food Kit" loading="lazy"></div><div class="price-pop"><span class="price">$299</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-p4wk.jpg')">
+    <h3>4Patriots 4-Week Survival Food Kit</h3>
+    <p class="note">A month of meals for one person — or a solid two weeks for two — in stackable storage totes. Who it’s for: Households that want real coverage for a long outage without a big spend. Check the label: most freeze-dried and dehydrated meals need water — and heat — to prepare.</p>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> A month of meals for one person — or a solid two weeks for two — in stackable storage totes.</p>
+<p><strong>Best for:</strong> Households that want real coverage for a long outage without a big spend.</p>
+<p><strong>Skip if:</strong> Storage space is your constraint — a month of food takes tote space.</p>
+<p><strong>Watch out for:</strong> Check the label for water and heat requirements, and note the best-by dates when it arrives.</p>
+</div>
+    <p class="prov">at 4Patriots — checked Nov 21, 2026</p>
+    <a class="buy" href="https://4patriots.com/products/4-week-emergency-survival-food-kit" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-p3mo.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-p3mo.jpg" alt="4Patriots 3-Month Survival Food Kit" loading="lazy"></div><div class="price-pop"><span class="price">$799</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-p3mo.jpg')">
+    <h3>4Patriots 3-Month Survival Food Kit</h3>
+    <p class="note">The deep pantry: about 90 days of meals for one person, or roughly a month for a household of three. Who it’s for: Families who want one purchase to settle the food question for the season. Check the label: most freeze-dried and dehydrated meals need water — and heat — to prepare.</p>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> About 90 days of meals for one person, or roughly a month for a household of three — one purchase settles the food question for the season.</p>
+<p><strong>Best for:</strong> Families who want the deep pantry handled in one buy.</p>
+<p><strong>Skip if:</strong> Your water isn't covered yet — water comes before a deep food pantry, every time.</p>
+<p><strong>Watch out for:</strong> It's the 704-serving kit at $799 — confirm servings and shelf life on the product page at 4Patriots.</p>
+</div>
+    <p class="prov">at 4Patriots — checked Nov 21, 2026</p>
+    <a class="buy" href="https://4patriots.com/products/3-month-emergency-survival-food-kit" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-gen.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-gen.jpg" alt="Patriot Power Solar Generator 2200X &amp; Solar Panel — 4Patriots" loading="lazy"></div><div class="price-pop"><span class="price">$3,499</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-gen.jpg')">
+    <h3>Patriot Power Solar Generator 2200X & Solar Panel — 4Patriots</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Solar-charged backup power with no fuel to store — the quiet, indoor-safe way to keep essentials running.</p>
+<p><strong>Best for:</strong> Keeping a fridge, phones and lights alive through outages where storing gasoline is a problem.</p>
+<p><strong>Skip if:</strong> You need to run a furnace blower, well pump or other big motor loads — check the exact unit's wattage against your loads first.</p>
+<p><strong>Watch out for:</strong> The widest range on this page ($400 – $2,500) because it's a class, not one model — and. Pick the exact unit and confirm capacity and what's included at 4Patriots.</p>
+</div>
+    <p class="prov">at 4Patriots — checked Nov 21, 2026</p>
+    <a class="buy" href="https://4patriots.com/products/patriot-power-solar-generator-2200x-solar-panel" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-bank.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-bank.jpg" alt="Patriot Power Cell-CX Solar Power Bank — 4Patriots" loading="lazy"></div><div class="price-pop"><span class="price">$29</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-bank.jpg')">
+    <h3>Patriot Power Cell-CX Solar Power Bank — 4Patriots</h3>
+    <p class="note">A pocket-size battery with a solar panel top-up — keeps a phone alive through a multi-day outage. Who it’s for: Everyone.</p>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> A pocket-size battery with a solar panel top-up — it keeps a phone alive through a multi-day outage.</p>
+<p><strong>Best for:</strong> Everyone — the cheapest preparedness buy on this page.</p>
+<p><strong>Skip if:</strong> You need to run laptops or power stations — this is phone-size power.</p>
+<p><strong>Watch out for:</strong> Solar top-up is a trickle, not a charge — top it off from the wall before the storm.</p>
+</div>
+    <p class="prov">at 4Patriots — checked Nov 21, 2026</p>
+    <a class="buy" href="https://4patriots.com/products/patriot-power-cell-cx-portable-solar-power-bank" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-rwlong.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-rwlong.jpg" alt="ReadyWise 1 Month Emergency Food Supply — 326 Servings" loading="lazy"></div><div class="price-pop"><span class="price">$319.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-rwlong.jpg')">
+    <h3>ReadyWise 1 Month Emergency Food Supply — 326 Servings</h3>
+    <p class="note">ReadyWise's larger kits: weeks of freeze-dried and dehydrated meals in sealed buckets, made to sit on a shelf until needed. Who it’s for: Shoppers who want a second brand to compare against 4Patriots, portion by portion.</p>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Weeks of freeze-dried and dehydrated meals in sealed buckets, made to sit on a shelf until needed — a second brand to compare against 4Patriots, portion by portion.</p>
+<p><strong>Best for:</strong> Shoppers building a pantry who want a brand comparison before committing.</p>
+<p><strong>Skip if:</strong> You want grab-and-go — these are shelf buckets, not tote kits.</p>
+<p><strong>Watch out for:</strong> Compare servings and calories per dollar, not bucket weight — that's how food kits actually compare.</p>
+</div>
+    <p class="prov">at readywise.com — checked Nov 21, 2026</p>
+    <a class="buy" href="https://readywise.com/products/emergency-1-month-supply-2-bucket-bundle" target="_blank" rel="sponsored noopener">See it at readywise.com</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-rwgo.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-rwgo.jpg" alt="ReadyWise 84-Serving Grab &amp; Go Food Bucket" loading="lazy"></div><div class="price-pop"><span class="price">$209.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-rwgo.jpg')">
+    <h3>ReadyWise 84-Serving Grab & Go Food Bucket</h3>
+    <p class="note">The smaller ReadyWise bucket: a few days of meals in one handle-topped container that fits a closet shelf. Who it’s for: A starter kit, a gift for a new homeowner, or a backup for the car. Check the label: most freeze-dried and dehydrated meals need water — and heat — to prepare.</p>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> A few days of meals in one handle-topped bucket that fits a closet shelf.</p>
+<p><strong>Best for:</strong> A starter kit, a gift for a new homeowner, or a backup for the car.</p>
+<p><strong>Skip if:</strong> You're stocking for a household — it's a few days, sized small on purpose.</p>
+<p><strong>Watch out for:</strong> Meals need water and heat to prepare.</p>
+</div>
+    <p class="prov">at readywise.com — checked Nov 21, 2026</p>
+    <a class="buy" href="https://readywise.com/products/84-serving-breakfast-entree-grab-go-bucket" target="_blank" rel="sponsored noopener">See it at readywise.com</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-grav.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-grav.jpg" alt="Patriot Pure Ultimate Water Filtration System — 2.25 Gal" loading="lazy"></div><div class="price-pop"><span class="price">$249</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-grav.jpg')">
+    <h3>Patriot Pure Ultimate Water Filtration System — 2.25 Gal</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Filters water with no power and no water pressure — the outage-proof way to make stored water drinkable.</p>
+<p><strong>Best for:</strong> Households whose outage plan leans on stored water.</p>
+<p><strong>Skip if:</strong> You only need trail water — the LifeStraw below is the portable pick.</p>
+<p><strong>Watch out for:</strong> Filter elements are consumables — price the replacements before you buy the system.</p>
+</div>
+    <p class="prov">at 4Patriots — checked Nov 21, 2026</p>
+    <a class="buy" href="https://4patriots.com/products/patriot-pure-ultimate-water-filtration-system-nanomesh-filter" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-straw.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-straw.jpg" alt="LifeStraw Personal Water Filter" loading="lazy"></div><div class="price-pop"><span class="price">$17.95</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-straw.jpg')">
+    <h3>LifeStraw Personal Water Filter</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> The classic personal filter — drink straight from the source, one person at a time.</p>
+<p><strong>Best for:</strong> Hikers, car kits and go-bags — one per person.</p>
+<p><strong>Skip if:</strong> You're filtering for a family — one straw serves one drinker; a gravity system moves volume.</p>
+<p><strong>Watch out for:</strong> A straw filter is for water you're drinking now, not for filling storage — and check its rated lifespan at lifestraw.com.</p>
+</div>
+    <p class="prov">at lifestraw.com — checked Nov 21, 2026</p>
+    <a class="buy" href="https://lifestraw.com/products/lifestraw" target="_blank" rel="sponsored noopener">See it at lifestraw.com</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-radio.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-radio.jpg" alt="Liberty Band Emergency Solar Weather Radio — 4Patriots" loading="lazy"></div><div class="price-pop"><span class="price">$49</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-radio.jpg')">
+    <h3>Liberty Band Emergency Solar Weather Radio — 4Patriots</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> AM/FM and weather band with a flashlight and USB phone charging — hand crank, solar or battery, so it never depends on one power source.</p>
+<p><strong>Best for:</strong> Every household.</p>
+<p><strong>Skip if:</strong> You already own one that works — crank it and test the battery before buying a second.</p>
+<p><strong>Watch out for:</strong></p>
+</div>
+    <p class="prov">at 4Patriots — checked Nov 21, 2026</p>
+    <a class="buy" href="https://4patriots.com/products/liberty-band-emergency-solar-weather-radio" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-bob.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-bob.jpg" alt="Food, Power &amp; Light Emergency Go-Bag Starter Package — 4Patriots" loading="lazy"></div><div class="price-pop"><span class="price">$89</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-bob.jpg')">
+    <h3>Food, Power & Light Emergency Go-Bag Starter Package — 4Patriots</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> A pre-packed basics kit — the fast start when building your own from scratch feels like homework.</p>
+<p><strong>Best for:</strong> Beginners who want a foundation to add to.</p>
+<p><strong>Skip if:</strong> You already own the basics piecemeal — a kit duplicates what you have.</p>
+<p><strong>Watch out for:</strong> Open it the day it arrives and learn what's inside; a kit you've never opened is a kit you can't use.</p>
+</div>
+    <p class="prov">at 4Patriots — checked Nov 21, 2026</p>
+    <a class="buy" href="https://4patriots.com/products/food-power-light-emergency-go-bag-starter-package" target="_blank" rel="sponsored noopener">See it at 4Patriots</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-pred9500.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-pred9500.jpg" alt="Predator 9500 Super Quiet Inverter Generator" loading="lazy"></div><div class="price-pop"><span class="price">$1,999.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-pred9500.jpg')">
+    <h3>Predator 9500 Super Quiet Inverter Generator</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> The big inverter class — serious wattage with electronics-safe output and inverter manners.</p>
+<p><strong>Best for:</strong> Serious backup power for a house full of electronics.</p>
+<p><strong>Skip if:</strong> A 3500-class unit covers your loads — this is roughly double the money.</p>
+<p><strong>Watch out for:</strong> Confirm starting vs. running watts and the noise rating at Harbor Freight;.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/9500-watt-super-quiet-inverter-generator-with-co-secure-technology-49-state-compliant-71365.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-pred3500.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-pred3500.jpg" alt="Predator 3500 Inverter Generator" loading="lazy"></div><div class="price-pop"><span class="price">$799.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-pred3500.jpg')">
+    <h3>Predator 3500 Inverter Generator</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> The popular mid-size inverter class — quiet enough for a campground, strong enough for a fridge and lights.</p>
+<p><strong>Best for:</strong> RVs, camping and light home backup.</p>
+<p><strong>Skip if:</strong> You need 240V for a well pump — check the outlet panel on the exact model first.</p>
+<p><strong>Watch out for:</strong></p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/3500-watt-super-quiet-inverter-generator-with-co-secure-technology-59137.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-generacgp.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-generacgp.jpg" alt="Generac GP6500 Portable Generator — 6,500 Watts" loading="lazy"></div><div class="price-pop"><span class="price">$809</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-generacgp.jpg')">
+    <h3>Generac GP6500 Portable Generator — 6,500 Watts</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Name-brand portable power in the 6,500 class — the outage workhorse size.</p>
+<p><strong>Best for:</strong> Running the essentials through a multi-day outage.</p>
+<p><strong>Skip if:</strong> Noise matters — open-frame gas generators are loud; inverter models are the quiet route.</p>
+<p><strong>Watch out for:</strong> If it will feed the house panel, budget for the cord and inlet kit below — and an electrician.</p>
+</div>
+    <p class="prov">at Northern Tool — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.northerntool.com/products/generac-gp6500-portable-generator-6500-watts-co-sense-technology-powerrush-model-7672-6859991" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-trifuel.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-trifuel.jpg" alt="Predator 13,000 Watt Tri-Fuel Portable Generator" loading="lazy"></div><div class="price-pop"><span class="price">$1,299.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-trifuel.jpg')">
+    <h3>Predator 13,000 Watt Tri-Fuel Portable Generator</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Runs on gas, propane or natural gas — when one fuel runs out or the gas station line is a mile long, you have options.</p>
+<p><strong>Best for:</strong> Households with propane or natural gas already on site.</p>
+<p><strong>Skip if:</strong> You'll only ever run gasoline — the tri-fuel premium buys flexibility you won't use.</p>
+<p><strong>Watch out for:</strong> Output ratings differ by fuel — confirm the per-fuel wattage at Harbor Freight before counting on a load.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/13000-watt-tri-fuel-portable-generator-with-remote-start-and-co-secure-technology-49-state-compliant-71386.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-standby.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-standby.jpg" alt="Generac Guardian 14 kW Home Standby Generator" loading="lazy"></div><div class="price-pop"><span class="price">$4,479</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-standby.jpg')">
+    <h3>Generac Guardian 14 kW Home Standby Generator</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Permanently installed, starts on its own when the power goes out, and runs the whole house — furnace included.</p>
+<p><strong>Best for:</strong> Homeowners who'd rather not wheel a portable out in the snow.</p>
+<p><strong>Skip if:</strong> The budget stops at the unit price — installation is a second, significant cost.</p>
+<p><strong>Watch out for:</strong> Get install quotes before you buy the unit.</p>
+</div>
+    <p class="prov">at Northern Tool — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.northerntool.com/products/generac-guardian-series-air-cooled-home-standby-generator-14kw-lp-14kw-ng-model-7223-105878" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-gencord.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-gencord.jpg" alt="Reliance Generator Through-the-Wall Kit — 30-Amp Inlet Box" loading="lazy"></div><div class="price-pop"><span class="price">$99.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-gencord.jpg')">
+    <h3>Reliance Generator Through-the-Wall Kit — 30-Amp Inlet Box</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> The safe connection between a portable generator and the house panel — no backfeeding, no cords through a window.</p>
+<p><strong>Best for:</strong> Anyone feeding a panel from a portable generator.</p>
+<p><strong>Skip if:</strong> You only ever plug appliances straight into the generator.</p>
+<p><strong>Watch out for:</strong> Panel work needs a licensed electrician in most places — the same rule as the transfer switch on the Tools page.</p>
+</div>
+    <p class="prov">at Northern Tool — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.northerntool.com/products/reliance-portable-generator-through-the-wall-kit-model-wkpbn30-62095" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-solar100.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-solar100.jpg" alt="Thunderbolt Solar 100 Watt Solar Panel Kit" loading="lazy"></div><div class="price-pop"><span class="price">$149.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-solar100.jpg')">
+    <h3>Thunderbolt Solar 100 Watt Solar Panel Kit</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Starter-size solar for keeping a 12V battery topped up — cabin, RV, boat or gate opener.</p>
+<p><strong>Best for:</strong> Off-grid battery maintenance.</p>
+<p><strong>Skip if:</strong> You expect household power from it — 100 watts maintains batteries; it doesn't run a house.</p>
+<p><strong>Watch out for:</strong> Confirm the charge controller is included and matches your battery at Harbor Freight;.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/100-watt-monocrystalline-solar-panel-kit-70735.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-solar200.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-solar200.jpg" alt="Yoshino 200W Foldable Solar Panel" loading="lazy"></div><div class="price-pop"><span class="price">$499</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-solar200.jpg')">
+    <h3>Yoshino 200W Foldable Solar Panel</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Folding solar sized for power stations — packs flat for storage and travel.</p>
+<p><strong>Best for:</strong> Power-station owners who camp or tailgate.</p>
+<p><strong>Skip if:</strong> Your power station takes a proprietary connector — check compatibility before ordering.</p>
+<p><strong>Watch out for:</strong> Confirm the connector type matches your power station at Northern Tool.</p>
+</div>
+    <p class="prov">at Northern Tool — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.northerntool.com/products/yoshino-foldable-portable-solar-panel-200w-monocrystalline-etfe-lamination-ip67-water-resistant-model-sp200-5799093" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-drillkit.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-drillkit.jpg" alt="Bauer 20V Drill &amp; Impact Driver Kit" loading="lazy"></div><div class="price-pop"><span class="price">$99.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-drillkit.jpg')">
+    <h3>Bauer 20V Drill & Impact Driver Kit</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> The two tools every house ends up needing during and after a storm — boarding a broken window, tightening what the wind loosened.</p>
+<p><strong>Best for:</strong> Every household.</p>
+<p><strong>Skip if:</strong> You're already deep in a name-brand battery platform — match the batteries you own.</p>
+<p><strong>Watch out for:</strong> Store-brand platforms are store-specific — batteries and tools come from that store only.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/20v-2-tool-drill-impact-driver-kit-73238.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-mechset.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-mechset.jpg" alt="Pittsburgh 301-Piece Mechanics Tool Set" loading="lazy"></div><div class="price-pop"><span class="price">$199.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-mechset.jpg')">
+    <h3>Pittsburgh 301-Piece Mechanics Tool Set</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> A full socket-and-wrench library in one case — the storm-repair and vehicle kit in a single buy.</p>
+<p><strong>Best for:</strong> Home garages building a first serious set.</p>
+<p><strong>Skip if:</strong> You own a good set already — a 301-piece case duplicates it.</p>
+<p><strong>Watch out for:</strong> Check the case latches and whether the sizes run metric, SAE or both at Harbor Freight.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/mechanics-tool-set-301-piece-63464.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-jackset.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-jackset.jpg" alt="Daytona 3 Ton Low-Profile Floor Jack" loading="lazy"></div><div class="price-pop"><span class="price">$199.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-jackset.jpg')">
+    <h3>Daytona 3 Ton Low-Profile Floor Jack</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> A pro-grade 3-ton low-profile jack with a rapid pump — the lift half of safe vehicle work. Matching Daytona jack stands are sold separately at Harbor Freight.</p>
+<p><strong>Best for:</strong> Home vehicle work and storm-cleanup lifting.</p>
+<p><strong>Skip if:</strong> Your vehicle's heaviest axle pushes past the 3-ton class — check the rating first.</p>
+<p><strong>Watch out for:</strong> Never work under a vehicle on a jack alone — stands hold, jacks lift.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/3-ton-low-profile-professional-floor-jack-with-rapid-pump-black-64780.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-compressor.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-compressor.jpg" alt="McGraw 6 Gallon Pancake Air Compressor" loading="lazy"></div><div class="price-pop"><span class="price">$139.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-compressor.jpg')">
+    <h3>McGraw 6 Gallon Pancake Air Compressor</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Compact air for tires, brad nailers and cleanup guns after a storm.</p>
+<p><strong>Best for:</strong> Small garages and portable air.</p>
+<p><strong>Skip if:</strong> You run high-demand air tools — a 6-gallon tank cycles constantly.</p>
+<p><strong>Watch out for:</strong> Drain the tank after use so it doesn't rust from inside.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/6-gallon-150-psi-oil-free-pancake-jobsite-air-compressor-58636.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-chainsaw.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-chainsaw.jpg" alt="Troy-Bilt 16-Inch Gas Chainsaw — 42cc" loading="lazy"></div><div class="price-pop"><span class="price">$209</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-chainsaw.jpg')">
+    <h3>Troy-Bilt 16-Inch Gas Chainsaw — 42cc</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> When a storm drops a tree across the driveway, this is the tool that opens the road again — and cuts the firewood after.</p>
+<p><strong>Best for:</strong> Homeowners with trees.</p>
+<p><strong>Skip if:</strong> You've never run a saw — hire the first cleanup out or take a safety course first.</p>
+<p><strong>Watch out for:</strong> Budget for chaps, eye and ear protection and a spare chain — none of it is optional.</p>
+</div>
+    <p class="prov">at Northern Tool — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.northerntool.com/products/troy-bilt-gas-powered-chainsaw-16in-bar-42cc-model-tb4216-105079" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-shopvac.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-shopvac.jpg" alt="Bauer 9 Gallon Wet/Dry Shop Vacuum" loading="lazy"></div><div class="price-pop"><span class="price">$79.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-shopvac.jpg')">
+    <h3>Bauer 9 Gallon Wet/Dry Shop Vacuum</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Sucks up the water from a burst pipe or a flooded corner before it becomes a mold problem — and handles the sawdust the rest of the year.</p>
+<p><strong>Best for:</strong> Basement owners.</p>
+<p><strong>Skip if:</strong> Your water problem is a whole basement — that's a pump's job; this handles corners and spills.</p>
+<p><strong>Watch out for:</strong> Water pickup uses the wet filter setup — check what's included at Harbor Freight.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/9-gallon-45-peak-hp-wetdry-vacuum-56202.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-welder.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-welder.jpg" alt="Titanium Easy-Flux 125 Amp Welder" loading="lazy"></div><div class="price-pop"><span class="price">$149.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-welder.jpg')">
+    <h3>Titanium Easy-Flux 125 Amp Welder</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> No gas bottle needed and runs on a normal outlet — gates, trailers and storm repairs get welded at home.</p>
+<p><strong>Best for:</strong> First welders and farm fixes.</p>
+<p><strong>Skip if:</strong> You need clean finish welds — flux-core spatters.</p>
+<p><strong>Watch out for:</strong> A helmet and gloves are separate, non-optional purchases.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="http://www.harborfreight.com/Easy-Flux-125-Amp-Welder-57861.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-worklight.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-worklight.jpg" alt="Braun 750 Lumen Rechargeable LED Floodlight" loading="lazy"></div><div class="price-pop"><span class="price">$29.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-worklight.jpg')">
+    <h3>Braun 750 Lumen Rechargeable LED Floodlight</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> A stand-up flood of light for the breaker panel, the crawl space or the 9 p.m. driveway repair — rechargeable, so no cord to trip over.</p>
+<p><strong>Best for:</strong> Anyone who's ever held a flashlight in their teeth.</p>
+<p><strong>Skip if:</strong> You need all-night runtime on one charge — check the runtime first and keep a corded backup.</p>
+<p><strong>Watch out for:</strong> Rechargeable means charge it before the storm, not during.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.harborfreight.com/750-lumen-rechargeable-ultracompact-magnetic-led-floodlight-green-59226.html" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
+  </div>
+</section>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-heater.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-heater.jpg" alt="Mr. Heater Portable Buddy Heater — 9,000 BTU" loading="lazy"></div><div class="price-pop"><span class="price">$84.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-heater.jpg')">
+    <h3>Mr. Heater Portable Buddy Heater — 9,000 BTU</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Indoor-rated propane heat for one room when the furnace is down — the difference between a cold house and a livable one during a winter outage.</p>
+<p><strong>Best for:</strong> Households planning for winter-outage heat — priority #3 on the winter list.</p>
+<p><strong>Skip if:</strong> The plan is heating the whole house — this is a one-room heater.</p>
+<p><strong>Watch out for:</strong> Follow the indoor rating exactly: ventilation and a working CO detector are part of the setup, and propane is a separate purchase.</p>
+</div>
+    <p class="prov">at Northern Tool — checked Nov 21, 2026</p>
+    <a class="buy" href="https://www.northerntool.com/mr-heater-portable-buddy-propane-heater-9-000-btu-model-mh9bx-173690" target="_blank" rel="sponsored noopener">See it at Northern Tool</a>
+  </div>
+</section>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/preparedness/card-tarps.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/preparedness/card-tarps.jpg" alt="Heavy-Duty Tarps &amp; Ratchet Strap Bundle" loading="lazy"></div><div class="price-pop"><span class="price">$25 – $50</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/preparedness/card-tarps.jpg')">
+    <h3>Heavy-Duty Tarps & Ratchet Strap Bundle</h3>
+    <div class="verdict">
+<p><strong>Why we picked it:</strong> Covers a damaged roof and secures the load — the cheapest storm-repair insurance on this page.</p>
+<p><strong>Best for:</strong> Every homeowner and truck owner.</p>
+<p><strong>Skip if:</strong> You need one specific heavy-duty tarp size — bundles run mixed sizes.</p>
+<p><strong>Watch out for:</strong> Tarp sizes and strap ratings vary by bundle — confirm the contents at Harbor Freight.</p>
+</div>
+    <p class="prov">at Harbor Freight — checked Nov 17, 2026</p>
     <a class="buy" href="https://www.harborfreight.com/" target="_blank" rel="sponsored noopener">See it at Harbor Freight</a>
   </div>
 </section>
-<h2 class="sec-title">More Owners Inc. stores</h2>
+<h2 class="sec-title" id="more-owners-inc-stores">More Owners Inc. stores</h2>
 <nav class="foot-links"><a href="/christmas-finds/">Christmas Finds</a>
 <a href="/kids-toys/">Kids Toys Finds</a>
 <a href="/tools/">Tools &amp; Materials</a>
