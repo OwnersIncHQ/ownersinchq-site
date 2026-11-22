@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Golf Finds — Owners Inc. | Owners Inc HQ</title>
-<meta name="description" content="Golf Finds — Clubs, gear and golf tech from the big brands. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody&#x27;s doing it.">
-<link rel="canonical" href="https://ownersinchq.com/golf-finds/">
+<meta content="Golf Finds — Clubs, gear and golf tech from the big brands. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody's doing it." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Golf Finds — Owners Inc." property="og:title"/>
+<meta content="Golf Finds — Clubs, gear and golf tech from the big brands. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody's doing it." property="og:description"/>
+<meta content="https://ownersinchq.com/golf-finds/" property="og:url"/>
+<meta content="https://ownersinchq.com/assets/golf-finds/hero-hero.jpg" property="og:image"/>
+<link href="https://ownersinchq.com/golf-finds/" rel="canonical"/>
 <link rel="icon" type="image/png" href="/assets/brand/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Golf Finds — Owners Inc.">
-<meta property="og:description" content="Golf Finds — Clubs, gear and golf tech from the big brands. Hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody&#x27;s doing it.">
-<meta property="og:url" content="https://ownersinchq.com/golf-finds/">
-<meta property="og:image" content="https://ownersinchq.com/assets/golf-finds/hero-hero.jpg">
 <script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
@@ -265,46 +265,136 @@ a{color:var(--green-d)}
 .topnav{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
 .topnav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--ink)}
 .topnav a:hover{color:var(--green)}
-.hero{position:relative;min-height:430px;display:flex;align-items:flex-end;background-size:cover;background-position:center}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(255,255,255,.94) 0%,rgba(255,255,255,.55) 34%,rgba(255,255,255,0) 62%)}
-.hero-in{position:relative;max-width:1180px;margin:0 auto;padding:34px 18px 30px;width:100%}
-.hero h1{font-size:2.5rem;line-height:1.12;max-width:720px;color:var(--ink)}
-.hero .tag{font-size:1.12rem;margin-top:10px;max-width:640px;color:#243528}
-.slogan{display:inline-block;margin-top:14px;background:var(--yellow);color:#111;font-weight:900;padding:7px 14px;border-radius:999px;font-size:.98rem;box-shadow:0 3px 10px rgba(0,0,0,.18)}
-.ftc-top{max-width:1180px;margin:14px auto 0;padding:0 18px;font-size:.85rem;color:#4a554d}
+.hero{position:relative;background:#fff}
+.hero-photo-wrap{position:relative;overflow:hidden;padding:38px 18px;background:#111}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.hero-photo{position:relative;z-index:2;display:block;margin:0 auto;width:min(620px,74%);height:auto;object-fit:contain;filter:drop-shadow(0 16px 26px rgba(0,0,0,.55))}
+.hero-lights{position:absolute;top:0;left:0;width:100%;height:auto;mix-blend-mode:screen;z-index:1;pointer-events:none}
+.hero-glow{position:absolute;top:0;left:0;right:0;height:48%;background:radial-gradient(ellipse 68% 100% at 50% 0%,rgba(255,166,55,.17),rgba(255,166,55,0) 70%);z-index:1;pointer-events:none}
+.hero-corner{position:absolute;top:0;width:min(235px,36%);aspect-ratio:1/1;overflow:hidden;z-index:3;pointer-events:none}
+.hero-corner.left{left:0}
+.hero-corner.right{right:0}
+.hero-corner .strip{position:absolute;top:30%;width:165%;height:clamp(24px,8.2vw,38px);background:url('/assets/brand/ribbon-strip.webp') center/auto 100% repeat-x;filter:drop-shadow(0 7px 9px rgba(0,0,0,.45))}
+.hero-corner.left .strip{left:30%;transform:translate(-50%,-50%) rotate(-45deg)}
+.hero-corner.right .strip{right:30%;transform:translate(50%,-50%) rotate(45deg)}
+.hero-ribbon-bow{position:absolute;top:-6px;right:0;width:clamp(96px,24vw,188px);height:auto;z-index:4;filter:drop-shadow(0 10px 14px rgba(0,0,0,.5));pointer-events:none}
+.hero-shade{display:none}
+.hero-in{position:relative;padding:16px 18px 20px;max-width:1180px;margin:0 auto}
+.hero h1{font-size:3.5rem;font-weight:900;line-height:1.05;letter-spacing:-.5px;max-width:760px;color:var(--ink)}
+.slogan{display:inline-block;margin-top:16px;background:var(--yellow);color:#111;font-weight:900;padding:10px 20px;border-radius:999px;font-size:1.08rem;box-shadow:0 5px 16px rgba(0,0,0,.25)}
+.ftc-top{max-width:1180px;margin:12px auto 0;padding:0 18px;font-size:.92rem;color:#4a554d;font-weight:600}
 .wrap{max-width:1180px;margin:0 auto;padding:10px 18px 8px}
-.sec-title{font-size:1.65rem;margin:30px 0 6px;color:var(--ink)}
-.sec-sub{color:#435347;margin-bottom:14px;max-width:760px}
-.band{position:relative;border-radius:22px;overflow:hidden;margin:22px 0;box-shadow:0 10px 30px rgba(20,40,25,.16);background:#e9efe9}
-.band img.photo{width:100%;height:420px;object-fit:contain;background:#fff}
-.band-body{position:relative;background:#fff;padding:20px 22px 22px;margin-top:0;border-radius:0 0 22px 22px}
-.band h3{font-size:1.3rem;line-height:1.25;margin-bottom:6px}
-.band .note{color:#33453a;max-width:820px}
+.sec-title{font-size:2.05rem;font-weight:900;margin:24px 0 8px;color:var(--ink)}
+.sec-title::after{content:"";display:block;width:74px;height:6px;border-radius:3px;background:var(--yellow);margin-top:8px;box-shadow:0 0 0 2px rgba(20,92,43,.85)}
+.sec-sub{color:#435347;margin-bottom:14px;max-width:760px;font-size:1rem}
+.band{position:relative;border-radius:24px;overflow:hidden;margin:10px 0;box-shadow:0 16px 38px rgba(20,40,25,.22);background:#e9efe9}
+.photo-wrap{position:relative;overflow:hidden;background:#fff}
+.band img.photo{position:relative;width:100%;height:100%;object-fit:contain}
+.photo-shade{position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(to top,rgba(255,255,255,.55),rgba(255,255,255,0))}
+.price-pop{position:absolute;left:18px;bottom:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fff;border-radius:18px;padding:10px 18px 12px;box-shadow:0 12px 30px rgba(10,25,15,.35);border:3px solid var(--yellow)}
+.price-pop .price{font-size:2.15rem;font-weight:900;color:var(--green-d);line-height:1}
+.price-pop .was{font-size:1.15rem;color:#7a857c;text-decoration:line-through;font-weight:700}
+.price-pop .save{background:#c8102e;color:#fff;font-weight:900;font-size:1rem;padding:5px 13px;border-radius:999px;box-shadow:0 4px 12px rgba(200,16,46,.4)}
+.h-xl .photo-wrap{height:440px}.h-lg .photo-wrap{height:390px}.h-md .photo-wrap{height:340px}.h-sm .photo-wrap{height:290px}
+.band-body{position:relative;background:#fff;padding:13px 20px 15px;margin-top:0;border-radius:0 0 24px 24px}
+.band h3{font-size:1.5rem;font-weight:900;line-height:1.22;margin-bottom:6px}
+.band .note{color:#33453a;max-width:820px;font-size:1rem}
 .price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:12px}
 .price{font-size:1.55rem;font-weight:900;color:var(--green-d)}
 .was{font-size:1.05rem;color:#7a857c;text-decoration:line-through}
 .save{background:#c8102e;color:#fff;font-weight:800;font-size:.85rem;padding:3px 10px;border-radius:999px}
-.prov{font-size:.9rem;color:#4a554d}
-.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 24px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+.prov{font-size:.95rem;color:#4a554d;font-weight:600;margin-top:10px}
+.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;font-size:1.05rem;text-decoration:none;padding:14px 30px;border-radius:999px;box-shadow:0 6px 18px rgba(29,122,58,.4)}
 .buy:hover{background:var(--green-d)}
-.storeband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:20px 0;text-decoration:none;box-shadow:0 10px 30px rgba(20,40,25,.16)}
-.storeband img{width:100%;height:250px;object-fit:cover}
+.storeband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:10px 0;text-decoration:none;box-shadow:0 12px 30px rgba(20,40,25,.2)}
+.storeband img{width:100%;height:190px;object-fit:cover}
+.storeband.sb-hero img{height:240px}.storeband.sb-tall img{height:215px}.storeband.sb-short img{height:160px}.storeband.sb-finale img{height:225px}
 .storeband .sb-in{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;background:linear-gradient(to top,rgba(255,255,255,.95),rgba(255,255,255,0))}
-.storeband h3{font-size:1.45rem;color:var(--ink)}
-.storeband p{color:#33453a}
-footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
+.storeband h3{font-size:1.6rem;font-weight:900;color:var(--ink)}
+.storeband p{color:#33453a;font-size:1rem}
+footer{background:#ffffff;margin-top:28px;border-top:6px solid var(--green)}
 .foot-in{max-width:1180px;margin:0 auto;padding:28px 18px 34px}
 .foot-in .slogan{margin:0 0 12px}
 .fine{font-size:.85rem;color:#5a665d;max-width:820px;margin-top:10px}
 .foot-links{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
 .foot-links a{font-weight:700;text-decoration:none}
-@media (max-width:640px){.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.band img.photo{height:300px}.price{font-size:1.3rem}}
+.capture{position:relative;border-radius:22px;overflow:hidden;margin:24px 0 6px;box-shadow:0 10px 30px rgba(20,40,25,.16);background:#e9f2ea}
+.capture-in{position:relative;padding:24px 22px}
+.missionline{font-size:1.05rem;font-weight:600;color:#243528;margin:20px 0 2px}
+.jumprow{max-width:1180px;margin:14px auto 0;padding:0 18px;display:flex;gap:9px;flex-wrap:wrap}
+.jump{flex:1 1 auto;text-align:center;background:var(--green);color:#fff !important;font-weight:800;font-size:.98rem;text-decoration:none;padding:12px 10px;border-radius:999px;box-shadow:0 5px 14px rgba(29,122,58,.30);white-space:nowrap}
+.jump.alt{background:#fff;color:var(--green-d) !important;border:2px solid var(--green);box-shadow:0 4px 12px rgba(20,40,25,.12)}
+.hubrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:6px 0 4px}
+.hub{position:relative;border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 10px 24px rgba(20,40,25,.18);display:block}
+.hub img{width:100%;height:150px;object-fit:cover}
+.hub span{position:absolute;left:0;right:0;bottom:0;padding:20px 14px 10px;background:linear-gradient(to top,rgba(255,255,255,.96),rgba(255,255,255,0));font-weight:900;font-size:1.12rem;color:var(--ink)}
+.capture h2{font-size:1.5rem;margin-bottom:6px;color:var(--ink)}
+.capture p{max-width:640px;color:#243528}
+.capture-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.btn-sub{background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+.btn-sub:hover{background:var(--green-d)}
+.btn-group{background:#fff;color:var(--green-d) !important;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:999px;border:2px solid var(--green);box-shadow:0 4px 14px rgba(20,40,25,.15)}
+.capture .small{font-size:.85rem;color:#4a554d;margin-top:10px}
+.trustline{display:flex;gap:8px 22px;flex-wrap:wrap;margin:16px 0 4px;padding:14px 18px;background:#fff;border-radius:16px;box-shadow:0 6px 18px rgba(20,40,25,.10);font-size:.95rem}
+.trustline b{color:var(--green-d)}
+.chips{display:flex;gap:10px;overflow-x:auto;padding:8px 2px 12px;-webkit-overflow-scrolling:touch}
+.chip{flex:0 0 auto;display:flex;align-items:center;gap:9px;background:#fff;border-radius:999px;padding:5px 16px 5px 5px;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem;box-shadow:0 4px 12px rgba(20,40,25,.12)}
+.chip img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+.badge{display:inline-block;background:var(--green);color:#fff;font-weight:800;font-size:.95rem;padding:3px 11px;border-radius:999px;margin-bottom:8px;letter-spacing:.2px}
+.searchrow{margin:2px 0 6px}
+.searchrow label{font-weight:700;display:block;margin-bottom:8px}
+.searchbox{width:100%;max-width:520px;padding:13px 18px;border:2px solid #cfe0d2;border-radius:999px;font-size:1rem;font-family:inherit;background:#fff;color:var(--ink)}
+.searchbox:focus{outline:none;border-color:var(--green)}
+.nomatch{display:none;color:#7a2d1d;font-weight:700;margin-top:10px}
+.soc{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
+.soc a{font-weight:700;text-decoration:none}
+@media (max-width:640px){.hero-photo{width:71%;height:auto}.hero-photo-wrap{padding:24px 12px}.hero h1{font-size:2.3rem}.h-xl .photo-wrap{height:300px}.h-lg .photo-wrap{height:270px}.h-md .photo-wrap{height:245px}.h-sm .photo-wrap{height:215px}.price-pop{left:10px;bottom:10px;padding:8px 13px 9px;gap:8px;border-width:2px}.price-pop .price{font-size:1.6rem}.price-pop .was{font-size:1rem}.price-pop .save{font-size:.95rem}.storeband img{height:140px}.storeband.sb-hero img{height:165px}.storeband.sb-tall img{height:150px}.storeband.sb-short img{height:115px}.storeband.sb-finale img{height:160px}.hub img{height:104px}.hub span{font-size:.98rem;padding:16px 10px 8px}.jump{font-size:.92rem;padding:11px 6px}
+.topnav{display:none}.topbar-in{padding:8px 14px}.hero-photo{width:71%}.hero-in{padding:12px 18px 14px}.slogan{margin-top:10px}.band h3{font-size:1.28rem}.buy{padding:11px 24px;margin-top:9px}.band-body{padding:11px 16px 13px}.capture-in{padding:18px 16px}.sec-title{margin:20px 0 6px;font-size:1.6rem}.storeband h3{font-size:1.22rem}.storeband p{font-size:.95rem}.storeband h3{font-size:1.35rem}.sec-title{font-size:1.7rem}.band img.photo{height:100%}.price{font-size:1.3rem}.capture-in{padding:20px 16px}.capture h2{font-size:1.3rem}.trustline{font-size:.9rem}}
 .brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
 
+.photo-wrap .photo-frame{height:100%}
+.photo-wrap>img.photo{width:100%;height:100%;object-fit:contain}
+.band .photo-frame img.photo{height:100%}
+.h-xs .photo-wrap{height:215px}
+@media (max-width:640px){.h-xs .photo-wrap{height:180px}}
+.hero .tag{font-size:1.12rem;color:#33453a;max-width:640px;margin-top:10px}
+:root{--green:#1d7a3a;--green-d:#145c2b;--yellow:#ffd21f;--ink:#14201a;--paper:#f7f7f2;--card:#ffffff}
+.hero .tag{font-size:1.12rem;margin-top:10px;max-width:640px;color:#243528}
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:18px 0}
+.dl-card{background:#fff;border-radius:18px;box-shadow:0 8px 24px rgba(20,40,25,.12);padding:18px 20px}
+.dl-card h3{font-size:1.15rem;margin-bottom:8px;color:var(--green-d)}
+.dl-card p{color:#33453a;font-size:.97rem;margin-bottom:6px}
+.dl-card .d{font-weight:800;color:var(--ink)}
 .photo-frame{position:relative;overflow:hidden;background:#fff}
 .photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
 .band .photo-frame img.photo{position:relative;background:transparent}
-</style>
+.code-note{display:block;margin-top:8px;background:#ffd21f;color:#111;font-weight:700;font-size:.9rem;line-height:1.45;padding:7px 11px;border-radius:8px;max-width:560px}
+
+
+/* photo-band melt pattern: sharp photo on top; the text zone is a blurred,
+   darkened melt of the same photo carrying the words — zero white cards */
+.photo-wrap{height:auto}
+.photo{position:static;width:100%;height:auto;object-fit:fill}
+.band-body{position:relative;z-index:3;margin-top:-48px;padding:56px 20px 16px;background:#0d1f13;color:#fff;overflow:hidden}
+.band-body::before{content:"";position:absolute;inset:-28px;background-image:var(--bimg);background-size:cover;background-position:center;filter:blur(24px) brightness(.48) saturate(1.15);z-index:-1}
+.band-body h3{color:#fff;font-size:1.3rem;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.band-body .note{color:rgba(255,255,255,.94);text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.band-body .prov{background:#fff;color:var(--green-d)}
+.price-pop{top:12px;bottom:auto;z-index:4}
+.verdict{margin-top:12px;background:rgba(8,18,11,.7);border-left:4px solid var(--yellow);border-radius:10px;padding:10px 14px;font-size:.93rem;color:#eef5ee}
+.verdict p{margin:3px 0}
+.verdict strong{color:var(--yellow)}
+.buycheck{background:#fff6cf;border:1px solid #ecd24f;border-radius:14px;padding:12px 16px;margin:14px 0 6px;font-size:1rem;color:#3d3a1a}
+.buycheck strong{color:#7a5b00}
+.ship-callout{max-width:1180px;margin:14px auto 0;padding:14px 20px;background:#fff6cf;border:2px solid var(--yellow);border-radius:16px;box-shadow:0 6px 18px rgba(20,40,25,.12);font-size:1.06rem;font-weight:700;color:#243528}
+.ship-callout strong{color:var(--green-d)}
+.ship-note{display:block;margin-top:8px;font-weight:800;color:#ffe97a;font-size:.95rem;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.frame-band .photo-wrap{background:#111}
+.frame-band .photo{width:auto;height:100%;margin:0 auto}
+@media (max-width:640px){.band-body{padding:54px 16px 14px}.band-body h3{font-size:1.16rem}}
+
+.hero-photo-wrap{height:calc(100vw*.56346 + 78px);padding:0}.hero-bg{top:auto;bottom:0;height:auto}
+.hero-photo{position:absolute;left:50%;transform:translateX(-50%);top:38px;margin:0;width:min(520px,44%)}@media (max-width:760px){.hero-photo-wrap{height:calc(100vw*.56346 + 98px)}.hero-photo{top:10px;width:58%}}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7BY95H3C7"></script>
 <script>
@@ -318,148 +408,162 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <body>
 <div class="topbar"><div class="topbar-in">
 <a class="brand" href="/"><img class="brandlogo" src="/assets/brand/logo-painting.jpg" alt="Owners Inc. logo">Owners <span class="inc">Inc.</span></a>
-<nav class="topnav"><a href="/">Home</a><a href="/christmas-finds/">Christmas</a><a href="/tools/">Tools</a><a href="/kids-toys/">Kids Toys</a><a href="/gaming/">Gaming</a></nav>
+<nav class="topnav"><a href="/christmas-finds/">Christmas</a><a href="/tools/">Tools</a><a href="/kids-toys/">Kids Toys</a><a href="/gaming/">Gaming</a><a href="/faith-finds/">Faith</a><a href="/tax-prep/">Tax Prep</a><a href="/ice-fishing/">Ice Fishing</a><a href="/#stores">All stores</a><a href="/#deals-email">Deals by email</a></nav>
 </div></div>
-<header class="hero" style="background-image:url('/assets/golf-finds/hero-hero.jpg')">
-<div class="hero-shade"></div>
+<header class="hero">
+<div class="hero-photo-wrap">
+<img class="hero-bg" src="/assets/brand/logo-painting.jpg" alt="" aria-hidden="true">
+<img class="hero-lights" src="/assets/brand/hero-lights.jpg" alt="" aria-hidden="true">
+<div class="hero-glow" aria-hidden="true"></div>
+<div class="hero-corner left" aria-hidden="true"><div class="strip"></div></div>
+<div class="hero-corner right" aria-hidden="true"><div class="strip"></div></div>
+<img class="hero-photo" src="/assets/golf-finds/bushnell-prox3-cutout.webp" alt="Bushnell Pro X3 Laser Rangefinder" fetchpriority="high">
+<img class="hero-ribbon-bow" src="/assets/brand/ribbon-bow.webp" alt="" aria-hidden="true">
+</div>
 <div class="hero-in">
 <h1>Golf Finds</h1>
 <p class="tag">Clubs, gear and golf tech from the big brands.</p>
 <span class="slogan">Owners Inc. Everybody's doing it.</span>
 </div>
 </header>
-<p class="ftc-top">Affiliate disclosure: Owners Inc. is an affiliate page. If you buy through a link on this page, Owners Inc. may earn a commission — and it costs you nothing extra; the price is the same as going straight to the store.</p>
+<nav class="jumprow" aria-label="Jump to a section">
+<a class="jump" href="#today-s-finds">Today's finds</a>
+<a class="jump" href="#more-owners-inc-stores">More Owners Inc. stores</a>
+<a class="jump alt" href="/bookkeeping-services/">Bookkeeping</a>
+<a class="jump alt" href="/#deals-email">Deals by Email</a>
+</nav>
+<p class="ftc-top">Owners Inc. may earn a commission on purchases through our links — it never changes your price.</p>
+<p class="ship-callout">Shipping is set by each golf shop at checkout — most offer free store pickup; check the rate on the product page before ordering clubs. (Retailer terms not individually verified Nov 21 — no free-shipping claim is made for this page.)</p>
 <main class="wrap">
-<h2 class="sec-title">Today's finds</h2>
+<h2 class="sec-title" id="today-s-finds">Today's finds</h2>
 <p class="sec-sub">Every find below shows the price, the store, and the date we checked it. Prices move — the store page always has the final word.</p>
-
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/driver.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/driver.jpg" alt="Callaway Elyte Driver" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/driver.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/driver.jpg" alt="Callaway Elyte Driver" loading="lazy"></div><div class="price-pop"><span class="price">$399.99 – $499.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/driver.jpg')">
     <h3>Callaway Elyte Driver</h3>
-    <p class="note">Callaway&#x27;s current flagship driver and the default big gift of this Christmas season. Balanced distance and forgiveness for the broad middle of golfers — and adjustable, so loft can be fine-tuned after a simulator session.</p>
-    <div class="price-row"><span class="price">$399.99 – $499.99</span><span class="prov">at Callawaygolf — checked Nov 16, 2026</span></div>
+    <p class="note">Callaway's current flagship driver and the default big gift of this Christmas season. Balanced distance and forgiveness for the broad middle of golfers — and adjustable, so loft can be fine-tuned after a simulator session.</p>
+    <p class="prov">at Callawaygolf — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.callawaygolf.com/golf-clubs/drivers/drivers-2025-elyte.html" target="_blank" rel="sponsored noopener">See it at Callawaygolf</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/driver-elyte-x.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/driver-elyte-x.jpg" alt="Callaway Elyte X Driver" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/driver-elyte-x.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/driver-elyte-x.jpg" alt="Callaway Elyte X Driver" loading="lazy"></div><div class="price-pop"><span class="price">$299.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/driver-elyte-x.jpg')">
     <h3>Callaway Elyte X Driver</h3>
     <p class="note">The most forgiving Elyte: highest launch in the family and a draw bias that straightens out a slice. The one to pick for newer golfers, slower swings, and anyone whose misses live on the right side of the fairway.</p>
-    <div class="price-row"><span class="price">$299.99</span><span class="prov">at Golf Galaxy — checked Nov 16, 2026</span></div>
+    <p class="prov">at Golf Galaxy — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.golfgalaxy.com/p/callaway-elyte-x-driver-24cwymcgmntxdvrdndrv/24cwymcgmntxdvrdndrv" target="_blank" rel="sponsored noopener">See it at Golf Galaxy</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/golf-finds/driver-paradym.jpg" alt="Callaway Paradym Ai Smoke MAX Driver" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/driver-paradym.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/driver-paradym.jpg" alt="Callaway Paradym Ai Smoke MAX Driver" loading="lazy"></div><div class="price-pop"><span class="price">$399.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/driver-paradym.jpg')">
     <h3>Callaway Paradym Ai Smoke MAX Driver</h3>
-    <p class="note">The previous lineup&#x27;s maximum-forgiveness driver, still sold new. Same buying logic as the Elyte: 10.5° and regular flex fits most golfers.</p>
-    <div class="price-row"><span class="price">$399.99</span><span class="prov">at Callawaygolf — checked Nov 16, 2026</span></div>
+    <p class="note">The previous lineup's maximum-forgiveness driver, still sold new. Same buying logic as the Elyte: 10.5° and regular flex fits most golfers.</p>
+    <p class="prov">at Callawaygolf — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.callawaygolf.com/golf-clubs/drivers/drivers-2024-paradym-ai-smoke-max.html" target="_blank" rel="sponsored noopener">See it at Callawaygolf</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/golf-finds/irons-elyte.webp" alt="Callaway Elyte Irons (Set)" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/irons-elyte.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/irons-elyte.webp" alt="Callaway Elyte Irons (Set)" loading="lazy"></div><div class="price-pop"><span class="price">$849.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/irons-elyte.webp')">
     <h3>Callaway Elyte Irons (Set)</h3>
     <p class="note">A game-improvement set: bigger heads, weight low and wide, high easy launch, and mishits that still travel. The set for golfers shooting 90 and up who want the ball airborne without a perfect strike.</p>
-    <div class="price-row"><span class="price">$849.99</span><span class="prov">at Callawaygolf — checked Nov 16, 2026</span></div>
+    <p class="prov">at Callawaygolf — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.callawaygolf.com/golf-clubs/iron-sets/irons-2025-elyte.html" target="_blank" rel="sponsored noopener">See it at Callawaygolf</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/golf-finds/irons-elyte-x.webp" alt="Callaway Elyte X Irons (Set)" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/irons-elyte-x.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/irons-elyte-x.webp" alt="Callaway Elyte X Irons (Set)" loading="lazy"></div><div class="price-pop"><span class="price">$849.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/irons-elyte-x.webp')">
     <h3>Callaway Elyte X Irons (Set)</h3>
     <p class="note">The X version of the Elyte irons: the largest, most forgiving head in the iron lineup, built to get the ball up from almost any lie or strike. If confidence at address is the problem, the oversized head is the answer.</p>
-    <div class="price-row"><span class="price">$849.99</span><span class="prov">at Callawaygolf — checked Nov 16, 2026</span></div>
+    <p class="prov">at Callawaygolf — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.callawaygolf.com/golf-clubs/iron-sets/irons-2025-elyte-x.html" target="_blank" rel="sponsored noopener">See it at Callawaygolf</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/irons-apex.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/irons-apex.jpg" alt="Callaway Apex Ai300 Irons (Set)" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/irons-apex.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/irons-apex.jpg" alt="Callaway Apex Ai300 Irons (Set)" loading="lazy"></div><div class="price-pop"><span class="price">$1,249.98</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/irons-apex.jpg')">
     <h3>Callaway Apex Ai300 Irons (Set)</h3>
-    <p class="note">The bridge set: a cleaner, more compact player&#x27;s shape that still carries real forgiveness underneath. For improving golfers who strike the center often and want a set they won&#x27;t outgrow next season.</p>
-    <div class="price-row"><span class="price">$1,249.98</span><span class="prov">at Callawaygolf — checked Nov 16, 2026</span></div>
+    <p class="note">The bridge set: a cleaner, more compact player's shape that still carries real forgiveness underneath. For improving golfers who strike the center often and want a set they won't outgrow next season.</p>
+    <p class="prov">at Callawaygolf — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.callawaygolf.com/golf-clubs/iron-sets/irons-2024-apex-ai300.html" target="_blank" rel="sponsored noopener">See it at Callawaygolf</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/golf-finds/putter-aione-seven.webp" alt="Odyssey Ai-ONE #7 Putter" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/putter-aione-seven.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/putter-aione-seven.webp" alt="Odyssey Ai-ONE #7 Putter" loading="lazy"></div><div class="price-pop"><span class="price">$299.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/putter-aione-seven.webp')">
     <h3>Odyssey Ai-ONE #7 Putter</h3>
-    <p class="note">Odyssey is Callaway&#x27;s putter line, and the #7 is its famous winged mallet — the shape that helps alignment just by looking down at it. The Ai-ONE insert keeps ball speed consistent on off-center putts, which is where most strokes are lost.</p>
-    <div class="price-row"><span class="price">$299.99</span><span class="prov">at Globalgolf — checked Nov 16, 2026</span></div>
+    <p class="note">Odyssey is Callaway's putter line, and the #7 is its famous winged mallet — the shape that helps alignment just by looking down at it. The Ai-ONE insert keeps ball speed consistent on off-center putts, which is where most strokes are lost.</p>
+    <p class="prov">at Globalgolf — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.globalgolf.com/golf-clubs/1073868-odyssey-ai-one-cruiser-7-putter/" target="_blank" rel="sponsored noopener">See it at Globalgolf</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/golf-finds/putter-aione-milled-eight.webp" alt="Odyssey Ai-ONE Milled Eight T Putter" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/putter-aione-milled-eight.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/putter-aione-milled-eight.webp" alt="Odyssey Ai-ONE Milled Eight T Putter" loading="lazy"></div><div class="price-pop"><span class="price">$399.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/putter-aione-milled-eight.webp')">
     <h3>Odyssey Ai-ONE Milled Eight T Putter</h3>
     <p class="note">The milled version of the Ai-ONE idea: a precision-milled head for golfers who putt by feel and prefer a clean, traditional look at address. The premium putter gift on this page — the one a good putter keeps for a decade.</p>
-    <div class="price-row"><span class="price">$399.99</span><span class="prov">at Puetzgolf — checked Nov 16, 2026</span></div>
+    <p class="prov">at Puetzgolf — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.puetzgolf.com/24-ai-one-mld-8-t-s-putter-24-ai-one-mld-8-t-s-putter" target="_blank" rel="sponsored noopener">See it at Puetzgolf</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/golf-finds/balls-chrome-tour.webp" alt="Callaway Chrome Tour Golf Balls (1 Dozen)" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/balls-chrome-tour.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/balls-chrome-tour.webp" alt="Callaway Chrome Tour Golf Balls (1 Dozen)" loading="lazy"></div><div class="price-pop"><span class="price">$57.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/balls-chrome-tour.webp')">
     <h3>Callaway Chrome Tour Golf Balls (1 Dozen)</h3>
-    <p class="note">Callaway&#x27;s tour-level ball: urethane cover for bite on chips and short shots, built for golfers whose short game can use it. The firmer, flatter-flying of the two Chrome tour balls.</p>
-    <div class="price-row"><span class="price">$57.99</span><span class="prov">at Maplehillgolf — checked Nov 16, 2026</span></div>
+    <p class="note">Callaway's tour-level ball: urethane cover for bite on chips and short shots, built for golfers whose short game can use it. The firmer, flatter-flying of the two Chrome tour balls.</p>
+    <p class="prov">at Maplehillgolf — checked Nov 16, 2026</p>
     <a class="buy" href="https://maplehillgolf.com/callaway-chrome-tour-golf-balls/" target="_blank" rel="sponsored noopener">See it at Maplehillgolf</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/balls-chrome-soft.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/balls-chrome-soft.webp" alt="Callaway Chrome Soft Golf Balls (1 Dozen)" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/balls-chrome-soft.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/balls-chrome-soft.webp" alt="Callaway Chrome Soft Golf Balls (1 Dozen)" loading="lazy"></div><div class="price-pop"><span class="price">$47.99 – $54.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/balls-chrome-soft.webp')">
     <h3>Callaway Chrome Soft Golf Balls (1 Dozen)</h3>
-    <p class="note">The soft-feeling tour ball: same urethane-cover category as Chrome Tour, with a softer feel off every club. The can&#x27;t-miss premium ball gift — a dozen of these is right for almost any golfer who plays regularly.</p>
-    <div class="price-row"><span class="price">$47.99 – $54.99</span><span class="prov">at Callawaygolf — checked Nov 16, 2026</span></div>
+    <p class="note">The soft-feeling tour ball: same urethane-cover category as Chrome Tour, with a softer feel off every club. The can't-miss premium ball gift — a dozen of these is right for almost any golfer who plays regularly.</p>
+    <p class="prov">at Callawaygolf — checked Nov 16, 2026</p>
     <a class="buy" href="https://www.callawaygolf.com/golf-balls/chrome-soft/balls-2024-chrome-soft.html" target="_blank" rel="sponsored noopener">See it at Callawaygolf</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/golf-finds/balls-supersoft.jpg" alt="Callaway Supersoft Golf Balls (1 Dozen)" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/balls-supersoft.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/balls-supersoft.jpg" alt="Callaway Supersoft Golf Balls (1 Dozen)" loading="lazy"></div><div class="price-pop"><span class="price">$24.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/balls-supersoft.jpg')">
     <h3>Callaway Supersoft Golf Balls (1 Dozen)</h3>
     <p class="note">The everyday dozen: very soft, straight, and long at moderate swing speeds. It gives up some bite on chips — a trade most casual golfers will never notice.</p>
-    <div class="price-row"><span class="price">$24.99</span><span class="prov">at Alpineshopvt — checked Nov 16, 2026</span></div>
+    <p class="prov">at Alpineshopvt — checked Nov 16, 2026</p>
     <a class="buy" href="https://alpineshopvt.com/products/callaway-supersoft-golf-balls-12pk" target="_blank" rel="sponsored noopener">See it at Alpineshopvt</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/golf-finds/rangefinder-prox3.jpg" alt="Bushnell Pro X3 Laser Rangefinder" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/rangefinder-prox3.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/rangefinder-prox3.jpg" alt="Bushnell Pro X3 Laser Rangefinder" loading="lazy"></div><div class="price-pop"><span class="price">$599.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/rangefinder-prox3.jpg')">
     <h3>Bushnell Pro X3 Laser Rangefinder</h3>
-    <p class="note">Bushnell&#x27;s flagship laser: slope-adjusted distances with an on/off switch to stay tournament-legal, a locking metal housing, and pin-locking vibration when it catches the flag. The rangefinder gift with nothing above it in the line.</p>
-    <div class="price-row"><span class="price">$599.99</span><span class="prov">at Austads — checked Nov 16, 2026</span></div>
+    <p class="note">Bushnell's flagship laser: slope-adjusted distances with an on/off switch to stay tournament-legal, a locking metal housing, and pin-locking vibration when it catches the flag. The rangefinder gift with nothing above it in the line.</p>
+    <p class="prov">at Austads — checked Nov 16, 2026</p>
     <a class="buy" href="https://austads.com/products/bushnell-pro-x3-laser-rangefinder" target="_blank" rel="sponsored noopener">See it at Austads</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/golf-finds/rangefinder-v6.jpg" alt="Bushnell Tour V6 Laser Rangefinder" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/rangefinder-v6.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/rangefinder-v6.jpg" alt="Bushnell Tour V6 Laser Rangefinder" loading="lazy"></div><div class="price-pop"><span class="price">$299.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/rangefinder-v6.jpg')">
     <h3>Bushnell Tour V6 Laser Rangefinder</h3>
-    <p class="note">The workhorse of the Bushnell line and the easiest golf gift on this page: exact laser yardages, a magnetic cart mount, and nothing to size, fit, or flex-match. If you&#x27;re gifting and don&#x27;t know their specs, gift this category — starting here.</p>
-    <div class="price-row"><span class="price">$299.99</span><span class="prov">at Pebblehurst — checked Nov 16, 2026</span></div>
+    <p class="note">The workhorse of the Bushnell line and the easiest golf gift on this page: exact laser yardages, a magnetic cart mount, and nothing to size, fit, or flex-match. If you're gifting and don't know their specs, gift this category — starting here.</p>
+    <p class="prov">at Pebblehurst — checked Nov 16, 2026</p>
     <a class="buy" href="https://pebblehurst.com/products/bushnell-tour-v6-black-rangefinder" target="_blank" rel="sponsored noopener">See it at Pebblehurst</a>
   </div>
 </section>
-<section class="band">
-  <div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/rangefinder-shift-v6.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/rangefinder-shift-v6.jpg" alt="Bushnell Tour V6 Shift Laser Rangefinder" loading="lazy"></div>
-  <div class="band-body">
+<section class="band frame-band h-sm">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/golf-finds/rangefinder-shift-v6.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/golf-finds/rangefinder-shift-v6.jpg" alt="Bushnell Tour V6 Shift Laser Rangefinder" loading="lazy"></div><div class="price-pop"><span class="price">$349.99 – $399.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/golf-finds/rangefinder-shift-v6.jpg')">
     <h3>Bushnell Tour V6 Shift Laser Rangefinder</h3>
     <p class="note">The Tour V6 with slope mode: it adjusts the yardage for uphill and downhill shots — a real help on hilly courses — and switches off for tournament play. The step-up pick for golfers who play the same hilly home course every week.</p>
-    <div class="price-row"><span class="price">$349.99 – $399.99</span><span class="prov">at Dick&#x27;s Sporting Goods — checked Nov 16, 2026</span></div>
-    <a class="buy" href="https://www.dickssportinggoods.com/p/bushnell-tour-v6-shift-rangefinder-23busutrv6shftrngrng/23busutrv6shftrngrng" target="_blank" rel="sponsored noopener">See it at Dick&#x27;s Sporting Goods</a>
+    <p class="prov">at Dick's Sporting Goods — checked Nov 16, 2026</p>
+    <a class="buy" href="https://www.dickssportinggoods.com/p/bushnell-tour-v6-shift-rangefinder-23busutrv6shftrngrng/23busutrv6shftrngrng" target="_blank" rel="sponsored noopener">See it at Dick's Sporting Goods</a>
   </div>
 </section>
-<h2 class="sec-title">More Owners Inc. stores</h2>
+<h2 class="sec-title" id="more-owners-inc-stores">More Owners Inc. stores</h2>
 <nav class="foot-links"><a href="/christmas-finds/">Christmas Finds</a>
 <a href="/kids-toys/">Kids Toys Finds</a>
 <a href="/tools/">Tools &amp; Materials</a>
