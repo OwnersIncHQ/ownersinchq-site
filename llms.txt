@@ -49,6 +49,7 @@ Every find shows its price, its store, and the date the price was checked.
 - Fishing: https://ownersinchq.com/fishing/
 - Ice Fishing: https://ownersinchq.com/ice-fishing/
 - Ammunition: https://ownersinchq.com/ammunition/
+- Fitness Finds: https://ownersinchq.com/fitness-finds/
 - Tax Prep & Money Tools: https://ownersinchq.com/tax-prep/
 - Share Owners Inc.: https://ownersinchq.com/share/
 
