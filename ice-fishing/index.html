@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ice Fishing &amp; Hardwater Finds — Owners Inc. | Owners Inc HQ</title>
-<meta name="description" content="Ice fishing augers, flashers, shelters and safety picks — hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody&#x27;s doing it.">
-<link rel="canonical" href="https://ownersinchq.com/ice-fishing/">
+<title>Ice Fishing & Hardwater Finds — Owners Inc. | Owners Inc HQ</title>
+<meta content="Ice fishing augers, flashers, shelters and safety picks — hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody's doing it." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Ice Fishing &amp; Hardwater Finds — Owners Inc." property="og:title"/>
+<meta content="Ice fishing augers, flashers, shelters and safety picks — hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody's doing it." property="og:description"/>
+<meta content="https://ownersinchq.com/ice-fishing/" property="og:url"/>
+<meta content="https://ownersinchq.com/assets/ice-fishing/hero.jpg" property="og:image"/>
+<link href="https://ownersinchq.com/ice-fishing/" rel="canonical"/>
 <link rel="icon" type="image/png" href="/assets/brand/favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ice Fishing &amp; Hardwater Finds — Owners Inc.">
-<meta property="og:description" content="Ice fishing augers, flashers, shelters and safety picks — hand-checked prices with the retailer and check date on every find. Owners Inc. Everybody&#x27;s doing it.">
-<meta property="og:url" content="https://ownersinchq.com/ice-fishing/">
-<meta property="og:image" content="https://ownersinchq.com/assets/ice-fishing/hero.jpg">
 <script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
@@ -145,53 +145,136 @@ a{color:var(--green-d)}
 .topnav{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
 .topnav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--ink)}
 .topnav a:hover{color:var(--green)}
-.hero{position:relative;min-height:430px;display:flex;align-items:flex-end;background-size:cover;background-position:center}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(255,255,255,.94) 0%,rgba(255,255,255,.55) 34%,rgba(255,255,255,0) 62%)}
-.hero-in{position:relative;max-width:1180px;margin:0 auto;padding:34px 18px 30px;width:100%}
-.hero h1{font-size:2.5rem;line-height:1.12;max-width:720px;color:var(--ink)}
-.hero .tag{font-size:1.12rem;margin-top:10px;max-width:640px;color:#243528}
-.slogan{display:inline-block;margin-top:14px;background:var(--yellow);color:#111;font-weight:900;padding:7px 14px;border-radius:999px;font-size:.98rem;box-shadow:0 3px 10px rgba(0,0,0,.18)}
-.ftc-top{max-width:1180px;margin:14px auto 0;padding:0 18px;font-size:.85rem;color:#4a554d}
+.hero{position:relative;background:#fff}
+.hero-photo-wrap{position:relative;overflow:hidden;padding:38px 18px;background:#111}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.hero-photo{position:relative;z-index:2;display:block;margin:0 auto;width:min(620px,74%);height:auto;object-fit:contain;filter:drop-shadow(0 16px 26px rgba(0,0,0,.55))}
+.hero-lights{position:absolute;top:0;left:0;width:100%;height:auto;mix-blend-mode:screen;z-index:1;pointer-events:none}
+.hero-glow{position:absolute;top:0;left:0;right:0;height:48%;background:radial-gradient(ellipse 68% 100% at 50% 0%,rgba(255,166,55,.17),rgba(255,166,55,0) 70%);z-index:1;pointer-events:none}
+.hero-corner{position:absolute;top:0;width:min(235px,36%);aspect-ratio:1/1;overflow:hidden;z-index:3;pointer-events:none}
+.hero-corner.left{left:0}
+.hero-corner.right{right:0}
+.hero-corner .strip{position:absolute;top:30%;width:165%;height:clamp(24px,8.2vw,38px);background:url('/assets/brand/ribbon-strip.webp') center/auto 100% repeat-x;filter:drop-shadow(0 7px 9px rgba(0,0,0,.45))}
+.hero-corner.left .strip{left:30%;transform:translate(-50%,-50%) rotate(-45deg)}
+.hero-corner.right .strip{right:30%;transform:translate(50%,-50%) rotate(45deg)}
+.hero-ribbon-bow{position:absolute;top:-6px;right:0;width:clamp(96px,24vw,188px);height:auto;z-index:4;filter:drop-shadow(0 10px 14px rgba(0,0,0,.5));pointer-events:none}
+.hero-shade{display:none}
+.hero-in{position:relative;padding:16px 18px 20px;max-width:1180px;margin:0 auto}
+.hero h1{font-size:3.5rem;font-weight:900;line-height:1.05;letter-spacing:-.5px;max-width:760px;color:var(--ink)}
+.slogan{display:inline-block;margin-top:16px;background:var(--yellow);color:#111;font-weight:900;padding:10px 20px;border-radius:999px;font-size:1.08rem;box-shadow:0 5px 16px rgba(0,0,0,.25)}
+.ftc-top{max-width:1180px;margin:12px auto 0;padding:0 18px;font-size:.92rem;color:#4a554d;font-weight:600}
 .wrap{max-width:1180px;margin:0 auto;padding:10px 18px 8px}
-.sec-title{font-size:1.65rem;margin:30px 0 6px;color:var(--ink)}
-.sec-sub{color:#435347;margin-bottom:14px;max-width:760px}
-.band{position:relative;border-radius:22px;overflow:hidden;margin:22px 0;box-shadow:0 10px 30px rgba(20,40,25,.16);background:#e9efe9}
-.band img.photo{width:100%;height:420px;object-fit:contain;background:#fff}
-.band-body{position:relative;background:#fff;padding:20px 22px 22px;margin-top:0;border-radius:0 0 22px 22px}
-.band h3{font-size:1.3rem;line-height:1.25;margin-bottom:6px}
-.band .note{color:#33453a;max-width:820px}
+.sec-title{font-size:2.05rem;font-weight:900;margin:24px 0 8px;color:var(--ink)}
+.sec-title::after{content:"";display:block;width:74px;height:6px;border-radius:3px;background:var(--yellow);margin-top:8px;box-shadow:0 0 0 2px rgba(20,92,43,.85)}
+.sec-sub{color:#435347;margin-bottom:14px;max-width:760px;font-size:1rem}
+.band{position:relative;border-radius:24px;overflow:hidden;margin:10px 0;box-shadow:0 16px 38px rgba(20,40,25,.22);background:#e9efe9}
+.photo-wrap{position:relative;overflow:hidden;background:#fff}
+.band img.photo{position:relative;width:100%;height:100%;object-fit:contain}
+.photo-shade{position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(to top,rgba(255,255,255,.55),rgba(255,255,255,0))}
+.price-pop{position:absolute;left:18px;bottom:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fff;border-radius:18px;padding:10px 18px 12px;box-shadow:0 12px 30px rgba(10,25,15,.35);border:3px solid var(--yellow)}
+.price-pop .price{font-size:2.15rem;font-weight:900;color:var(--green-d);line-height:1}
+.price-pop .was{font-size:1.15rem;color:#7a857c;text-decoration:line-through;font-weight:700}
+.price-pop .save{background:#c8102e;color:#fff;font-weight:900;font-size:1rem;padding:5px 13px;border-radius:999px;box-shadow:0 4px 12px rgba(200,16,46,.4)}
+.h-xl .photo-wrap{height:440px}.h-lg .photo-wrap{height:390px}.h-md .photo-wrap{height:340px}.h-sm .photo-wrap{height:290px}
+.band-body{position:relative;background:#fff;padding:13px 20px 15px;margin-top:0;border-radius:0 0 24px 24px}
+.band h3{font-size:1.5rem;font-weight:900;line-height:1.22;margin-bottom:6px}
+.band .note{color:#33453a;max-width:820px;font-size:1rem}
 .price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:12px}
 .price{font-size:1.55rem;font-weight:900;color:var(--green-d)}
 .was{font-size:1.05rem;color:#7a857c;text-decoration:line-through}
 .save{background:#c8102e;color:#fff;font-weight:800;font-size:.85rem;padding:3px 10px;border-radius:999px}
-.prov{font-size:.9rem;color:#4a554d}
-.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 24px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+.prov{font-size:.95rem;color:#4a554d;font-weight:600;margin-top:10px}
+.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;font-size:1.05rem;text-decoration:none;padding:14px 30px;border-radius:999px;box-shadow:0 6px 18px rgba(29,122,58,.4)}
 .buy:hover{background:var(--green-d)}
-.storeband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:20px 0;text-decoration:none;box-shadow:0 10px 30px rgba(20,40,25,.16)}
-.storeband img{width:100%;height:250px;object-fit:cover}
+.storeband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:10px 0;text-decoration:none;box-shadow:0 12px 30px rgba(20,40,25,.2)}
+.storeband img{width:100%;height:190px;object-fit:cover}
+.storeband.sb-hero img{height:240px}.storeband.sb-tall img{height:215px}.storeband.sb-short img{height:160px}.storeband.sb-finale img{height:225px}
 .storeband .sb-in{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;background:linear-gradient(to top,rgba(255,255,255,.95),rgba(255,255,255,0))}
-.storeband h3{font-size:1.45rem;color:var(--ink)}
-.storeband p{color:#33453a}
-footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
+.storeband h3{font-size:1.6rem;font-weight:900;color:var(--ink)}
+.storeband p{color:#33453a;font-size:1rem}
+footer{background:#ffffff;margin-top:28px;border-top:6px solid var(--green)}
 .foot-in{max-width:1180px;margin:0 auto;padding:28px 18px 34px}
 .foot-in .slogan{margin:0 0 12px}
 .fine{font-size:.85rem;color:#5a665d;max-width:820px;margin-top:10px}
 .foot-links{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
 .foot-links a{font-weight:700;text-decoration:none}
-@media (max-width:640px){.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.band img.photo{height:300px}.price{font-size:1.3rem}}
-
-.buycheck{background:#fff6cf;border:1px solid #ecd24f;border-radius:14px;padding:12px 16px;margin:14px 0 6px;font-size:1rem;color:#3d3a1a}
-.buycheck strong{color:#7a5b00}
-.verdict{margin-top:12px;background:#f1f7f1;border-left:4px solid var(--green);border-radius:10px;padding:10px 14px;font-size:.93rem;color:#243528}
-.verdict p{margin:3px 0}
-.verdict strong{color:var(--green-d)}
+.capture{position:relative;border-radius:22px;overflow:hidden;margin:24px 0 6px;box-shadow:0 10px 30px rgba(20,40,25,.16);background:#e9f2ea}
+.capture-in{position:relative;padding:24px 22px}
+.missionline{font-size:1.05rem;font-weight:600;color:#243528;margin:20px 0 2px}
+.jumprow{max-width:1180px;margin:14px auto 0;padding:0 18px;display:flex;gap:9px;flex-wrap:wrap}
+.jump{flex:1 1 auto;text-align:center;background:var(--green);color:#fff !important;font-weight:800;font-size:.98rem;text-decoration:none;padding:12px 10px;border-radius:999px;box-shadow:0 5px 14px rgba(29,122,58,.30);white-space:nowrap}
+.jump.alt{background:#fff;color:var(--green-d) !important;border:2px solid var(--green);box-shadow:0 4px 12px rgba(20,40,25,.12)}
+.hubrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:6px 0 4px}
+.hub{position:relative;border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 10px 24px rgba(20,40,25,.18);display:block}
+.hub img{width:100%;height:150px;object-fit:cover}
+.hub span{position:absolute;left:0;right:0;bottom:0;padding:20px 14px 10px;background:linear-gradient(to top,rgba(255,255,255,.96),rgba(255,255,255,0));font-weight:900;font-size:1.12rem;color:var(--ink)}
+.capture h2{font-size:1.5rem;margin-bottom:6px;color:var(--ink)}
+.capture p{max-width:640px;color:#243528}
+.capture-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.btn-sub{background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+.btn-sub:hover{background:var(--green-d)}
+.btn-group{background:#fff;color:var(--green-d) !important;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:999px;border:2px solid var(--green);box-shadow:0 4px 14px rgba(20,40,25,.15)}
+.capture .small{font-size:.85rem;color:#4a554d;margin-top:10px}
+.trustline{display:flex;gap:8px 22px;flex-wrap:wrap;margin:16px 0 4px;padding:14px 18px;background:#fff;border-radius:16px;box-shadow:0 6px 18px rgba(20,40,25,.10);font-size:.95rem}
+.trustline b{color:var(--green-d)}
+.chips{display:flex;gap:10px;overflow-x:auto;padding:8px 2px 12px;-webkit-overflow-scrolling:touch}
+.chip{flex:0 0 auto;display:flex;align-items:center;gap:9px;background:#fff;border-radius:999px;padding:5px 16px 5px 5px;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem;box-shadow:0 4px 12px rgba(20,40,25,.12)}
+.chip img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+.badge{display:inline-block;background:var(--green);color:#fff;font-weight:800;font-size:.95rem;padding:3px 11px;border-radius:999px;margin-bottom:8px;letter-spacing:.2px}
+.searchrow{margin:2px 0 6px}
+.searchrow label{font-weight:700;display:block;margin-bottom:8px}
+.searchbox{width:100%;max-width:520px;padding:13px 18px;border:2px solid #cfe0d2;border-radius:999px;font-size:1rem;font-family:inherit;background:#fff;color:var(--ink)}
+.searchbox:focus{outline:none;border-color:var(--green)}
+.nomatch{display:none;color:#7a2d1d;font-weight:700;margin-top:10px}
+.soc{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
+.soc a{font-weight:700;text-decoration:none}
+@media (max-width:640px){.hero-photo{width:71%;height:auto}.hero-photo-wrap{padding:24px 12px}.hero h1{font-size:2.3rem}.h-xl .photo-wrap{height:300px}.h-lg .photo-wrap{height:270px}.h-md .photo-wrap{height:245px}.h-sm .photo-wrap{height:215px}.price-pop{left:10px;bottom:10px;padding:8px 13px 9px;gap:8px;border-width:2px}.price-pop .price{font-size:1.6rem}.price-pop .was{font-size:1rem}.price-pop .save{font-size:.95rem}.storeband img{height:140px}.storeband.sb-hero img{height:165px}.storeband.sb-tall img{height:150px}.storeband.sb-short img{height:115px}.storeband.sb-finale img{height:160px}.hub img{height:104px}.hub span{font-size:.98rem;padding:16px 10px 8px}.jump{font-size:.92rem;padding:11px 6px}
+.topnav{display:none}.topbar-in{padding:8px 14px}.hero-photo{width:71%}.hero-in{padding:12px 18px 14px}.slogan{margin-top:10px}.band h3{font-size:1.28rem}.buy{padding:11px 24px;margin-top:9px}.band-body{padding:11px 16px 13px}.capture-in{padding:18px 16px}.sec-title{margin:20px 0 6px;font-size:1.6rem}.storeband h3{font-size:1.22rem}.storeband p{font-size:.95rem}.storeband h3{font-size:1.35rem}.sec-title{font-size:1.7rem}.band img.photo{height:100%}.price{font-size:1.3rem}.capture-in{padding:20px 16px}.capture h2{font-size:1.3rem}.trustline{font-size:.9rem}}
 .brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
 
+.photo-wrap .photo-frame{height:100%}
+.photo-wrap>img.photo{width:100%;height:100%;object-fit:contain}
+.band .photo-frame img.photo{height:100%}
+.h-xs .photo-wrap{height:215px}
+@media (max-width:640px){.h-xs .photo-wrap{height:180px}}
+.hero .tag{font-size:1.12rem;color:#33453a;max-width:640px;margin-top:10px}
+:root{--green:#1d7a3a;--green-d:#145c2b;--yellow:#ffd21f;--ink:#14201a;--paper:#f7f7f2;--card:#ffffff}
+.hero .tag{font-size:1.12rem;margin-top:10px;max-width:640px;color:#243528}
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:18px 0}
+.dl-card{background:#fff;border-radius:18px;box-shadow:0 8px 24px rgba(20,40,25,.12);padding:18px 20px}
+.dl-card h3{font-size:1.15rem;margin-bottom:8px;color:var(--green-d)}
+.dl-card p{color:#33453a;font-size:.97rem;margin-bottom:6px}
+.dl-card .d{font-weight:800;color:var(--ink)}
 .photo-frame{position:relative;overflow:hidden;background:#fff}
 .photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
 .band .photo-frame img.photo{position:relative;background:transparent}
 .code-note{display:block;margin-top:8px;background:#ffd21f;color:#111;font-weight:700;font-size:.9rem;line-height:1.45;padding:7px 11px;border-radius:8px;max-width:560px}
-</style>
+
+
+/* photo-band melt pattern: sharp photo on top; the text zone is a blurred,
+   darkened melt of the same photo carrying the words — zero white cards */
+.photo-wrap{height:auto}
+.photo{position:static;width:100%;height:auto;object-fit:fill}
+.band-body{position:relative;z-index:3;margin-top:-48px;padding:56px 20px 16px;background:#0d1f13;color:#fff;overflow:hidden}
+.band-body::before{content:"";position:absolute;inset:-28px;background-image:var(--bimg);background-size:cover;background-position:center;filter:blur(24px) brightness(.48) saturate(1.15);z-index:-1}
+.band-body h3{color:#fff;font-size:1.3rem;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.band-body .note{color:rgba(255,255,255,.94);text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.band-body .prov{background:#fff;color:var(--green-d)}
+.price-pop{top:12px;bottom:auto;z-index:4}
+.verdict{margin-top:12px;background:rgba(8,18,11,.7);border-left:4px solid var(--yellow);border-radius:10px;padding:10px 14px;font-size:.93rem;color:#eef5ee}
+.verdict p{margin:3px 0}
+.verdict strong{color:var(--yellow)}
+.buycheck{background:#fff6cf;border:1px solid #ecd24f;border-radius:14px;padding:12px 16px;margin:14px 0 6px;font-size:1rem;color:#3d3a1a}
+.buycheck strong{color:#7a5b00}
+.ship-callout{max-width:1180px;margin:14px auto 0;padding:14px 20px;background:#fff6cf;border:2px solid var(--yellow);border-radius:16px;box-shadow:0 6px 18px rgba(20,40,25,.12);font-size:1.06rem;font-weight:700;color:#243528}
+.ship-callout strong{color:var(--green-d)}
+.ship-note{display:block;margin-top:8px;font-weight:800;color:#ffe97a;font-size:.95rem;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.frame-band .photo-wrap{background:#111}
+.frame-band .photo{width:auto;height:100%;margin:0 auto}
+@media (max-width:640px){.band-body{padding:54px 16px 14px}.band-body h3{font-size:1.16rem}}
+
+.hero-photo-wrap{height:calc(100vw*.56346 + 70px);padding:0}.hero-bg{top:auto;bottom:0;height:auto}
+.hero-photo{position:absolute;left:50%;transform:translateX(-50%);top:30px;margin:0;width:min(600px,47%)}@media (max-width:760px){.hero-photo-wrap{height:calc(100vw*.56346 + 110px)}.hero-photo{top:12px;width:60%}}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7BY95H3C7"></script>
 <script>
@@ -205,118 +288,131 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <body>
 <div class="topbar"><div class="topbar-in">
 <a class="brand" href="/"><img class="brandlogo" src="/assets/brand/logo-painting.jpg" alt="Owners Inc. logo">Owners <span class="inc">Inc.</span></a>
-<nav class="topnav"><a href="/">Home</a><a href="/christmas-finds/">Christmas</a><a href="/tools/">Tools</a><a href="/kids-toys/">Kids Toys</a><a href="/gaming/">Gaming</a><a href="/tax-prep/">Tax Prep</a><a href="/ice-fishing/">Ice Fishing</a></nav>
+<nav class="topnav"><a href="/christmas-finds/">Christmas</a><a href="/tools/">Tools</a><a href="/kids-toys/">Kids Toys</a><a href="/gaming/">Gaming</a><a href="/faith-finds/">Faith</a><a href="/tax-prep/">Tax Prep</a><a href="/ice-fishing/">Ice Fishing</a><a href="/#stores">All stores</a><a href="/#deals-email">Deals by email</a></nav>
 </div></div>
-<header class="hero" style="background-image:url('/assets/ice-fishing/hero.jpg')">
-<div class="hero-shade"></div>
+<header class="hero">
+<div class="hero-photo-wrap">
+<img class="hero-bg" src="/assets/brand/logo-painting.jpg" alt="" aria-hidden="true">
+<img class="hero-lights" src="/assets/brand/hero-lights.jpg" alt="" aria-hidden="true">
+<div class="hero-glow" aria-hidden="true"></div>
+<div class="hero-corner left" aria-hidden="true"><div class="strip"></div></div>
+<div class="hero-corner right" aria-hidden="true"><div class="strip"></div></div>
+<img class="hero-photo" src="/assets/ice-fishing/yukon-cutout.webp" alt="Clam Yukon Thermal Flip-Over Shelter — 2-Angler" fetchpriority="high">
+<img class="hero-ribbon-bow" src="/assets/brand/ribbon-bow.webp" alt="" aria-hidden="true">
+</div>
 <div class="hero-in">
-<h1>Ice Fishing &amp; Hardwater Finds</h1>
+<h1>Ice Fishing & Hardwater Finds</h1>
 <p class="tag">Hard water. Warm shelter. Fish on.</p>
 <span class="slogan">Owners Inc. Everybody's doing it.</span>
 </div>
 </header>
-<p class="ftc-top">Affiliate disclosure: Owners Inc. is an affiliate page. If you buy through a link on this page, Owners Inc. may earn a commission — and it costs you nothing extra; the price is the same as going straight to the store.</p>
+<nav class="jumprow" aria-label="Jump to a section">
+<a class="jump" href="#augers">Augers</a>
+<a class="jump" href="#electronics">Electronics</a>
+<a class="jump" href="#shelters">Shelters</a>
+<a class="jump" href="#safety">Safety</a>
+<a class="jump alt" href="/bookkeeping-services/">Bookkeeping</a>
+<a class="jump alt" href="/#deals-email">Deals by Email</a>
+</nav>
+<p class="ftc-top">Owners Inc. may earn a commission on purchases through our links — it never changes your price.</p>
+<p class="ship-callout">Shipping is set by each store at checkout — <strong>Acme Tools</strong> ships FREE at $199+ (under that, $6.49 flat); <strong>Joe's Sporting Goods</strong> lists the Maven as Fast &amp; Free Shipping Eligible and <strong>Scheels</strong> lists free shipping on the Vexilar. Checked Nov 21, 2026.</p>
 <main class="wrap">
-<div style="margin:14px 0 4px"><a href="#augers" style="display:inline-block;background:#1d7a3a;color:#fff;font-weight:700;padding:8px 14px;border-radius:999px;margin:0 6px 8px 0;text-decoration:none">Augers</a><a href="#electronics" style="display:inline-block;background:#1d7a3a;color:#fff;font-weight:700;padding:8px 14px;border-radius:999px;margin:0 6px 8px 0;text-decoration:none">Electronics</a><a href="#shelters" style="display:inline-block;background:#1d7a3a;color:#fff;font-weight:700;padding:8px 14px;border-radius:999px;margin:0 6px 8px 0;text-decoration:none">Shelters</a><a href="#safety" style="display:inline-block;background:#1d7a3a;color:#fff;font-weight:700;padding:8px 14px;border-radius:999px;margin:0 6px 8px 0;text-decoration:none">Safety</a></div>
-<h2 class="sec-title">Today's hardwater finds</h2>
+<h2 class="sec-title" id="today-s-hardwater-finds">Today's hardwater finds</h2>
 <p class="sec-sub">Every find below shows the price, the store, and the date we checked it. Prices move — the store page always has the final word.</p>
 <p class="buycheck"><strong>The one check that matters most:</strong> decide how you'll make holes before you buy anything else. Power auger, drill-powered flight, or a hand auger — that one choice sets the budget for everything after it. Every card below carries our verdict: why we picked it, who it's for, who should skip it, and what to watch out for.</p>
-
-<section class="band" id="augers">
-  <img class="photo" src="/assets/ice-fishing/maven.jpg" alt="StrikeMaster Lithium 40V Maven ice auger, 8 inch" loading="lazy">
-  <div class="band-body">
-    <h3>StrikeMaster Lithium 40V Maven Auger — 8&quot;</h3>
+<section class="band frame-band h-md has-verdict" id="augers">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/ice-fishing/maven.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/ice-fishing/maven.jpg" alt="StrikeMaster Lithium 40V Maven ice auger, 8 inch" loading="lazy"></div><div class="price-pop"><span class="price">$579.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/ice-fishing/maven.jpg')">
+    <h3>StrikeMaster Lithium 40V Maven Auger — 8"</h3>
     <p class="note">The full-power electric: brushless motor, twin serrated stainless-steel blades, a built-in LED light and bubble level, forward and reverse — and TWO 40V batteries in the box (5Ah and 4Ah), so a dead pack never ends the day. Joe's lists it Fast &amp; Free Shipping Eligible.</p>
     <div class="verdict">
-      <p><strong>Why we picked it:</strong> It's the auger the whole category is measured against this season — real power, no gas, no pull cord, and a second battery included instead of sold separately.</p>
-      <p><strong>Best for:</strong> Anglers who drill a lot of holes, move often, or fish thick mid-winter ice.</p>
-      <p><strong>Skip if:</strong> You fish a handful of holes a few times a year — the drill unit and the hand auger below do that job for far less.</p>
-      <p><strong>Watch out for:</strong> Blades are consumables: budget for a spare set, and keep the batteries warm — lithium loses punch in deep cold.</p>
-    </div>
-    <div class="price-row"><span class="price">$579.99</span><span class="prov">at Joe's Sporting Goods — checked Nov 21, 2026</span></div>
+<p><strong>Why we picked it:</strong> It's the auger the whole category is measured against this season — real power, no gas, no pull cord, and a second battery included instead of sold separately.</p>
+<p><strong>Best for:</strong> Anglers who drill a lot of holes, move often, or fish thick mid-winter ice.</p>
+<p><strong>Skip if:</strong> You fish a handful of holes a few times a year — the drill unit and the hand auger below do that job for far less.</p>
+<p><strong>Watch out for:</strong> Blades are consumables: budget for a spare set, and keep the batteries warm — lithium loses punch in deep cold.</p>
+</div>
+    <p class="prov">at Joe's Sporting Goods — checked Nov 21, 2026</p>
     <a class="buy" href="https://joessportinggoods.com/products/1-185451-lithium-40v-maven-auger" target="_blank" rel="sponsored noopener">See it at Joe's Sporting Goods</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/ice-fishing/liteflite.jpg" alt="StrikeMaster Lite-Flite Lazer drill unit, 8 inch" loading="lazy">
-  <div class="band-body">
-    <h3>StrikeMaster Lite-Flite Lazer Drill Unit — 8&quot;</h3>
-    <p class="note">Already own a good cordless drill? This is the flight that turns it into an ice auger: twin chrome-alloy stainless Lazer blades on a lightweight synthetic flight, with the blade guard and two-stage drill adapter in the box. Runs on a professional 18V (or higher) brushless drill with a 1/2&quot; chuck.</p>
+<section class="band frame-band h-sm has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/ice-fishing/liteflite.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/ice-fishing/liteflite.jpg" alt="StrikeMaster Lite-Flite Lazer drill unit, 8 inch" loading="lazy"></div><div class="price-pop"><span class="price">$178.99</span><span class="was">$242.99</span><span class="save">Save 26%</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/ice-fishing/liteflite.jpg')">
+    <h3>StrikeMaster Lite-Flite Lazer Drill Unit — 8"</h3>
+    <p class="note">Already own a good cordless drill? This is the flight that turns it into an ice auger: twin chrome-alloy stainless Lazer blades on a lightweight synthetic flight, with the blade guard and two-stage drill adapter in the box. Runs on a professional 18V (or higher) brushless drill with a 1/2" chuck.</p>
     <div class="verdict">
-      <p><strong>Why we picked it:</strong> The cheapest honest route to power drilling — it borrows the drill already in your garage instead of selling you a second motor.</p>
-      <p><strong>Best for:</strong> Run-and-gun anglers and anyone who already owns a strong brushless drill.</p>
-      <p><strong>Skip if:</strong> Your drill is a small 12V or brushed model — it will struggle and drain fast. The Maven above is the self-contained answer.</p>
-      <p><strong>Watch out for:</strong> Drill not included, and the price is a sale price — it was $242.99 on the same Joe's listing.</p>
-    </div>
-    <div class="price-row"><span class="price">$178.99</span><span class="was">$242.99</span><span class="save">Save 26%</span><span class="prov">at Joe's Sporting Goods — checked Nov 21, 2026</span></div>
+<p><strong>Why we picked it:</strong> The cheapest honest route to power drilling — it borrows the drill already in your garage instead of selling you a second motor.</p>
+<p><strong>Best for:</strong> Run-and-gun anglers and anyone who already owns a strong brushless drill.</p>
+<p><strong>Skip if:</strong> Your drill is a small 12V or brushed model — it will struggle and drain fast. The Maven above is the self-contained answer.</p>
+<p><strong>Watch out for:</strong> Drill not included, and the price is a sale price — it was $242.99 on the same Joe's listing.</p>
+</div>
+    <p class="prov">at Joe's Sporting Goods — checked Nov 21, 2026</p>
     <a class="buy" href="https://joessportinggoods.com/products/1-122275-lite-flite-lazer-drill-unit" target="_blank" rel="sponsored noopener">See it at Joe's Sporting Goods</a>
   </div>
 </section>
-<section class="band">
-  <img class="photo" src="/assets/ice-fishing/mora.jpg" alt="StrikeMaster Mora hand ice auger, 8 inch" loading="lazy">
-  <div class="band-body">
-    <h3>StrikeMaster Mora Hand Auger — 8&quot;</h3>
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/ice-fishing/mora.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/ice-fishing/mora.jpg" alt="StrikeMaster Mora hand ice auger, 8 inch" loading="lazy"></div><div class="price-pop"><span class="price">$77.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/ice-fishing/mora.jpg')">
+    <h3>StrikeMaster Mora Hand Auger — 8"</h3>
     <p class="note">The powder-blue classic that's been cutting Minnesota ice for decades. No battery, no motor, nothing to charge — just sharp blades, a wing-bolt, and a blade cover in the box. The auger that lives in the truck all winter as the backup that never fails.</p>
     <div class="verdict">
-      <p><strong>Why we picked it:</strong> Every hardwater kit needs one tool with zero failure modes. This is it — and at this price it's the easiest first auger there is.</p>
-      <p><strong>Best for:</strong> First-timers, panfish anglers drilling a few holes, and as the permanent backup next to a power auger.</p>
-      <p><strong>Skip if:</strong> You're drilling through two feet of ice all day — your shoulders will file a complaint. Go power.</p>
-      <p><strong>Watch out for:</strong> Hand-auger blades dull if they bang around loose; keep the cover on in transport.</p>
-    </div>
-    <div class="price-row"><span class="price">$77.99</span><span class="prov">at Joe's Sporting Goods — checked Nov 21, 2026</span></div>
+<p><strong>Why we picked it:</strong> Every hardwater kit needs one tool with zero failure modes. This is it — and at this price it's the easiest first auger there is.</p>
+<p><strong>Best for:</strong> First-timers, panfish anglers drilling a few holes, and as the permanent backup next to a power auger.</p>
+<p><strong>Skip if:</strong> You're drilling through two feet of ice all day — your shoulders will file a complaint. Go power.</p>
+<p><strong>Watch out for:</strong> Hand-auger blades dull if they bang around loose; keep the cover on in transport.</p>
+</div>
+    <p class="prov">at Joe's Sporting Goods — checked Nov 21, 2026</p>
     <a class="buy" href="https://joessportinggoods.com/products/33377-mora-2pc-hand-auger" target="_blank" rel="sponsored noopener">See it at Joe's Sporting Goods</a>
   </div>
 </section>
-<section class="band" id="electronics">
-  <img class="photo" src="/assets/ice-fishing/vexilar.jpg" alt="Vexilar FLX-28 Genz Pack flasher with Pro-View Ice-Ducer" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-sm has-verdict" id="electronics">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/ice-fishing/vexilar.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/ice-fishing/vexilar.jpg" alt="Vexilar FLX-28 Genz Pack flasher with Pro-View Ice-Ducer" loading="lazy"></div><div class="price-pop"><span class="price">$399.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/ice-fishing/vexilar.jpg')">
     <h3>Vexilar FLX-28 Genz Pack Flasher</h3>
     <p class="note">The flasher serious ice anglers swear by: five-color display with digital depth, auto range, the Pro-View Ice-Ducer, and a sealed lead-acid battery in the pack. Scheels lists free shipping on this one — checked Nov 21, 2026.</p>
     <div class="verdict">
-      <p><strong>Why we picked it:</strong> Instant, real-time sonar with no screen lag and no menu-diving at -10° — a flasher still beats a graph when the fish are tight to bottom.</p>
-      <p><strong>Best for:</strong> Anglers who fish by the dial and want the top of Vexilar's flasher line without going to live sonar money.</p>
-      <p><strong>Skip if:</strong> You want GPS mapping or a forward-facing live view — that's a different (much pricier) class of electronics.</p>
-      <p><strong>Watch out for:</strong> This Genz Pack is the lead-acid battery version; Vexilar's lithium packs cost more. Confirm which battery you're buying.</p>
-    </div>
-    <div class="price-row"><span class="price">$399.99</span><span class="prov">at Scheels — checked Nov 21, 2026</span></div>
+<p><strong>Why we picked it:</strong> Instant, real-time sonar with no screen lag and no menu-diving at -10° — a flasher still beats a graph when the fish are tight to bottom.</p>
+<p><strong>Best for:</strong> Anglers who fish by the dial and want the top of Vexilar's flasher line without going to live sonar money.</p>
+<p><strong>Skip if:</strong> You want GPS mapping or a forward-facing live view — that's a different (much pricier) class of electronics.</p>
+<p><strong>Watch out for:</strong> This Genz Pack is the lead-acid battery version; Vexilar's lithium packs cost more. Confirm which battery you're buying.</p>
+</div>
+    <p class="prov">at Scheels — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.scheels.com/p/vexilar-flx28-genz-pack-w/-pro-view-ice-ducer-fish-finder/52762-GPX28PV/" target="_blank" rel="sponsored noopener">See it at Scheels</a>
   </div>
 </section>
-<section class="band" id="shelters">
-  <img class="photo" src="/assets/ice-fishing/yukon.jpg" alt="Clam Yukon Thermal flip-over ice shelter" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-md has-verdict" id="shelters">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/ice-fishing/yukon.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/ice-fishing/yukon.jpg" alt="Clam Yukon Thermal flip-over ice shelter" loading="lazy"></div><div class="price-pop"><span class="price">$999.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/ice-fishing/yukon.jpg')">
     <h3>Clam Yukon Thermal Flip-Over Shelter — 2-Angler</h3>
     <p class="note">A two-angler flip-over with Clam's thermal (insulated, quilted) fabric: tow it behind the sled or ATV, flip it over, and you're fishing in a warm, dark house instead of kneeling in the wind. The shelter that turns a two-hour outing into an all-day one.</p>
     <div class="verdict">
-      <p><strong>Why we picked it:</strong> Clam invented the flip-over, and the Yukon is its workhorse size — room for two anglers and a heater without going to a four-person sled.</p>
-      <p><strong>Best for:</strong> Pairs who fish together and anyone tired of wind cutting trips short.</p>
-      <p><strong>Skip if:</strong> You always fish solo and walk out — a one-person flip-over (or no shelter at all) is lighter and cheaper.</p>
-      <p><strong>Watch out for:</strong> Acme shows the discounted price in cart on this listing — the price at Acme's checkout is the final word.</p>
-    </div>
-    <div class="price-row"><span class="price">$999.99</span><span class="prov">at Acme Tools — checked Nov 21, 2026</span></div>
+<p><strong>Why we picked it:</strong> Clam invented the flip-over, and the Yukon is its workhorse size — room for two anglers and a heater without going to a four-person sled.</p>
+<p><strong>Best for:</strong> Pairs who fish together and anyone tired of wind cutting trips short.</p>
+<p><strong>Skip if:</strong> You always fish solo and walk out — a one-person flip-over (or no shelter at all) is lighter and cheaper.</p>
+<p><strong>Watch out for:</strong> Acme shows the discounted price in cart on this listing — the price at Acme's checkout is the final word.</p>
+</div>
+    <p class="prov">at Acme Tools — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.acmetools.com/clam-outdoors-outdoors-yukon-thermal-2-angler-flip-over-ice-shelter-19648/S0000000140120.html" target="_blank" rel="sponsored noopener">See it at Acme Tools</a>
   </div>
 </section>
-<section class="band" id="safety">
-  <img class="photo" src="/assets/ice-fishing/lakco.jpg" alt="Lakco ice safety picks on a neck cord" loading="lazy">
-  <div class="band-body">
+<section class="band frame-band h-sm has-verdict" id="safety">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/ice-fishing/lakco.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/ice-fishing/lakco.jpg" alt="Lakco ice safety picks on a neck cord" loading="lazy"></div><div class="price-pop"><span class="price">$9.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/ice-fishing/lakco.jpg')">
     <h3>Lakco Ice Safety Picks</h3>
     <p class="note">Ten bucks of insurance that hangs around your neck: two spiked handles on a cord that give you something to dig in and pull with if you ever go through. The cheapest item on this page and the first one that should go in the bucket.</p>
     <div class="verdict">
-      <p><strong>Why we picked it:</strong> Self-rescue picks are the one piece of ice gear nobody should skip — they weigh nothing, cost almost nothing, and only matter on the worst day.</p>
-      <p><strong>Best for:</strong> Every single person who walks on ice. Early ice, late ice, any ice.</p>
-      <p><strong>Skip if:</strong> Never skip these. If you already own a set, buy a set for whoever fishes with you.</p>
-      <p><strong>Watch out for:</strong> Picks in a tackle box don't help — they only work worn around your neck, outside your coat.</p>
-    </div>
-    <div class="price-row"><span class="price">$9.99</span><span class="prov">at Scheels — checked Nov 21, 2026</span></div>
+<p><strong>Why we picked it:</strong> Self-rescue picks are the one piece of ice gear nobody should skip — they weigh nothing, cost almost nothing, and only matter on the worst day.</p>
+<p><strong>Best for:</strong> Every single person who walks on ice. Early ice, late ice, any ice.</p>
+<p><strong>Skip if:</strong> Never skip these. If you already own a set, buy a set for whoever fishes with you.</p>
+<p><strong>Watch out for:</strong> Picks in a tackle box don't help — they only work worn around your neck, outside your coat.</p>
+</div>
+    <p class="prov">at Scheels — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.scheels.com/p/lakco-ice-safety-picks/72668-ICEPICKS/" target="_blank" rel="sponsored noopener">See it at Scheels</a>
   </div>
 </section>
-
-<h2 class="sec-title">Season opener: the St. Paul show</h2>
+<h2 class="sec-title" id="season-opener-the-st-paul-show">Season opener: the St. Paul show</h2>
 <p class="sec-sub">The Saint Paul Ice Fishing &amp; Winter Sports Show runs <strong>December 4–6, 2026 at the Saint Paul RiverCentre</strong> — 190+ exhibitors with fish houses, augers, electronics and shelters on the floor (dates and venue per the RiverCentre). It's the one weekend you can put hands on every auger and shelter on this page before the lakes lock up for real.</p>
 <p class="buycheck"><strong>Ice safety, plain and short:</strong> no ice is ever 100% safe. Check thickness as you go with a spud bar or test holes, stay off ice you haven't checked, and wear your safety picks outside your coat — the Lakco set above costs less than the gas to the lake. More open-water gear lives on our <a href="/fishing/">Fishing Finds page</a>.</p>
-
 </main>
 <footer><div class="foot-in">
 <span class="slogan">Owners Inc. Everybody's doing it.</span>
@@ -331,7 +427,5 @@ if(y>140&&y>last+4){bar.classList.add('hide');}else if(y<last-4||y<140){bar.clas
 last=y;},{passive:true});})();
 </script>
 
-</body>
-</html>
 </body>
 </html>
