@@ -48,6 +48,7 @@ Every find shows its price, its store, and the date the price was checked.
 - Golf Finds: https://ownersinchq.com/golf-finds/
 - Fishing: https://ownersinchq.com/fishing/
 - Ice Fishing: https://ownersinchq.com/ice-fishing/
+- Ammunition: https://ownersinchq.com/ammunition/
 - Tax Prep & Money Tools: https://ownersinchq.com/tax-prep/
 - Share Owners Inc.: https://ownersinchq.com/share/
 
