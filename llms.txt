@@ -53,6 +53,7 @@ Every find shows its price, its store, and the date the price was checked.
 - Home Security Finds: https://ownersinchq.com/home-security-finds/
 - Mobility Finds: https://ownersinchq.com/mobility-finds/
 - Furniture Finds: https://ownersinchq.com/furniture-finds/
+- Cleaning Supplies: https://ownersinchq.com/cleaning-supplies/
 - Tax Prep & Money Tools: https://ownersinchq.com/tax-prep/
 - Share Owners Inc.: https://ownersinchq.com/share/
 
