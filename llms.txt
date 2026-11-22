@@ -19,6 +19,7 @@ Contact: hello@ownersinchq.com · (651) 314-9387 (call or text)
   https://ownersinchq.com/bookkeeping-services/
 
 ## Finds stores
+- Everything Store (every find from every store on one page): https://ownersinchq.com/everything-store/
 
 Every find shows its price, its store, and the date the price was checked.
 
