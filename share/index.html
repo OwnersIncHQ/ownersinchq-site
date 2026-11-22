@@ -32,62 +32,92 @@
  ]
 }</script>
 <style>
-:root{--green:#1d7a3a;--green-d:#145c2b;--yellow:#ffd21f;--ink:#14201a;--paper:#f7f7f2;--muted:#435347}
+:root{--green:#1d7a3a;--green-d:#145c2b;--yellow:#ffd21f;--ink:#14201a;--paper:#f7f7f2;--card:#ffffff}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
 img{display:block;max-width:100%}
 a{color:var(--green-d)}
-.topbar{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.10);transition:transform .35s ease}
+.topbar{position:sticky;top:0;z-index:50;background:#ffffff;box-shadow:0 2px 14px rgba(0,0,0,.10);transition:transform .35s ease}
 .topbar.hide{transform:translateY(-110%)}
 .topbar-in{max-width:1180px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.brand{display:inline-flex;align-items:center;gap:10px;font-weight:900;font-size:1.25rem;color:var(--ink);text-decoration:none;letter-spacing:.3px}
+.brand{font-weight:900;font-size:1.25rem;color:var(--ink);text-decoration:none;letter-spacing:.3px}
 .brand .inc{color:var(--green)}
-.brandlogo{height:44px;width:auto;border-radius:6px;box-shadow:0 1px 6px rgba(0,0,0,.25)}
 .topnav{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
 .topnav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--ink)}
 .topnav a:hover{color:var(--green)}
-.ftc-top{max-width:1180px;margin:14px auto 0;padding:0 18px;font-size:.85rem;color:#4a554d}
-.hero{position:relative;min-height:460px;display:flex;align-items:flex-end;background-size:cover;background-position:center;margin-top:14px}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(255,255,255,.95) 0%,rgba(255,255,255,.6) 36%,rgba(255,255,255,0) 64%)}
-.hero-in{position:relative;max-width:1180px;margin:0 auto;padding:34px 18px 30px;width:100%}
-.hero-logo{width:210px;max-width:62%;border-radius:16px;box-shadow:0 10px 28px rgba(20,40,25,.30);margin-bottom:16px}
-.hero h1{font-size:2.5rem;line-height:1.12;max-width:720px;color:var(--ink)}
-.hero .tag{font-size:1.12rem;margin-top:10px;max-width:640px;color:#243528}
-.slogan{display:inline-block;margin-top:18px;background:var(--yellow);color:#111;font-weight:900;padding:7px 14px;border-radius:999px;font-size:.98rem;box-shadow:0 3px 10px rgba(0,0,0,.25)}
-.wrap{max-width:1180px;margin:0 auto;padding:8px 18px 8px}
-.sec-title{font-size:1.65rem;margin:34px 0 6px}
-.sec-sub{color:var(--muted);margin-bottom:14px;max-width:780px}
-.rows{display:flex;flex-direction:column;gap:12px;margin:16px 0 6px}
-.row{display:flex;align-items:center;gap:14px;background:#fff;border-radius:18px;box-shadow:0 8px 24px rgba(20,40,25,.12);padding:14px 18px;min-height:68px;text-decoration:none;color:var(--ink)}
-.row:hover{box-shadow:0 10px 28px rgba(20,40,25,.20)}
-.row .who{flex:1;min-width:0}
-.row .name{font-weight:900;font-size:1.12rem;color:var(--green-d)}
-.row .sub{color:#33453a;font-size:.95rem}
-.row .go{font-weight:900;background:var(--green);color:#fff;padding:10px 18px;border-radius:999px;white-space:nowrap;box-shadow:0 4px 14px rgba(29,122,58,.35)}
-.row .go.gold{background:var(--yellow);color:#111;box-shadow:0 4px 14px rgba(0,0,0,.18)}
-.sharebox{background:#fff;border-radius:22px;box-shadow:0 10px 30px rgba(20,40,25,.14);padding:26px 24px;margin:18px 0 4px;border-top:7px solid var(--green)}
-.sharebox h2{font-size:1.55rem;line-height:1.2;margin-bottom:8px}
-.sharebox p{color:#33453a;max-width:720px}
+.hero{position:relative;background:#fff}
+.hero-photo-wrap{position:relative;overflow:hidden;padding:38px 18px;background:#111}
+.hero-lights{position:absolute;top:0;left:0;width:100%;height:auto;mix-blend-mode:screen;z-index:1;pointer-events:none}
+.hero-glow{position:absolute;top:0;left:0;right:0;height:48%;background:radial-gradient(ellipse 68% 100% at 50% 0%,rgba(255,166,55,.17),rgba(255,166,55,0) 70%);z-index:1;pointer-events:none}
+.hero-corner{position:absolute;top:0;width:min(235px,36%);aspect-ratio:1/1;overflow:hidden;z-index:3;pointer-events:none}
+.hero-corner.left{left:0}
+.hero-corner.right{right:0}
+.hero-corner .strip{position:absolute;top:30%;width:165%;height:clamp(24px,8.2vw,38px);background:url('/assets/brand/ribbon-strip.webp') center/auto 100% repeat-x;filter:drop-shadow(0 7px 9px rgba(0,0,0,.45))}
+.hero-corner.left .strip{left:30%;transform:translate(-50%,-50%) rotate(-45deg)}
+.hero-corner.right .strip{right:30%;transform:translate(50%,-50%) rotate(45deg)}
+.hero-ribbon-bow{position:absolute;top:-6px;right:0;width:clamp(96px,24vw,188px);height:auto;z-index:4;filter:drop-shadow(0 10px 14px rgba(0,0,0,.5));pointer-events:none}
+.hero-photo{position:relative;z-index:2;display:block;margin:0 auto;width:min(860px,94%);height:auto;border-radius:16px;box-shadow:0 18px 42px rgba(0,0,0,.55)}
+.hero-in{position:relative;padding:16px 18px 20px;max-width:1180px;margin:0 auto}
+.hero h1{font-size:3.2rem;font-weight:900;line-height:1.08;letter-spacing:-.5px;max-width:820px;color:var(--ink)}
+.hero .tag{font-size:1.12rem;margin-top:12px;max-width:680px;color:#243528}
+.slogan{display:inline-block;margin-top:16px;background:var(--yellow);color:#111;font-weight:900;padding:10px 20px;border-radius:999px;font-size:1.08rem;box-shadow:0 5px 16px rgba(0,0,0,.25)}
+.ftc-top{max-width:1180px;margin:12px auto 0;padding:0 18px;font-size:.92rem;color:#4a554d;font-weight:600}
+.wrap{max-width:1180px;margin:0 auto;padding:10px 18px 8px}
+.sec-title{font-size:2.05rem;font-weight:900;margin:24px 0 8px;color:var(--ink)}
+.sec-title::after{content:"";display:block;width:74px;height:6px;border-radius:3px;background:var(--yellow);margin-top:8px;box-shadow:0 0 0 2px rgba(20,92,43,.85)}
+.sec-sub{color:#435347;margin-bottom:14px;max-width:760px;font-size:1rem}
+.band{position:relative;border-radius:24px;overflow:hidden;margin:10px 0;box-shadow:0 16px 38px rgba(20,40,25,.22);background:#e9efe9}
+.photo-wrap{position:relative;overflow:hidden;background:#fff}
+.band img.photo{position:relative;width:100%;height:100%;object-fit:contain}
+.photo-shade{position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(to top,rgba(255,255,255,.55),rgba(255,255,255,0))}
+.price-pop{position:absolute;left:18px;bottom:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fff;border-radius:18px;padding:10px 18px 12px;box-shadow:0 12px 30px rgba(10,25,15,.35);border:3px solid var(--yellow)}
+.price-pop .price{font-size:2.15rem;font-weight:900;color:var(--green-d);line-height:1}
+.price-pop .was{font-size:1.15rem;color:#7a857c;text-decoration:line-through;font-weight:700}
+.price-pop .save{background:#c8102e;color:#fff;font-weight:900;font-size:1rem;padding:5px 13px;border-radius:999px;box-shadow:0 4px 12px rgba(200,16,46,.4)}
+.h-xl .photo-wrap{height:440px}.h-lg .photo-wrap{height:390px}.h-md .photo-wrap{height:340px}.h-sm .photo-wrap{height:290px}
+.band-body{position:relative;background:#fff;padding:13px 20px 15px;margin-top:0;border-radius:0 0 24px 24px}
+.band h3{font-size:1.5rem;font-weight:900;line-height:1.22;margin-bottom:6px}
+.band .note{color:#33453a;max-width:820px;font-size:1rem}
+.prov{font-size:.95rem;color:#4a554d;font-weight:600;margin-top:10px}
+.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;font-size:1.05rem;text-decoration:none;padding:14px 30px;border-radius:999px;box-shadow:0 6px 18px rgba(29,122,58,.4)}
+.buy:hover{background:var(--green-d)}
+.badge{display:inline-block;background:var(--green);color:#fff;font-weight:800;font-size:.95rem;padding:3px 11px;border-radius:999px;margin-bottom:8px;letter-spacing:.2px}
+.shareband{position:relative;border-radius:24px;overflow:hidden;margin:14px 0 6px;box-shadow:0 16px 38px rgba(20,40,25,.22);background:#e9efe9}
+.shareband>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shareband-in{position:relative;background:rgba(255,255,255,.94);border-radius:18px;margin:16px;padding:24px 22px;box-shadow:0 10px 26px rgba(20,40,25,.25)}
+.shareband h2{font-size:1.7rem;font-weight:900;line-height:1.2;margin-bottom:8px;color:var(--ink)}
+.shareband p{color:#33453a;max-width:720px}
 .bigshare{display:block;width:100%;margin-top:16px;background:var(--green);color:#fff;font-weight:900;font-size:1.15rem;padding:16px 24px;border:none;border-radius:999px;cursor:pointer;box-shadow:0 4px 14px rgba(29,122,58,.35);font-family:inherit}
 .bigshare:hover{background:var(--green-d)}
 .copied{display:none;margin-top:10px;font-weight:700;color:var(--green-d)}
 .sharegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:16px}
 .sharegrid a{display:block;text-align:center;background:var(--paper);border:2px solid var(--green);color:var(--green-d);font-weight:900;text-decoration:none;padding:13px 10px;border-radius:999px}
 .sharegrid a:hover{background:var(--green);color:#fff}
-.band{position:relative;border-radius:22px;overflow:hidden;margin:28px 0 6px;box-shadow:0 10px 30px rgba(20,40,25,.20);background-size:cover;background-position:center;min-height:250px;display:flex;align-items:flex-end;text-decoration:none}
-.band-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(255,255,255,.95) 0%,rgba(255,255,255,.55) 45%,rgba(255,255,255,0) 75%)}
-.band-in{position:relative;padding:24px;color:var(--ink)}
-.band h2{font-size:1.6rem;margin-bottom:6px}
-.band p{color:#243528;max-width:560px}
-.band .go{display:inline-block;margin-top:12px;font-weight:900;background:var(--green);color:#fff;padding:11px 20px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
-footer{background:#fff;margin-top:44px;border-top:6px solid var(--green)}
+.followband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:10px 0;text-decoration:none;box-shadow:0 12px 30px rgba(20,40,25,.2);background:#e9efe9}
+.followband img{width:100%;height:180px;object-fit:cover}
+.followband .fb-in{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:flex-end;gap:14px;padding:40px 20px 15px;background:linear-gradient(to top,rgba(255,255,255,.96) 0%,rgba(255,255,255,.9) 58%,rgba(255,255,255,0) 100%)}
+.followband .who{flex:1;min-width:0}
+.followband h3{font-size:1.45rem;font-weight:900;line-height:1.2;color:var(--ink)}
+.followband p{color:#33453a;font-size:.98rem}
+.followband .go{font-weight:900;background:var(--green);color:#fff;padding:10px 20px;border-radius:999px;white-space:nowrap;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+.followband.gold{border:3px solid var(--yellow)}
+.followband .go.gold{background:var(--yellow);color:#111;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.storeband{display:block;position:relative;border-radius:22px;overflow:hidden;margin:10px 0;text-decoration:none;box-shadow:0 12px 30px rgba(20,40,25,.2)}
+.storeband img{width:100%;height:260px;object-fit:cover}
+.storeband .sb-in{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;background:linear-gradient(to top,rgba(255,255,255,.95),rgba(255,255,255,0))}
+.storeband h3{font-size:1.6rem;font-weight:900;color:var(--ink)}
+.storeband p{color:#33453a;font-size:1rem}
+.storeband .go{display:inline-block;margin-top:10px;font-weight:900;background:var(--green);color:#fff;padding:11px 20px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
+footer{background:#ffffff;margin-top:28px;border-top:6px solid var(--green)}
 .foot-in{max-width:1180px;margin:0 auto;padding:28px 18px 34px}
 .foot-in .slogan{margin:0 0 12px}
-.fine{font-size:.85rem;color:#5a665d;max-width:860px;margin-top:10px}
+.fine{font-size:.85rem;color:#5a665d;max-width:820px;margin-top:10px}
 .foot-links{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
 .foot-links a{font-weight:700;text-decoration:none}
-@media (max-width:640px){.hero{min-height:400px}.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.hero-logo{width:170px}.row{padding:12px 14px}.row .go{padding:9px 14px}.sec-title{font-size:1.4rem}}
+.brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
+@media (max-width:640px){.hero-photo-wrap{padding:24px 12px}.hero h1{font-size:2.1rem}.hero-in{padding:12px 18px 14px}.slogan{margin-top:10px}.h-xl .photo-wrap{height:300px}.h-lg .photo-wrap{height:270px}.h-md .photo-wrap{height:245px}.price-pop{left:10px;bottom:10px;padding:8px 13px 9px;gap:8px;border-width:2px}.price-pop .price{font-size:1.6rem}.price-pop .was{font-size:1rem}.price-pop .save{font-size:.95rem}.band h3{font-size:1.28rem}.buy{padding:11px 24px;margin-top:9px}.band-body{padding:11px 16px 13px}.sec-title{margin:20px 0 6px;font-size:1.7rem}.followband img{height:140px}.followband .fb-in{padding:30px 14px 12px}.followband h3{font-size:1.2rem}.followband p{font-size:.92rem}.followband .go{padding:9px 15px}.storeband img{height:215px}.storeband h3{font-size:1.35rem}.shareband-in{margin:12px;padding:18px 16px}.shareband h2{font-size:1.4rem}
+.topnav{display:none}.topbar-in{padding:8px 14px}}
 </style>
 </head>
 <body>
@@ -95,36 +125,27 @@ footer{background:#fff;margin-top:44px;border-top:6px solid var(--green)}
 <a class="brand" href="/"><img class="brandlogo" src="/assets/brand/logo-painting.jpg" alt="Owners Inc. logo">Owners <span class="inc">Inc.</span></a>
 <nav class="topnav"><a href="/">Home</a><a href="/bookkeeping-services/">Bookkeeping</a><a href="/tools/">Tools</a><a href="/christmas-finds/">Christmas</a><a href="/kids-toys/">Kids Toys</a></nav>
 </div></div>
-
-<p class="ftc-top">Affiliate disclosure: Owners Inc. is an affiliate page. If you buy through a link on this page, Owners Inc. may earn a commission — and it costs you nothing extra; the price is the same as going straight to the store.</p>
-
-<header class="hero" style="background-image:url('/assets/christmas-finds/hero-hero-photo.jpg')">
-<div class="hero-shade"></div>
+<header class="hero">
+<div class="hero-photo-wrap">
+<img class="hero-lights" src="/assets/brand/hero-lights.jpg" alt="" aria-hidden="true">
+<div class="hero-glow" aria-hidden="true"></div>
+<div class="hero-corner left" aria-hidden="true"><div class="strip"></div></div>
+<div class="hero-corner right" aria-hidden="true"><div class="strip"></div></div>
+<img class="hero-photo" src="/assets/brand/logo-painting.jpg" alt="Owners Inc. painted logo — a golden cheese wedge over the words Owners Inc." fetchpriority="high">
+<img class="hero-ribbon-bow" src="/assets/brand/ribbon-bow.webp" alt="" aria-hidden="true">
+</div>
 <div class="hero-in">
-<img class="hero-logo" src="/assets/brand/logo-painting.jpg" alt="Owners Inc. painting logo — a golden cheese wedge over the words Owners Inc.">
 <h1>Real deals, checked by hand — and a sleep story every night.</h1>
 <p class="tag">Owners Inc. is Aaron's shop. Every find is checked and dated before it goes up, and there's a calm sleep story on YouTube every night. Follow along below — then pass this page to one friend. That's how the name gets out.</p>
 <span class="slogan">Owners Inc. Everybody's doing it.</span>
 </div>
 </header>
-
+<p class="ftc-top">Owners Inc. may earn a commission on purchases through our links — it never changes your price.</p>
 <main class="wrap">
 
-<h2 class="sec-title">Follow Owners Inc.</h2>
-<p class="sec-sub">One tap each. The Facebook group is the one that helps most right now — it's brand new and growing, and every member counts.</p>
-<div class="rows">
-<a class="row" href="https://www.youtube.com/@OwnersIncHQ" target="_blank" rel="noopener"><span class="who"><span class="name">YouTube</span><br><span class="sub">@OwnersIncHQ — deals, finds &amp; sleep stories</span></span><span class="go">Watch</span></a>
-<a class="row" href="https://www.youtube.com/@OwnersIncKids" target="_blank" rel="noopener"><span class="who"><span class="name">YouTube Kids</span><br><span class="sub">@OwnersIncKids — bedtime stories for little dreamers</span></span><span class="go">Watch</span></a>
-<a class="row" href="https://www.instagram.com/aaron59914" target="_blank" rel="noopener"><span class="who"><span class="name">Instagram</span><br><span class="sub">@aaron59914 — daily finds &amp; reels</span></span><span class="go">Follow</span></a>
-<a class="row" href="https://www.facebook.com/owners.inc.2026" target="_blank" rel="noopener"><span class="who"><span class="name">Facebook Page</span><br><span class="sub">Owners Inc. — posts &amp; updates</span></span><span class="go">Follow</span></a>
-<a class="row" href="https://www.facebook.com/groups/1329634792542874" target="_blank" rel="noopener"><span class="who"><span class="name">Facebook Group</span><br><span class="sub">Owners Inc. Daily Deals &amp; Finds — come be one of the first in</span></span><span class="go gold">Join</span></a>
-<a class="row" href="https://www.threads.com/@aaron59914" target="_blank" rel="noopener"><span class="who"><span class="name">Threads</span><br><span class="sub">@aaron59914</span></span><span class="go">Follow</span></a>
-<a class="row" href="https://www.tiktok.com/@owners.inc" target="_blank" rel="noopener"><span class="who"><span class="name">TikTok</span><br><span class="sub">@owners.inc</span></span><span class="go">Follow</span></a>
-<a class="row" href="https://ownersinc.substack.com" target="_blank" rel="noopener"><span class="who"><span class="name">Substack</span><br><span class="sub">The free weekly deals roundup, by email</span></span><span class="go">Subscribe</span></a>
-<a class="row" href="https://ownersinchq.com"><span class="who"><span class="name">The Stores</span><br><span class="sub">ownersinchq.com — every store, every find</span></span><span class="go">Shop</span></a>
-</div>
-
-<section class="sharebox" aria-labelledby="share-title">
+<section class="shareband" aria-labelledby="share-title">
+<img src="/assets/christmas-finds/hero-hero-photo.jpg" alt="" aria-hidden="true" loading="lazy">
+<div class="shareband-in">
 <h2 id="share-title">Pass it on</h2>
 <p>Know somebody who likes a straight deal, or a kid who needs a bedtime story? Send them this page. One share from you puts Owners Inc. in front of people we'd never reach on our own.</p>
 <button class="bigshare" id="shareBtn" type="button">Share this page</button>
@@ -135,15 +156,80 @@ footer{background:#fff;margin-top:44px;border-top:6px solid var(--green)}
 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fownersinchq.com%2Fshare%2F&amp;quote=My%20friend%20Aaron%20runs%20Owners%20Inc%20%E2%80%94%20real%20deals%2C%20checked%20by%20hand%2C%20and%20a%20sleep%20story%20every%20night.%20Take%20a%20look%3A" target="_blank" rel="noopener">Facebook</a>
 <a href="https://twitter.com/intent/tweet?text=My%20friend%20Aaron%20runs%20Owners%20Inc%20%E2%80%94%20real%20deals%2C%20checked%20by%20hand%2C%20and%20a%20sleep%20story%20every%20night.%20Take%20a%20look%3A&amp;url=https%3A%2F%2Fownersinchq.com%2Fshare%2F" target="_blank" rel="noopener">X</a>
 </div>
+</div>
 </section>
 
-<a class="band" href="/" style="background-image:url('/assets/tools/hero-media-generation-hero-real-tools-0-82e90293-0be2-4803-8eae-b887ff9329fc.jpg')">
-<span class="band-shade"></span>
-<span class="band-in">
-<h2>Shop the stores</h2>
-<p>Tools, toys, gaming, gifts, preparedness and more — every product checked, priced and dated.</p>
-<span class="go">See today's finds</span>
-</span>
+<h2 class="sec-title" id="deals">Today's best deals</h2>
+<p class="sec-sub">The biggest verified savings on the site right now — every price checked at the retailer on the date shown. Last updated Nov 20, 2026.</p>
+<section class="band h-xl">
+  <div class="photo-wrap"><img class="photo" src="/assets/family-gift-finds/card-sperry.jpg" alt="Sperry Boat Shoes" loading="lazy"><div class="photo-shade"></div><div class="price-pop"><span class="price">$46.97</span><span class="was">$95</span><span class="save">Save 51%</span></div></div>
+  <div class="band-body">
+    <span class="badge">Biggest saving on this page</span>
+    <h3>Sperry Boat Shoes</h3>
+    <p class="note">Grip on a wet deck, polish enough for dinner after the marina.</p>
+    <p class="prov">at Westmarine — checked Nov 10, 2026 · from <a href="/family-gift-finds/">Family Gift Finds</a></p>
+    <a class="buy" href="https://www.westmarine.com/sperry-men-s-7-seas-3-eye-boat-shoes-P020196333.html" target="_blank" rel="sponsored noopener">See it at Westmarine</a>
+  </div>
+</section>
+<section class="band h-md">
+  <div class="photo-wrap"><img class="photo" src="/assets/kids-toys/lego-classic.jpg" alt="LEGO Classic Creative Brick Box — 484 Pieces" loading="lazy"><div class="photo-shade"></div><div class="price-pop"><span class="price">$14.99</span><span class="was">$24.99</span><span class="save">Save 40%</span></div></div>
+  <div class="band-body">
+    <span class="badge">Freshest check — Nov 19, 2026</span>
+    <h3>LEGO Classic Creative Brick Box — 484 Pieces</h3>
+    <p class="note">No instructions needed, no franchise required — the safest toy buy on this page.</p>
+    <p class="prov">at Target — checked Nov 19, 2026 · from <a href="/kids-toys/">Kids Toys Finds</a></p>
+    <a class="buy" href="https://www.target.com/p/lego-classic-medium-creative-brick-box-building-toys-for-creative-play-kids-creative-kit-10696/-/A-16747750" target="_blank" rel="sponsored noopener">See it at Target</a>
+  </div>
+</section>
+<section class="band h-lg">
+  <div class="photo-wrap"><img class="photo" src="/assets/tools/product-p61.jpg" alt="Metabo HPT MultiVolt 18V Brushless 2-Tool Combo Kit (KC18DEXQBM)" loading="lazy"><div class="photo-shade"></div><div class="price-pop"><span class="price">$129</span><span class="was">$199</span><span class="save">Save 35%</span></div></div>
+  <div class="band-body">
+    <h3>Metabo HPT MultiVolt 18V Brushless 2-Tool Combo Kit (KC18DEXQBM)</h3>
+    <p class="note">Brushless hammer drill/driver + impact driver, (2) batteries, charger and soft case — $129 at Lowe&#x27;s, was $199.</p>
+    <p class="prov">at Lowe&#x27;s — checked Nov 16, 2026 · from <a href="/tools/">Tools &amp; Materials</a></p>
+    <a class="buy" href="https://www.lowes.com/pd/Metabo-HPT-MultiVolt-2-Tool-18-volt-Brushless-Power-Tool-Combo-Kit-with-Soft-Case-2-Li-ion-Batteries-Included-and-Charger-Included/5014248535" target="_blank" rel="sponsored noopener">See it at Lowe&#x27;s</a>
+  </div>
+</section>
+
+<h2 class="sec-title" id="follow">Follow Owners Inc.</h2>
+<p class="sec-sub">One tap each. The Facebook group is the one that helps most right now — it's brand new and growing, and every member counts.</p>
+
+<a class="followband" href="https://www.youtube.com/@OwnersIncHQ" target="_blank" rel="noopener">
+  <img src="/assets/tvs/hero-hero-bright.jpg" alt="" loading="lazy">
+  <span class="fb-in"><span class="who"><h3>YouTube</h3><p>@OwnersIncHQ — deals, finds &amp; sleep stories</p></span><span class="go">Watch</span></span>
+</a>
+<a class="followband" href="https://www.youtube.com/@OwnersIncKids" target="_blank" rel="noopener">
+  <img src="/assets/kids-toys/band-home-v6.jpg" alt="" loading="lazy">
+  <span class="fb-in"><span class="who"><h3>YouTube Kids</h3><p>@OwnersIncKids — bedtime stories for little dreamers</p></span><span class="go">Watch</span></span>
+</a>
+<a class="followband" href="https://www.instagram.com/aaron59914" target="_blank" rel="noopener">
+  <img src="/assets/beauty-finds/hero-prod-press-on-nails.webp" alt="" loading="lazy">
+  <span class="fb-in"><span class="who"><h3>Instagram</h3><p>@aaron59914 — daily finds &amp; reels</p></span><span class="go">Follow</span></span>
+</a>
+<a class="followband" href="https://www.facebook.com/owners.inc.2026" target="_blank" rel="noopener">
+  <img src="/assets/e-bikes/hero-fat.jpg" alt="" loading="lazy">
+  <span class="fb-in"><span class="who"><h3>Facebook Page</h3><p>Owners Inc. — posts &amp; updates</p></span><span class="go">Follow</span></span>
+</a>
+<a class="followband gold" href="https://www.facebook.com/groups/1329634792542874" target="_blank" rel="noopener">
+  <img src="/assets/family-gift-finds/band-home-v6.jpg" alt="" loading="lazy">
+  <span class="fb-in"><span class="who"><h3>Facebook Group</h3><p>Owners Inc. Daily Deals &amp; Finds — come be one of the first in</p></span><span class="go gold">Join</span></span>
+</a>
+<a class="followband" href="https://www.threads.com/@aaron59914" target="_blank" rel="noopener">
+  <img src="/assets/temu-finds/band-home-v5.jpg" alt="" loading="lazy">
+  <span class="fb-in"><span class="who"><h3>Threads</h3><p>@aaron59914</p></span><span class="go">Follow</span></span>
+</a>
+<a class="followband" href="https://www.tiktok.com/@owners.inc" target="_blank" rel="noopener">
+  <img src="/assets/electronics/band-home-v5.jpg" alt="" loading="lazy">
+  <span class="fb-in"><span class="who"><h3>TikTok</h3><p>@owners.inc</p></span><span class="go">Follow</span></span>
+</a>
+<a class="followband" href="https://ownersinc.substack.com" target="_blank" rel="noopener">
+  <img src="/assets/faith-finds/band-home-v6.jpg" alt="" loading="lazy">
+  <span class="fb-in"><span class="who"><h3>Substack</h3><p>The free weekly deals roundup, by email</p></span><span class="go">Subscribe</span></span>
+</a>
+
+<a class="storeband" href="/">
+  <img src="/assets/tools/band-home-v6.jpg" alt="Tools &amp; Materials at Owners Inc." loading="lazy">
+  <span class="sb-in"><h3>Shop the stores</h3><p>Tools, toys, gaming, gifts, preparedness and more — every product checked, priced and dated.</p><span class="go">See today's finds</span></span>
 </a>
 
 </main>
@@ -152,7 +238,7 @@ footer{background:#fff;margin-top:44px;border-top:6px solid var(--green)}
 <span class="slogan">Owners Inc. Everybody's doing it.</span>
 <nav class="foot-links"><a href="/">Home</a><a href="/bookkeeping-services/">Bookkeeping</a><a href="/tools/">Tools &amp; Materials</a><a href="/christmas-finds/">Christmas Finds</a><a href="/kids-toys/">Kids Toys</a></nav>
 <p class="fine">Affiliate disclosure: Owners Inc. is an affiliate page. If you buy through a link on this page, Owners Inc. may earn a commission — and it costs you nothing extra; the price is the same as going straight to the store. The store pays Owners Inc. a commission out of its own pocket for sending you — that's the whole affiliate deal, plain and simple. Prices and availability are checked on the dates shown and can change; the retailer's page is the final word.</p>
-<p class="fine">Questions? Call or text (651) 314-9387 or email hello@ownersinchq.com.</p>
+<p class="fine">Owners Inc. — a family-owned finds business in Hastings, Minnesota. Questions? Call (651) 314-9387 or email hello@ownersinchq.com.</p>
 </div></footer>
 
 <script>
