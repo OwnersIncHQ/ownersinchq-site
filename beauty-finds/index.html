@@ -435,6 +435,10 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 .foot-links a{font-weight:700;text-decoration:none}
 @media (max-width:640px){.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.band img.photo{height:300px}.price{font-size:1.3rem}}
 .brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
+
+.photo-frame{position:relative;overflow:hidden;background:#fff}
+.photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
+.band .photo-frame img.photo{position:relative;background:transparent}
 </style>
 </head>
 <body>
@@ -501,7 +505,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/beauty-finds/prod-cerave-cleanser.webp" alt="Hydrating Facial Cleanser" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/beauty-finds/prod-cerave-cleanser.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/beauty-finds/prod-cerave-cleanser.webp" alt="Hydrating Facial Cleanser" loading="lazy"></div>
   <div class="band-body">
     <h3>Hydrating Facial Cleanser</h3>
     <p class="note">CeraVe A non-foaming face cleanser sold for normal-to-dry skin, with a separate foaming version for normal-to-oily skin.</p>
@@ -510,7 +514,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/beauty-finds/prod-vanicream.webp" alt="Moisturizing Cream" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/beauty-finds/prod-vanicream.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/beauty-finds/prod-vanicream.webp" alt="Moisturizing Cream" loading="lazy"></div>
   <div class="band-body">
     <h3>Moisturizing Cream</h3>
     <p class="note">VanicreamA thick moisturizer sold in a pump tub, labeled fragrance-free.</p>
@@ -591,7 +595,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/beauty-finds/prod-versace-bright-crystal.webp" alt="Bright Crystal Eau de Toilette" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/beauty-finds/prod-versace-bright-crystal.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/beauty-finds/prod-versace-bright-crystal.webp" alt="Bright Crystal Eau de Toilette" loading="lazy"></div>
   <div class="band-body">
     <h3>Bright Crystal Eau de Toilette</h3>
     <p class="note">VersaceA long-running women&#x27;s eau de toilette sold in several bottle sizes.</p>
@@ -600,7 +604,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/beauty-finds/prod-nautica-voyage.webp" alt="Voyage Eau de Toilette" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/beauty-finds/prod-nautica-voyage.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/beauty-finds/prod-nautica-voyage.webp" alt="Voyage Eau de Toilette" loading="lazy"></div>
   <div class="band-body">
     <h3>Voyage Eau de Toilette</h3>
     <p class="note">NauticaA men&#x27;s cologne staple sold in drugstores and department stores alike, usually in a 3.4 oz bottle.</p>
@@ -654,7 +658,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/beauty-finds/prod-native-bodywash.webp" alt="Body Wash" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/beauty-finds/prod-native-bodywash.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/beauty-finds/prod-native-bodywash.webp" alt="Body Wash" loading="lazy"></div>
   <div class="band-body">
     <h3>Body Wash</h3>
     <p class="note">NativeA body wash sold in scents like Coconut &amp; Vanilla plus seasonal ones, labeled sulfate-free on the front.</p>

@@ -390,6 +390,10 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 .foot-links a{font-weight:700;text-decoration:none}
 @media (max-width:640px){.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.band img.photo{height:300px}.price{font-size:1.3rem}}
 .brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
+
+.photo-frame{position:relative;overflow:hidden;background:#fff}
+.photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
+.band .photo-frame img.photo{position:relative;background:transparent}
 </style>
 </head>
 <body>
@@ -411,7 +415,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <p class="sec-sub">Every find below shows the price, the store, and the date we checked it. Prices move — the store page always has the final word.</p>
 
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-rope-tug.jpg" alt="Rope Tug Toys" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-rope-tug.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-rope-tug.jpg" alt="Rope Tug Toys" loading="lazy"></div>
   <div class="band-body">
     <h3>Rope Tug Toys</h3>
     <p class="note">Braided cotton ropes for tug-of-war and fetch — great for burning energy and keeping teeth busy. Replace it when it starts to fray. Check price on Temu → </p>
@@ -420,7 +424,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-chew-bone.jpg" alt="Tough Chew Bones" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-chew-bone.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-chew-bone.jpg" alt="Tough Chew Bones" loading="lazy"></div>
   <div class="band-body">
     <h3>Tough Chew Bones</h3>
     <p class="note">Hard rubber and nylon chews built for power chewers. Size up if your dog destroys toys fast — and always supervise a new chew the first few times. Check price on Temu → </p>
@@ -438,7 +442,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-plush-toys.webp" alt="Squeaky Plush Toys" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-plush-toys.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-plush-toys.webp" alt="Squeaky Plush Toys" loading="lazy"></div>
   <div class="band-body">
     <h3>Squeaky Plush Toys</h3>
     <p class="note">Soft, squeaky, and made to be carried around like a trophy. Best for gentle chewers — a determined shredder will have the stuffing out in minutes. Check price on Temu → </p>
@@ -456,7 +460,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-catnip-balls.webp" alt="Catnip &amp; Crinkle Balls" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-catnip-balls.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-catnip-balls.webp" alt="Catnip &amp; Crinkle Balls" loading="lazy"></div>
   <div class="band-body">
     <h3>Catnip &amp; Crinkle Balls</h3>
     <p class="note">Light, noisy, and perfect for 2 a.m. Buy the multi-pack — half of them will live under the couch within a week. zoomies. Watch out for: half of them will live under the couch within a week, so buy the multi-pack. Check price on Temu → </p>
@@ -474,7 +478,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-litter-box.jpg" alt="Litter Box Basics" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-litter-box.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-litter-box.jpg" alt="Litter Box Basics" loading="lazy"></div>
   <div class="band-body">
     <h3>Litter Box Basics</h3>
     <p class="note">The unglamorous shelf that decides whether the whole setup works. Box first: big enough for your cat to turn around in, with sides matched to how much they kick. Clumping litter lifts out clean for daily scooping; non-clumping swaps out whole.</p>
@@ -483,7 +487,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-wire-crate.jpg" alt="Wire Dog Crates" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-wire-crate.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-wire-crate.jpg" alt="Wire Dog Crates" loading="lazy"></div>
   <div class="band-body">
     <h3>Wire Dog Crates</h3>
     <p class="note">Folding wire kennels with a divider panel, so one crate grows with your puppy. Double latches and a slide-out tray make cleanups painless. Check price on Temu → </p>
@@ -492,7 +496,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-crate-mat.webp" alt="Kennel Cushions &amp; Crate Mats" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-crate-mat.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-crate-mat.webp" alt="Kennel Cushions &amp; Crate Mats" loading="lazy"></div>
   <div class="band-body">
     <h3>Kennel Cushions &amp; Crate Mats</h3>
     <p class="note">The part that turns a crate into a den. Washable, padded mats sized to standard crates — get two, so one&#x27;s ready while the other&#x27;s in the wash. Check price on Temu → </p>
@@ -519,7 +523,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-dog-treats.jpg" alt="Dog Biscuits &amp; Training Treats" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-dog-treats.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-dog-treats.jpg" alt="Dog Biscuits &amp; Training Treats" loading="lazy"></div>
   <div class="band-body">
     <h3>Dog Biscuits &amp; Training Treats</h3>
     <p class="note">Small, low-calorie training treats for reps, and crunchy biscuits for the cookie jar. Check the ingredient list — meat first is a good sign. Check price on Temu → </p>
@@ -528,7 +532,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-cat-treats.webp" alt="Cat Treats &amp; Lickables" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-cat-treats.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-cat-treats.webp" alt="Cat Treats &amp; Lickables" loading="lazy"></div>
   <div class="band-body">
     <h3>Cat Treats &amp; Lickables</h3>
     <p class="note">Crunchy treats and squeeze-up lickables — the fastest way to become your cat&#x27;s favorite human. A few a day is plenty; they&#x27;re treats, not dinner. Check price on Temu → </p>
@@ -537,7 +541,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-puzzle-feeder.jpg" alt="Puzzle Feeders &amp; Enrichment" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-puzzle-feeder.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-puzzle-feeder.jpg" alt="Puzzle Feeders &amp; Enrichment" loading="lazy"></div>
   <div class="band-body">
     <h3>Puzzle Feeders &amp; Enrichment</h3>
     <p class="note">Slow-feeder bowls, snuffle mats and lick mats turn a two-minute meal into ten minutes of nose work for dogs and cats alike. Start easy — a puzzle they can&#x27;t solve is just a locked fridge — and step the difficulty up as they get it.</p>
@@ -564,7 +568,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-grooming-brush.webp" alt="Brushes &amp; Deshedding Tools" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-grooming-brush.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-grooming-brush.webp" alt="Brushes &amp; Deshedding Tools" loading="lazy"></div>
   <div class="band-body">
     <h3>Brushes &amp; Deshedding Tools</h3>
     <p class="note">Self-cleaning slicker brushes and deshedding tools that pull loose fur before it lands on your clothes. Five minutes a week beats a fur-covered couch. Check price on Temu → </p>
@@ -573,7 +577,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/pet-finds/product-wood-chews.jpg" alt="Wood Chew Toy Bundles" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/pet-finds/product-wood-chews.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/pet-finds/product-wood-chews.jpg" alt="Wood Chew Toy Bundles" loading="lazy"></div>
   <div class="band-body">
     <h3>Wood Chew Toy Bundles</h3>
     <p class="note">Natural wood chews, woven grass balls and loofah pieces for rabbits, guinea pigs and hamsters. Their teeth never stop growing — chews aren&#x27;t optional. Check price on Temu → </p>

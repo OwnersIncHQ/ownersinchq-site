@@ -480,6 +480,10 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 .foot-links a{font-weight:700;text-decoration:none}
 @media (max-width:640px){.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.band img.photo{height:300px}.price{font-size:1.3rem}}
 .brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
+
+.photo-frame{position:relative;overflow:hidden;background:#fff}
+.photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
+.band .photo-frame img.photo{position:relative;background:transparent}
 </style>
 </head>
 <body>
@@ -501,7 +505,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <p class="sec-sub">Every find below shows the price, the store, and the date we checked it. Prices move — the store page always has the final word.</p>
 
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/kjv-large-print.jpg" alt="KJV Large-Print Bible — Imitation Leather, Burgundy" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/kjv-large-print.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/kjv-large-print.jpg" alt="KJV Large-Print Bible — Imitation Leather, Burgundy" loading="lazy"></div>
   <div class="band-body">
     <h3>KJV Large-Print Bible — Imitation Leather, Burgundy</h3>
     <p class="note">The King James text set in large, comfortable type — made for daily reading without straining. Look for 12-point type or larger, a lay-flat binding, and a cover that will take years of use.</p>
@@ -510,7 +514,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/kjv-study.jpg" alt="KJV Study Bible — Full-Color, Saddle Brown (Holman)" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/kjv-study.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/kjv-study.jpg" alt="KJV Study Bible — Full-Color, Saddle Brown (Holman)" loading="lazy"></div>
   <div class="band-body">
     <h3>KJV Study Bible — Full-Color, Saddle Brown (Holman)</h3>
     <p class="note">The full KJV text with study notes, maps, cross-references, and background articles alongside it. The pick for readers who want help understanding what they&#x27;re reading, right on the page.</p>
@@ -546,7 +550,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/one-year-bible.jpg" alt="The One Year Bible KJV — Tyndale" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/one-year-bible.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/one-year-bible.jpg" alt="The One Year Bible KJV — Tyndale" loading="lazy"></div>
   <div class="band-body">
     <h3>The One Year Bible KJV — Tyndale</h3>
     <p class="note">The whole Bible arranged into dated daily readings — Old Testament, New Testament, Psalms, and Proverbs each day — so you read through it in a year without planning a thing.</p>
@@ -555,7 +559,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/hymnal.jpg" alt="Lutheran Service Book — Deluxe Edition" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/hymnal.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/hymnal.jpg" alt="Lutheran Service Book — Deluxe Edition" loading="lazy"></div>
   <div class="band-body">
     <h3>Lutheran Service Book — Deluxe Edition</h3>
     <p class="note">A traditional hardcover hymnal with the classic hymns in four-part harmony. For the home piano, family singing, and anyone whose church went to screens and misses the book.</p>
@@ -564,7 +568,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/bible-encyclopedia.jpg" alt="New International Encyclopedia of Bible Characters" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/bible-encyclopedia.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/bible-encyclopedia.jpg" alt="New International Encyclopedia of Bible Characters" loading="lazy"></div>
   <div class="band-body">
     <h3>New International Encyclopedia of Bible Characters</h3>
     <p class="note">People, places, customs, and terms of the Bible explained in one illustrated reference volume. The book that answers the questions a sermon raises.</p>
@@ -573,7 +577,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/morning-evening.jpg" alt="Morning and Evening — Spurgeon&#x27;s 365-Day Devotional" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/morning-evening.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/morning-evening.jpg" alt="Morning and Evening — Spurgeon&#x27;s 365-Day Devotional" loading="lazy"></div>
   <div class="band-body">
     <h3>Morning and Evening — Spurgeon&#x27;s 365-Day Devotional</h3>
     <p class="note">Charles Spurgeon&#x27;s beloved devotional: a short reading for every morning and every evening of the year. In print for well over a century because the readings hold up.</p>
@@ -582,7 +586,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/prayer-journal.jpg" alt="Faith Love Forgiveness Devotional Journal — DaySpring" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/prayer-journal.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/prayer-journal.jpg" alt="Faith Love Forgiveness Devotional Journal — DaySpring" loading="lazy"></div>
   <div class="band-body">
     <h3>Faith Love Forgiveness Devotional Journal — DaySpring</h3>
     <p class="note">Dated pages with prompts for prayer requests, gratitude, and answered prayers — so a year from now you can see the record. A thoughtful confirmation or new-believer gift.</p>
@@ -591,7 +595,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/couples-devotional.jpg" alt="The Meaning of Marriage: A Couple's Devotional" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/couples-devotional.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/couples-devotional.jpg" alt="The Meaning of Marriage: A Couple's Devotional" loading="lazy"></div>
   <div class="band-body">
     <h3>The Meaning of Marriage: A Couple's Devotional</h3>
     <p class="note">One short reading a day written for two people to read together, with a question or prayer to close. Built for five minutes at the kitchen table or bedside.</p>
@@ -600,7 +604,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/teens-devotional.jpg" alt="Press Pause — Teen Devotional" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/teens-devotional.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/teens-devotional.jpg" alt="Press Pause — Teen Devotional" loading="lazy"></div>
   <div class="band-body">
     <h3>Press Pause — Teen Devotional</h3>
     <p class="note">Short daily readings written in plain language for teenagers — real-life topics, one page a day, no lectures. Sized for a backpack and a busy school year.</p>
@@ -618,7 +622,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/gift-bible-occasions.jpg" alt="NRSV Catholic Bible — Gift Edition" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/gift-bible-occasions.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/gift-bible-occasions.jpg" alt="NRSV Catholic Bible — Gift Edition" loading="lazy"></div>
   <div class="band-body">
     <h3>NRSV Catholic Bible — Gift Edition</h3>
     <p class="note">Presentation editions made for the occasion, with a presentation page for the name and date. Pick the edition for the day — baptism, confirmation, and first communion editions differ in size and helps.</p>
@@ -627,7 +631,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/mustard-seed-necklace.jpg" alt="Mustard Seed Necklace" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/mustard-seed-necklace.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/mustard-seed-necklace.jpg" alt="Mustard Seed Necklace" loading="lazy"></div>
   <div class="band-body">
     <h3>Mustard Seed Necklace</h3>
     <p class="note">A single mustard seed in a clear pendant — a small, wearable reminder that faith doesn&#x27;t have to be big to be real. A longtime first-communion and confirmation gift.</p>
@@ -636,7 +640,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/scripture-cards.jpg" alt="Praying for You Boxed Cards — 12 KJV Cards" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/scripture-cards.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/scripture-cards.jpg" alt="Praying for You Boxed Cards — 12 KJV Cards" loading="lazy"></div>
   <div class="band-body">
     <h3>Praying for You Boxed Cards — 12 KJV Cards</h3>
     <p class="note">A boxed assortment of cards with verses for encouragement, sympathy, thanks, and birthdays. The sympathy card you write at midnight is the one you already had in the drawer.</p>
@@ -645,7 +649,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/family-game.jpg" alt="Choose Your Clues Card Game" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/family-game.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/family-game.jpg" alt="Choose Your Clues Card Game" loading="lazy"></div>
   <div class="band-body">
     <h3>Choose Your Clues Card Game</h3>
     <p class="note">Bible-trivia and story-based games the whole family can play together — questions scaled so kids and grandparents both have a game. A gift that gets used the day it&#x27;s opened.</p>
@@ -654,7 +658,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/wedding-gift-bible.jpg" alt="NABRE Catholic Wedding Edition Bible — White Bonded Leather" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/wedding-gift-bible.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/wedding-gift-bible.jpg" alt="NABRE Catholic Wedding Edition Bible — White Bonded Leather" loading="lazy"></div>
   <div class="band-body">
     <h3>NABRE Catholic Wedding Edition Bible — White Bonded Leather</h3>
     <p class="note">A keepsake edition with a presentation page for the couple&#x27;s names and wedding date, made to be kept and used for decades. The wedding gift that outlasts everything else on the registry.</p>
@@ -663,7 +667,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/wooden-cross.jpg" alt="Flower and Beaded Wood Wall Cross" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/wooden-cross.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/wooden-cross.jpg" alt="Flower and Beaded Wood Wall Cross" loading="lazy"></div>
   <div class="band-body">
     <h3>Flower and Beaded Wood Wall Cross</h3>
     <p class="note">A solid-wood cross for a wall at home or at church, in sizes from a hallway piece to a statement over a mantel. Check the hanging hardware before you buy — the good ones include it.</p>
@@ -672,7 +676,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/scripture-canvas.jpg" alt="Living Faith Framed Scripture Art" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/scripture-canvas.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/scripture-canvas.jpg" alt="Living Faith Framed Scripture Art" loading="lazy"></div>
   <div class="band-body">
     <h3>Living Faith Framed Scripture Art</h3>
     <p class="note">Canvas and framed prints carrying a verse in lettering designed to be read across a room. Measure your wall first — these range from small shelf pieces to full mantel widths.</p>
@@ -681,7 +685,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/votive-candles.jpg" alt="Hobnail Votive Candle Holder" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/votive-candles.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/votive-candles.jpg" alt="Hobnail Votive Candle Holder" loading="lazy"></div>
   <div class="band-body">
     <h3>Hobnail Votive Candle Holder</h3>
     <p class="note">Votive and altar candles in home-size quantities — for a prayer corner, a table centerpiece, or a small chapel. Churches buying by the case: see the For Churches section instead.</p>
@@ -708,7 +712,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/worship-album.jpg" alt="Until the Whole World Hears — Listening CD" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/worship-album.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/worship-album.jpg" alt="Until the Whole World Hears — Listening CD" loading="lazy"></div>
   <div class="band-body">
     <h3>Until the Whole World Hears — Listening CD</h3>
     <p class="note">Current worship music on CD or digital download — the songs churches are singing now, for the car and the kitchen. Check the format before you buy: some releases are digital-only.</p>
@@ -717,7 +721,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/accompaniment.jpg" alt="Lutheran Service Book: Hymn Accompaniment Edition" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/accompaniment.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/accompaniment.jpg" alt="Lutheran Service Book: Hymn Accompaniment Edition" loading="lazy"></div>
   <div class="band-body">
     <h3>Lutheran Service Book: Hymn Accompaniment Edition</h3>
     <p class="note">Accompaniment editions and choir resources that match the standard hymnals — spiral-bound to lie flat on the piano, with arrangements a volunteer accompanist can actually play.</p>
@@ -726,7 +730,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/faith-finds/piano-worship.jpg" alt="100 Piano Hymns — 3-CD Set" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/faith-finds/piano-worship.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/faith-finds/piano-worship.jpg" alt="100 Piano Hymns — 3-CD Set" loading="lazy"></div>
   <div class="band-body">
     <h3>100 Piano Hymns — 3-CD Set</h3>
     <p class="note">Hymns and worship songs played as solo piano instrumentals — for quiet mornings, reading, prayer time, and waiting rooms. No vocals, nothing jarring.</p>

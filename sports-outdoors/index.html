@@ -300,6 +300,10 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 .foot-links a{font-weight:700;text-decoration:none}
 @media (max-width:640px){.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.band img.photo{height:300px}.price{font-size:1.3rem}}
 .brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
+
+.photo-frame{position:relative;overflow:hidden;background:#fff}
+.photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
+.band .photo-frame img.photo{position:relative;background:transparent}
 </style>
 </head>
 <body>
@@ -321,7 +325,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <p class="sec-sub">Every find below shows the price, the store, and the date we checked it. Prices move — the store page always has the final word.</p>
 
 <section class="band">
-  <img class="photo" src="/assets/sports-outdoors/prod-00.jpg" alt="Bowflex SelectTech 90 Adjustable Dumbbells" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/sports-outdoors/prod-00.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/sports-outdoors/prod-00.jpg" alt="Bowflex SelectTech 90 Adjustable Dumbbells" loading="lazy"></div>
   <div class="band-body">
     <h3>Bowflex SelectTech 90 Adjustable Dumbbells</h3>
     
@@ -330,7 +334,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/sports-outdoors/prod-01.jpg" alt="Technogym Power Bands (Resistance Bands)" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/sports-outdoors/prod-01.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/sports-outdoors/prod-01.jpg" alt="Technogym Power Bands (Resistance Bands)" loading="lazy"></div>
   <div class="band-body">
     <h3>Technogym Power Bands (Resistance Bands)</h3>
     
@@ -393,7 +397,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/sports-outdoors/prod-08.jpg" alt="Cressi Focus Mask" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/sports-outdoors/prod-08.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/sports-outdoors/prod-08.jpg" alt="Cressi Focus Mask" loading="lazy"></div>
   <div class="band-body">
     <h3>Cressi Focus Mask</h3>
     
@@ -402,7 +406,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/sports-outdoors/prod-09.jpg" alt="Eskimo FatFish 450i Pop-Up Ice Shelter" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/sports-outdoors/prod-09.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/sports-outdoors/prod-09.jpg" alt="Eskimo FatFish 450i Pop-Up Ice Shelter" loading="lazy"></div>
   <div class="band-body">
     <h3>Eskimo FatFish 450i Pop-Up Ice Shelter</h3>
     

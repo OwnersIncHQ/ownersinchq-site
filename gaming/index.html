@@ -285,6 +285,10 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 .foot-links a{font-weight:700;text-decoration:none}
 @media (max-width:640px){.hero h1{font-size:1.8rem}.hero-shade{background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 45%,rgba(255,255,255,.55) 68%,rgba(255,255,255,.18) 88%,rgba(255,255,255,0) 100%)}.band img.photo{height:300px}.price{font-size:1.3rem}}
 .brand{display:inline-flex;align-items:center;gap:10px}.brandlogo{height:44px;width:auto;border-radius:6px;display:block;box-shadow:0 1px 6px rgba(0,0,0,.25)}
+
+.photo-frame{position:relative;overflow:hidden;background:#fff}
+.photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
+.band .photo-frame img.photo{position:relative;background:transparent}
 </style>
 </head>
 <body>
@@ -306,7 +310,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <p class="sec-sub">Every find below shows the price, the store, and the date we checked it. Prices move — the store page always has the final word.</p>
 
 <section class="band">
-  <img class="photo" src="/assets/gaming/find-humble-choice.jpg" alt="Humble Choice — a month of games for the price of a pizza" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/find-humble-choice.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/find-humble-choice.jpg" alt="Humble Choice — a month of games for the price of a pizza" loading="lazy"></div>
   <div class="band-body">
     <h3>Humble Choice — a month of games for the price of a pizza</h3>
     <p class="note">Every month Humble drops a bundle of PC games (Steam keys) for one flat price. You keep every game forever, even if you cancel the next day. It&#x27;s the single best dollars-per-game deal in PC gaming, and it&#x27;s the first thing we&#x27;d put in front of anybody starting a library.</p>
@@ -315,7 +319,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/gaming/find-humble-publisher.jpg" alt="Humble Publisher Bundle (Top Tier)" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/find-humble-publisher.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/find-humble-publisher.jpg" alt="Humble Publisher Bundle (Top Tier)" loading="lazy"></div>
   <div class="band-body">
     <h3>Humble Publisher Bundle (Top Tier)</h3>
     <p class="note">One publisher&#x27;s whole shelf at a steep cut — the Capcom bundle in the photo is the idea. buying solo · Humble Bundle</p>
@@ -324,7 +328,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/gaming/find-fanatical-byo.jpg" alt="Fanatical Build-Your-Own Bundle" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/find-fanatical-byo.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/find-fanatical-byo.jpg" alt="Fanatical Build-Your-Own Bundle" loading="lazy"></div>
   <div class="band-body">
     <h3>Fanatical Build-Your-Own Bundle</h3>
     <p class="note">buying solo · Fanatical</p>
@@ -333,7 +337,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/gaming/find-gmg-bundle.jpg" alt="Green Man Gaming Mystery/XP Bundle" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/find-gmg-bundle.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/find-gmg-bundle.jpg" alt="Green Man Gaming Mystery/XP Bundle" loading="lazy"></div>
   <div class="band-body">
     <h3>Green Man Gaming Mystery/XP Bundle</h3>
     <p class="note">A grab-bag of keys priced like a bundle. buying solo · Green Man Gaming</p>
@@ -342,7 +346,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/gaming/find-gamepass.jpg" alt="Xbox Game Pass Ultimate — 1 Month Code" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/find-gamepass.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/find-gamepass.jpg" alt="Xbox Game Pass Ultimate — 1 Month Code" loading="lazy"></div>
   <div class="band-body">
     <h3>Xbox Game Pass Ultimate — 1 Month Code</h3>
     <p class="note">Tier 3 · KeyshopThe full Game Pass library plus EA Play, delivered as a redeemable code.</p>
@@ -351,7 +355,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/gaming/gift-cards.webp" alt="Nintendo eShop Gift Card — $20" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/gift-cards.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/gift-cards.webp" alt="Nintendo eShop Gift Card — $20" loading="lazy"></div>
   <div class="band-body">
     <h3>Nintendo eShop Gift Card — $20</h3>
     <p class="note">Tier 3 · KeyshopFace value, emailed as a code.</p>
@@ -360,7 +364,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/gaming/find-steam-card.png" alt="Steam Wallet Gift Card — $20" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/find-steam-card.png" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/find-steam-card.png" alt="Steam Wallet Gift Card — $20" loading="lazy"></div>
   <div class="band-body">
     <h3>Steam Wallet Gift Card — $20</h3>
     <p class="note">Tier 3 · KeyshopFace value, emailed as a code.</p>
@@ -369,7 +373,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/gaming/find-xbox-card.jpg" alt="Xbox Gift Card — $25" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/find-xbox-card.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/find-xbox-card.jpg" alt="Xbox Gift Card — $25" loading="lazy"></div>
   <div class="band-body">
     <h3>Xbox Gift Card — $25</h3>
     <p class="note">Tier 3 · KeyshopFace value, emailed as a code.</p>
@@ -378,7 +382,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/gaming/find-ps-card.jpg" alt="PlayStation Store Gift Card — $25" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/find-ps-card.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/find-ps-card.jpg" alt="PlayStation Store Gift Card — $25" loading="lazy"></div>
   <div class="band-body">
     <h3>PlayStation Store Gift Card — $25</h3>
     <p class="note">Tier 3 · KeyshopFace value, emailed as a code.</p>
@@ -405,7 +409,7 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
   </div>
 </section>
 <section class="band">
-  <img class="photo" src="/assets/gaming/find-razer-mouse.webp" alt="Razer Cobra Pro Wireless Gaming Mouse" loading="lazy">
+  <div class="photo-frame"><img class="photo-bg" src="/assets/gaming/find-razer-mouse.webp" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/gaming/find-razer-mouse.webp" alt="Razer Cobra Pro Wireless Gaming Mouse" loading="lazy"></div>
   <div class="band-body">
     <h3>Razer Cobra Pro Wireless Gaming Mouse</h3>
     <p class="note">Tier 1 · Official storeA 77 g wireless gaming mouse with a Focus Pro 30K optical sensor and 11-zone Chroma RGB underglow.</p>
