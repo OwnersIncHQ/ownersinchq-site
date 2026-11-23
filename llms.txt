@@ -59,6 +59,7 @@ Every find shows its price, its store, and the date the price was checked.
 - Office Supplies: https://ownersinchq.com/office-supplies/
 - Landscaping Supplies: https://ownersinchq.com/landscaping-supplies/
 - Tax Prep & Money Tools: https://ownersinchq.com/tax-prep/
+- Finance Finds: https://ownersinchq.com/finance-finds/
 - Home & Kitchen Finds: https://ownersinchq.com/home-kitchen-finds/
 - Deck Supplies: https://ownersinchq.com/deck-supplies/
 - Refrigerators: https://ownersinchq.com/refrigerators/
