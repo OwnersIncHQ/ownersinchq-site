@@ -425,69 +425,44 @@
   }
  ]
 }</script>
-<style>
-:root{--green:#1d7a3a;--green-d:#145c2b;--yellow:#ffd21f;--ink:#14201a;--paper:#f7f7f2;--card:#ffffff}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
-img{display:block;max-width:100%}
-a{color:var(--green-d)}
-.topbar{position:sticky;top:0;z-index:50;background:#ffffff;box-shadow:0 2px 14px rgba(0,0,0,.10);transition:transform .35s ease}
-.topbar.hide{transform:translateY(-110%)}
-.topbar-in{max-width:1180px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.brand{font-weight:900;font-size:1.25rem;color:var(--ink);text-decoration:none;letter-spacing:.3px;display:inline-flex;align-items:center;gap:10px}
-.brand .inc{color:var(--green)}
-.brandlogo{height:44px;width:auto;border-radius:6px;box-shadow:0 1px 6px rgba(0,0,0,.25)}
-.topnav{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}
-.topnav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--ink)}
-.topnav a:hover{color:var(--green)}
-.hero{background:var(--paper)}
-.hero-photo-wrap{position:relative;overflow:hidden;background:#0c0f0c;padding:134px 18px}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-photo{position:relative;display:block;margin:0 auto;width:min(574px,46%);filter:drop-shadow(0 18px 28px rgba(0,0,0,.55))}
-.hero-in{position:relative;max-width:1180px;margin:0 auto;padding:20px 18px 6px;width:100%}
-.hero h1{font-size:2.5rem;line-height:1.12;max-width:760px;color:var(--ink)}
-.hero .tag{font-size:1.12rem;margin-top:10px;max-width:680px;color:#243528}
-.slogan{display:inline-block;margin-top:14px;background:var(--yellow);color:#111;font-weight:900;padding:7px 14px;border-radius:999px;font-size:.98rem;box-shadow:0 3px 10px rgba(0,0,0,.18)}
-.jumprow{max-width:1180px;margin:16px auto 0;padding:0 18px;display:flex;gap:10px;flex-wrap:wrap}
-.jump{flex:1 1 auto;text-align:center;background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 10px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.30);font-size:.98rem}
-.jump.alt{background:#fff;color:var(--green-d) !important;border:2px solid var(--green)}
-.ftc-top{max-width:1180px;margin:14px auto 0;padding:0 18px;font-size:.85rem;color:#4a554d}
-.wrap{max-width:1180px;margin:0 auto;padding:10px 18px 8px}
-.sec-title{font-size:1.65rem;margin:30px 0 6px;color:var(--ink)}
-.sec-sub{color:#435347;margin-bottom:14px;max-width:760px}
-.band{position:relative;border-radius:24px;overflow:hidden;margin:16px 0;box-shadow:0 16px 38px rgba(20,40,25,.22);background:#cfd8cf}
-.photo-frame{position:relative;overflow:hidden}
-.photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(22px) brightness(1.03);transform:scale(1.3)}
-.photo-sharp{position:absolute;left:0;right:0;top:0;height:var(--sf,66%);overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 88%,transparent 100%);mask-image:linear-gradient(to bottom,#000 88%,transparent 100%)}
-.photo-sharp img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--op,50% 50%)}
-
-.band-overlay{position:absolute;left:0;right:0;bottom:0;padding:72px 22px 18px;background:linear-gradient(to top,rgba(255,255,255,.98) 0%,rgba(255,255,255,.96) 38%,rgba(255,255,255,.85) 60%,rgba(255,255,255,.4) 82%,rgba(255,255,255,0) 100%)}
-.band h3{font-size:1.3rem;line-height:1.25;margin-bottom:6px}
-.band h3 .aud{color:#435347;font-weight:700;font-size:1.05rem}
-.band .note{color:#33453a;max-width:820px}
-.price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:12px}
-.price{font-size:1.55rem;font-weight:900;color:var(--green-d)}
-.was{font-size:1.05rem;color:#7a857c;text-decoration:line-through}
-.save{background:#c8102e;color:#fff;font-weight:800;font-size:.85rem;padding:3px 10px;border-radius:999px}
-.prov{font-size:.9rem;color:#4a554d}
-.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 24px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}
-.buy:hover{background:var(--green-d)}
-footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
-.foot-in{max-width:1180px;margin:0 auto;padding:28px 18px 34px}
-.foot-in .slogan{margin:0 0 12px}
-.fine{font-size:.85rem;color:#5a665d;max-width:820px;margin-top:10px}
-.foot-links{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}
-.foot-links a{font-weight:700;text-decoration:none}
-@media (max-width:640px){.hero h1{font-size:1.8rem}.hero-photo-wrap{padding:64px 12px}.hero-photo{width:65.5%}.band-overlay{padding:56px 16px 14px}.band h3{font-size:1.18rem}.band .note{font-size:.94rem;line-height:1.45}.price-row{margin-top:8px;gap:9px}.buy{margin-top:9px;padding:10px 20px}.price{font-size:1.3rem}.topnav{display:none}.jump{font-size:.9rem;padding:11px 6px}}
-@media (min-width:641px){.photo-frame{aspect-ratio:auto !important;width:100%;height:600px;background:#fdfdfa}.photo-sharp{height:470px}.photo-sharp img.photo{object-fit:contain;object-position:50% 0%}.photo-frame .photo-bg{display:none}}
-.code-note{display:block;margin-top:8px;background:#ffd21f;color:#111;font-weight:700;font-size:.9rem;line-height:1.45;padding:7px 11px;border-radius:8px;max-width:560px}
+<style>:root{--green:#1d7a3a;--green-d:#145c2b;--yellow:#ffd21f;--ink:#14201a;--paper:#f7f7f2;--card:#ffffff}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}img{display:block;max-width:100%}a{color:var(--green-d)}.topbar{position:sticky;top:0;z-index:50;background:#ffffff;box-shadow:0 2px 14px rgba(0,0,0,.10);transition:transform .35s ease}.topbar.hide{transform:translateY(-110%)}.topbar-in{max-width:1180px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}.brand{font-weight:900;font-size:1.25rem;color:var(--ink);text-decoration:none;letter-spacing:.3px;display:inline-flex;align-items:center;gap:10px}.brand .inc{color:var(--green)}.brandlogo{height:44px;width:auto;border-radius:6px;box-shadow:0 1px 6px rgba(0,0,0,.25)}.topnav{display:flex;gap:14px;flex-wrap:wrap;margin-left:auto}.topnav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--ink)}.topnav a:hover{color:var(--green)}.hero{background:var(--paper)}.hero-photo-wrap{position:relative;overflow:hidden;background:#0c0f0c;padding:134px 18px}.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero-photo{position:relative;display:block;margin:0 auto;width:min(574px,46%);filter:drop-shadow(0 18px 28px rgba(0,0,0,.55))}.hero-in{position:relative;max-width:1180px;margin:0 auto;padding:20px 18px 6px;width:100%}.hero h1{font-size:2.5rem;line-height:1.12;max-width:760px;color:var(--ink)}.hero .tag{font-size:1.12rem;margin-top:10px;max-width:680px;color:#243528}.slogan{display:inline-block;margin-top:14px;background:var(--yellow);color:#111;font-weight:900;padding:7px 14px;border-radius:999px;font-size:.98rem;box-shadow:0 3px 10px rgba(0,0,0,.18)}.jumprow{max-width:1180px;margin:16px auto 0;padding:0 18px;display:flex;gap:10px;flex-wrap:wrap}.jump{flex:1 1 auto;text-align:center;background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 10px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.30);font-size:.98rem}.jump.alt{background:#fff;color:var(--green-d) !important;border:2px solid var(--green)}.ftc-top{max-width:1180px;margin:14px auto 0;padding:0 18px;font-size:.85rem;color:#4a554d}.wrap{max-width:1180px;margin:0 auto;padding:10px 18px 8px}.sec-title{font-size:1.65rem;margin:30px 0 6px;color:var(--ink)}.sec-sub{color:#435347;margin-bottom:14px;max-width:760px}.price{font-size:1.55rem;font-weight:900;color:var(--green-d)}.was{font-size:1.05rem;color:#7a857c;text-decoration:line-through}.save{background:#c8102e;color:#fff;font-weight:800;font-size:.85rem;padding:3px 10px;border-radius:999px}.prov{font-size:.9rem;color:#4a554d}.buy{display:inline-block;margin-top:12px;background:var(--green);color:#fff !important;font-weight:800;text-decoration:none;padding:12px 24px;border-radius:999px;box-shadow:0 4px 14px rgba(29,122,58,.35)}.buy:hover{background:var(--green-d)}footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}.foot-in{max-width:1180px;margin:0 auto;padding:28px 18px 34px}.foot-in .slogan{margin:0 0 12px}.fine{font-size:.85rem;color:#5a665d;max-width:820px;margin-top:10px}.foot-links{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0}.foot-links a{font-weight:700;text-decoration:none}@media (max-width:640px){.hero h1{font-size:1.8rem}.hero-photo-wrap{padding:64px 12px}.hero-photo{width:65.5%}.buy{margin-top:9px;padding:10px 20px}.price{font-size:1.3rem}.topnav{display:none}.jump{font-size:.9rem;padding:11px 6px}}@media (min-width:641px){}.code-note{display:block;margin-top:8px;background:#ffd21f;color:#111;font-weight:700;font-size:.9rem;line-height:1.45;padding:7px 11px;border-radius:8px;max-width:560px}.badge{display:inline-block;background:#1d7a3a;color:#fff;font-weight:800;font-size:.95rem;padding:3px 11px;border-radius:999px;margin-bottom:8px;letter-spacing:.2px}.ribbon{background:#8a6d00;color:#fff}.howcheck{max-width:1180px;margin:14px auto 0;padding:13px 20px;background:#eef6ee;border:2px solid #1d7a3a;border-radius:16px;font-size:1rem;font-weight:600;color:#243528}
+/* ===== FULL LAYOUT AUDIT FIX (Nov 22, 2026): fleet frame-band pattern ===== */
+.band{position:relative;border-radius:24px;overflow:hidden;margin:10px 0;box-shadow:0 16px 38px rgba(20,40,25,.22);background:#e9efe9}
+.photo-wrap{position:relative;overflow:hidden;background:#111}
+.photo-frame{position:relative;overflow:hidden;height:100%}
+.photo-frame .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(1.04);transform:scale(1.3)}
+.frame-band .photo{position:relative;width:auto;height:100%;margin:0 auto;display:block;background:transparent}
+.h-md .photo-wrap{height:340px}
+.price-pop{position:absolute;left:18px;top:12px;z-index:4;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fff;border:2px solid var(--yellow);border-radius:18px;padding:10px 18px;box-shadow:0 8px 22px rgba(20,40,25,.25)}
+.price-pop .price{font-size:2.15rem;font-weight:900;color:var(--green-d);line-height:1}
+.price-pop .was{font-size:1.15rem;color:#7a857c;text-decoration:line-through;font-weight:700}
+.price-pop .save{background:#c8102e;color:#fff;font-weight:900;font-size:1rem;padding:5px 13px;border-radius:999px;box-shadow:0 4px 12px rgba(200,16,46,.4)}
+.band-body{position:relative;z-index:3;margin-top:-48px;padding:56px 20px 16px;background:#0d1f13;color:#fff;overflow:hidden;border-radius:0 0 24px 24px}
+.band-body::before{content:"";position:absolute;inset:-28px;background-image:var(--bimg);background-size:cover;background-position:center;filter:blur(24px) brightness(.48) saturate(1.15);z-index:-1}
+.band-body h3{color:#fff;font-size:1.3rem;font-weight:900;line-height:1.25;margin-bottom:6px;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.band-body .note{color:rgba(255,255,255,.94);font-size:1rem;line-height:1.45;text-shadow:0 1px 6px rgba(0,0,0,.4);max-width:820px}
+.band-body .prov{display:block;background:#fff;color:var(--green-d);font-weight:700;font-size:.9rem;border-radius:10px;padding:6px 12px;margin-top:10px}
 .verdict{margin-top:12px;background:rgba(8,18,11,.7);border-left:4px solid var(--yellow);border-radius:10px;padding:10px 14px;font-size:.93rem;color:#eef5ee}
 .verdict p{margin:3px 0}
 .verdict strong{color:var(--yellow)}
-.badge{display:inline-block;background:#1d7a3a;color:#fff;font-weight:800;font-size:.95rem;padding:3px 11px;border-radius:999px;margin-bottom:8px;letter-spacing:.2px}
-.ribbon{background:#8a6d00;color:#fff}
-.howcheck{max-width:1180px;margin:14px auto 0;padding:13px 20px;background:#eef6ee;border:2px solid #1d7a3a;border-radius:16px;font-size:1rem;font-weight:600;color:#243528}
+.band-body .code-note{display:block;margin-top:10px}
+.band-body .buy{margin-top:12px}
+@media (max-width:640px){
+.h-md .photo-wrap{height:245px}
+.price-pop{left:10px;padding:8px 13px 9px;gap:8px}
+.price-pop .price{font-size:1.6rem}
+.price-pop .was{font-size:1rem}
+.price-pop .save{font-size:.95rem}
+.band-body{padding:54px 16px 14px}
+.band-body h3{font-size:1.16rem}
+}
+/* hero proportion fix: boot sits over the wedge, OWNERS INC lettering stays readable */
+.hero-photo-wrap{padding:40px 18px 150px}
+.hero-photo{width:min(430px,34%)}
+@media (max-width:640px){
+.hero-photo-wrap{padding:30px 12px 116px}
+.hero-photo{width:58%}
+}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7BY95H3C7"></script>
@@ -527,396 +502,373 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <main class="wrap">
 <h2 class="sec-title" id="shoes">Sneakers &amp; Shoes</h2>
 <p class="sec-sub">Last updated Nov 22, 2026. The shoes everybody is buying this season — slim retros, chunky runners, and the slip-ons that sell out every holiday.</p>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:566 / 1000;--sf:65.6%;--op:48.5% 50%;--opd:50.0% 88.0%"><img class="photo-bg" src="/assets/clothing-shoes/adidas-samba.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/adidas-samba.jpg" alt="adidas Samba OG — Unisex" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/adidas-samba.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/adidas-samba.jpg" alt="adidas Samba OG — Unisex" loading="lazy"></div><div class="price-pop"><span class="price">$99.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/adidas-samba.jpg')">
     <span class="badge ribbon">BEST OVERALL</span>
     <h3>adidas Samba OG — Unisex — $99.99 at Journeys</h3>
     <p class="note">The slim retro that runs the season — white leather, green accents, gum sole. The #1 shoe on bestseller lists right now.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The slim retro in white leather with a gum sole — the original version of the season's biggest shoe, not a fashion variant.</p>
 <p><strong>Best for:</strong> Everyday wear with everything from jeans to trousers.</p>
 <p><strong>Skip if:</strong> You need cushioning for long days on your feet — the Samba is a low-profile shoe with a thin sole.</p>
 <p><strong>Watch out for:</strong> Unisex sizing: men's and women's numbers differ, so confirm the size chart at Journeys before ordering.</p>
 </div>
-    <div class="price-row"><span class="price">$99.99</span><span class="prov">at Journeys — checked Nov 21, 2026</span></div>
+    <p class="prov">at Journeys — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.journeys.com/product/adidas-samba-og-athletic-shoe-cloud-white-collegiate-green-clear-granite-437591" target="_blank" rel="sponsored noopener">Get Deal at Journeys</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:585 / 1000;--sf:64.5%;--op:28.6% 50%;--opd:50.0% 40.6%"><img class="photo-bg" src="/assets/clothing-shoes/adidas-samba-jane.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/adidas-samba-jane.jpg" alt="adidas Samba Jane — Women&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/adidas-samba-jane.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/adidas-samba-jane.jpg" alt="adidas Samba Jane — Women&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$109.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/adidas-samba-jane.jpg')">
     <h3>adidas Samba Jane — Women's — $109.99 at JD Sports</h3>
     <p class="note">The Samba turned Mary Jane — same low profile with a strap across the top. The fashion version of the season&#x27;s biggest shoe.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING on orders over $75 · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The Samba rebuilt as a Mary Jane with a strap across the top — the fashion version of the same low profile.</p>
 <p><strong>Best for:</strong> Anyone who wants the Samba look with a dressier edge.</p>
 <p><strong>Skip if:</strong> You want the classic sneaker — the OG on this page is $10 less and reads more athletic.</p>
 <p><strong>Watch out for:</strong> Women's sizing only, and a strap fits differently from laces — check the fit and return terms at JD Sports.</p>
 </div>
-    <div class="price-row"><span class="price">$109.99</span><span class="prov">at JD Sports — checked Nov 21, 2026</span></div>
+    <p class="prov">at JD Sports — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING on orders over $75 · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.jdsports.com/pdp/womens-adidas-originals-samba-jane-casual-shoes/prod1010011/KH6231/100" target="_blank" rel="sponsored noopener">Get Deal at JD Sports</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:587 / 1000;--sf:64.4%;--op:31.9% 50%;--opd:50.0% 69.6%"><img class="photo-bg" src="/assets/clothing-shoes/nike-af1.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/nike-af1.jpg" alt="Nike Air Force 1 &#x27;07 — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/nike-af1.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/nike-af1.jpg" alt="Nike Air Force 1 &#x27;07 — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$105</span><span class="was">$115</span><span class="save">Save 9%</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/nike-af1.jpg')">
     <h3>Nike Air Force 1 '07 — Men's — $105 (was $115, Save 9%) at Finish Line</h3>
     <p class="note">The all-white staple that goes with everything — and it&#x27;s under its $115 list price at Finish Line right now.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING on orders over $75 · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The all-white staple that goes with everything, listed at $105 against its $115 list price at Finish Line.</p>
 <p><strong>Best for:</strong> A one-shoe wardrobe anchor for everyday outfits.</p>
 <p><strong>Skip if:</strong> You run or train in your sneakers — this is a casual shoe, not a performance one.</p>
 <p><strong>Watch out for:</strong> White leather shows every scuff, and the under-list price is on this colorway — confirm your size is in stock.</p>
 </div>
-    <div class="price-row"><span class="price">$105</span><span class="was">$115</span><span class="save">Save 9%</span><span class="prov">at Finish Line — checked Nov 21, 2026</span></div>
+    <p class="prov">at Finish Line — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING on orders over $75 · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.finishline.com/store/product/mens-nike-air-force-1-07-casual-shoes/prod2767626?styleId=FZ4123&amp;colorId=394" target="_blank" rel="sponsored noopener">Get Deal at Finish Line</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:558 / 1000;--sf:66.1%;--op:44.2% 50%;--opd:50.0% 83.8%"><img class="photo-bg" src="/assets/clothing-shoes/nb-9060.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/nb-9060.jpg" alt="New Balance 9060 — Unisex" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/nb-9060.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/nb-9060.jpg" alt="New Balance 9060 — Unisex" loading="lazy"></div><div class="price-pop"><span class="price">$159.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/nb-9060.jpg')">
     <h3>New Balance 9060 — Unisex — $159.99 at Journeys</h3>
     <p class="note">The chunky statement sneaker — big cushioning, bigger presence. The New Balance everybody notices.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The chunky statement sneaker — the biggest cushioning and presence in New Balance's lifestyle line on this page.</p>
 <p><strong>Best for:</strong> Anyone who wants the bold retro-runner look as their main sneaker.</p>
 <p><strong>Skip if:</strong> You prefer a low, slim profile — this is the opposite silhouette; the 530 on this page is the quieter option.</p>
 <p><strong>Watch out for:</strong> It is the priciest sneaker here; confirm the sea salt / concrete colorway on the listing before ordering.</p>
 </div>
-    <div class="price-row"><span class="price">$159.99</span><span class="prov">at Journeys — checked Nov 21, 2026</span></div>
+    <p class="prov">at Journeys — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.journeys.com/kidz/product/new-balance-9060-athletic-shoe-sea-salt-concrete-402229" target="_blank" rel="sponsored noopener">Get Deal at Journeys</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:567 / 1000;--sf:65.6%;--op:50.7% 50%;--opd:50.0% 85.2%"><img class="photo-bg" src="/assets/clothing-shoes/nb-530.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/nb-530.jpg" alt="New Balance 530 — Unisex" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/nb-530.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/nb-530.jpg" alt="New Balance 530 — Unisex" loading="lazy"></div><div class="price-pop"><span class="price">$109.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/nb-530.jpg')">
     <h3>New Balance 530 — Unisex — $109.99 at Journeys</h3>
     <p class="note">The easy retro runner — light, neutral, and everyday-priced. The 9060&#x27;s laid-back sibling.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The easy retro runner — light and neutral at $109.99, a full $50 under the 9060 on this page.</p>
 <p><strong>Best for:</strong> Daily wear and walking-around comfort without the statement-shoe look.</p>
 <p><strong>Skip if:</strong> You want maximum cushion — the 530's ride is flatter than the chunky models.</p>
 <p><strong>Watch out for:</strong> Unisex listing: check the men's/women's size conversion at Journeys.</p>
 </div>
-    <div class="price-row"><span class="price">$109.99</span><span class="prov">at Journeys — checked Nov 21, 2026</span></div>
+    <p class="prov">at Journeys — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.journeys.com/product/new-balance-530-athletic-shoe-white-natural-indigo-401953" target="_blank" rel="sponsored noopener">Get Deal at Journeys</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:538 / 1000;--sf:67.3%;--op:50.0% 50%;--opd:50.0% 52.2%"><img class="photo-bg" src="/assets/clothing-shoes/nike-v5-rnr.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/nike-v5-rnr.jpg" alt="Nike V5 RNR — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/nike-v5-rnr.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/nike-v5-rnr.jpg" alt="Nike V5 RNR — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$95</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/nike-v5-rnr.jpg')">
     <h3>Nike V5 RNR — Men's — $95 at Nike</h3>
     <p class="note">Nike&#x27;s Y2K-style chunky runner — a top gift pick this season, and the cheapest Nike on this page.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING for Nike Members (free to join) at $50+ · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> Nike's Y2K-style chunky runner at $95 — the cheapest Nike on this page and a top gift pick this season.</p>
 <p><strong>Best for:</strong> A gift pick, and an everyday chunky sneaker under $100.</p>
 <p><strong>Skip if:</strong> You want a slim retro profile — this is the big, sculpted end of the range.</p>
 <p><strong>Watch out for:</strong> The code note on this card lists EARLYBF for extra off Nike's Black Friday selection — whether it applies to this shoe is decided at Nike's checkout, so confirm there.</p>
 </div>
-    <div class="price-row"><span class="price">$95</span><span class="prov">at Nike — checked Nov 21, 2026</span></div>
+    <p class="prov">at Nike — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING for Nike Members (free to join) at $50+ · shipping checked Nov 21, 2026</p>
     <p class="code-note">Code <strong>EARLYBF</strong> at Nike: extra 25% off Nike&#x27;s Black Friday selection at nike.com — code checked Nov 21, 2026; Nike lists no end date, so treat it as early-Black-Friday only.</p>
     <a class="buy" href="https://www.nike.com/t/v5-rnr-mens-shoes-WHxi2GRN/HJ5228-009" target="_blank" rel="sponsored noopener">Get Deal at Nike</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:573 / 1000;--sf:65.2%;--op:53.3% 50%;--opd:50.0% 53.1%"><img class="photo-bg" src="/assets/clothing-shoes/puma-speedcat.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/puma-speedcat.jpg" alt="Puma Speedcat OG — Unisex" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/puma-speedcat.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/puma-speedcat.jpg" alt="Puma Speedcat OG — Unisex" loading="lazy"></div><div class="price-pop"><span class="price">$100</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/puma-speedcat.jpg')">
     <h3>Puma Speedcat OG — Unisex — $100 at Puma</h3>
     <p class="note">The low-profile racing-style sneaker Puma brought back — slim, quick, and a flat $100.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING on orders over $75 · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The low-profile racing-style sneaker Puma brought back, at a flat $100.</p>
 <p><strong>Best for:</strong> Slim-profile fans who want the shape of the season without the most common version of it.</p>
 <p><strong>Skip if:</strong> You need arch support or cushion for all-day standing — racing-style shoes run flat and narrow.</p>
 <p><strong>Watch out for:</strong> The slim last runs narrow; if you are between sizes, check Puma's fit notes first.</p>
 </div>
-    <div class="price-row"><span class="price">$100</span><span class="prov">at Puma — checked Nov 21, 2026</span></div>
+    <p class="prov">at Puma — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING on orders over $75 · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://us.puma.com/us/en/pd/speedcat-og-sneakers/398846" target="_blank" rel="sponsored noopener">Get Deal at Puma</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:565 / 1000;--sf:65.7%;--op:48.6% 50%;--opd:50.0% 81.7%"><img class="photo-bg" src="/assets/clothing-shoes/vans-knu-skool.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/vans-knu-skool.jpg" alt="Vans Knu Skool — Unisex" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/vans-knu-skool.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/vans-knu-skool.jpg" alt="Vans Knu Skool — Unisex" loading="lazy"></div><div class="price-pop"><span class="price">$94.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/vans-knu-skool.jpg')">
     <h3>Vans Knu Skool — Unisex — $94.99 at Journeys</h3>
     <p class="note">The padded, chunky take on the Old Skool — built for skaters, worn by everybody.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The padded, chunky take on the Old Skool — built for skaters, worn by everybody, per the page note.</p>
 <p><strong>Best for:</strong> Skaters and anyone who likes the padded '90s skate silhouette.</p>
 <p><strong>Skip if:</strong> You want the original low-profile Vans feel — this version is deliberately bulkier.</p>
 <p><strong>Watch out for:</strong> The linked colorway is chipmunk brown; skate shoes fit snug, so confirm your size at Journeys.</p>
 </div>
-    <div class="price-row"><span class="price">$94.99</span><span class="prov">at Journeys — checked Nov 21, 2026</span></div>
+    <p class="prov">at Journeys — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.journeys.com/product/vans-knu-skool-skate-shoe-chipmunk-brown-496481" target="_blank" rel="sponsored noopener">Get Deal at Journeys</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:566 / 1000;--sf:65.6%;--op:49.3% 50%;--opd:50.0% 76.6%"><img class="photo-bg" src="/assets/clothing-shoes/converse-chuck70.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/converse-chuck70.jpg" alt="Converse Chuck 70 High-Top — Unisex" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/converse-chuck70.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/converse-chuck70.jpg" alt="Converse Chuck 70 High-Top — Unisex" loading="lazy"></div><div class="price-pop"><span class="price">$94.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/converse-chuck70.jpg')">
     <h3>Converse Chuck 70 High-Top — Unisex — $94.99 at Journeys</h3>
     <p class="note">The premium Chuck — heavier canvas, more cushion underfoot, and the parchment color goes with anything.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The premium Chuck — heavier canvas and more cushion underfoot than the standard Chuck Taylor, in parchment.</p>
 <p><strong>Best for:</strong> Anyone who wears Chucks daily and wants the upgraded build.</p>
 <p><strong>Skip if:</strong> You just want the cheapest Chuck — the standard line costs less; the 70 is the premium tier.</p>
 <p><strong>Watch out for:</strong> High-top Chucks run long on some feet; check Journeys' size guidance before ordering.</p>
 </div>
-    <div class="price-row"><span class="price">$94.99</span><span class="prov">at Journeys — checked Nov 21, 2026</span></div>
+    <p class="prov">at Journeys — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.journeys.com/product/converse-chuck-70-hi-sneaker-parchment-399710?c=0" target="_blank" rel="sponsored noopener">Get Deal at Journeys</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:670 / 1000;--sf:59.3%;--op:50.0% 50%;--opd:50.0% 73.9%"><img class="photo-bg" src="/assets/clothing-shoes/skechers-slipins.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/skechers-slipins.jpg" alt="Skechers Slip-ins: GO WALK Glide-Step 2.0 — Women&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/skechers-slipins.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/skechers-slipins.jpg" alt="Skechers Slip-ins: GO WALK Glide-Step 2.0 — Women&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$105</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/skechers-slipins.jpg')">
     <h3>Skechers Slip-ins: GO WALK Glide-Step 2.0 — Women's — $105 at Skechers</h3>
     <p class="note">Hands-free slip-ons — step in and go, with Glide-Step cushioning made for all-day walks.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING for Skechers Plus members (free to join) — no minimum · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> Hands-free step-in entry with Glide-Step cushioning — no bending, no laces, made for all-day walks.</p>
 <p><strong>Best for:</strong> All-day walkers and anyone who hates tying shoes — travel days especially.</p>
 <p><strong>Skip if:</strong> You need a snug athletic lockdown — slip-ins trade it for convenience.</p>
 <p><strong>Watch out for:</strong> Women's listing; slip-on sizing differs from lace-ups, so confirm with Skechers' size chart.</p>
 </div>
-    <div class="price-row"><span class="price">$105</span><span class="prov">at Skechers — checked Nov 21, 2026</span></div>
+    <p class="prov">at Skechers — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING for Skechers Plus members (free to join) — no minimum · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.skechers.com/skechers-slip-ins-go-walk-glide-step-2.0---cozy-fit-walker/199252757920.html" target="_blank" rel="sponsored noopener">Get Deal at Skechers</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:569 / 1000;--sf:65.4%;--op:50.0% 50%;--opd:50.0% 88.0%"><img class="photo-bg" src="/assets/clothing-shoes/ugg-tasman.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/ugg-tasman.jpg" alt="UGG Tasman II Slipper — Women&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/ugg-tasman.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/ugg-tasman.jpg" alt="UGG Tasman II Slipper — Women&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$129.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/ugg-tasman.jpg')">
     <h3>UGG Tasman II Slipper — Women's — $129.99 at Journeys</h3>
     <p class="note">The slipper-shoe everyone gifts — sheepskin-lined with an indoor-outdoor sole, in the chestnut color that sells out first.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The sheepskin-lined slipper with an indoor-outdoor sole — the slipper-shoe everyone gifts, in the chestnut color that sells out first.</p>
 <p><strong>Best for:</strong> Gifting, and anyone who lives in slippers past the front door.</p>
 <p><strong>Skip if:</strong> You need a full boot for snow — this is a slipper-shoe, not winter footwear.</p>
 <p><strong>Watch out for:</strong> Holiday sell-out risk on chestnut is real per the page note; confirm your size is in stock at Journeys.</p>
 </div>
-    <div class="price-row"><span class="price">$129.99</span><span class="prov">at Journeys — checked Nov 21, 2026</span></div>
+    <p class="prov">at Journeys — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.journeys.com/kidz/product/womens-ugg-tasman-2-slipper-chestnut-582252" target="_blank" rel="sponsored noopener">Get Deal at Journeys</a>
-  </div>
   </div>
 </section>
 <h2 class="sec-title" id="boots">Boots &amp; Work Shoes</h2>
 <p class="sec-sub">Boots that earn their keep — the icons, the gift boot, and a real waterproof hiker on a Black Friday price.</p>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:565 / 1000;--sf:65.7%;--op:47.8% 50%;--opd:50.0% 69.2%"><img class="photo-bg" src="/assets/clothing-shoes/timberland-6in.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/timberland-6in.jpg" alt="Timberland Premium 6-Inch Boot — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/timberland-6in.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/timberland-6in.jpg" alt="Timberland Premium 6-Inch Boot — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$219.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/timberland-6in.jpg')">
     <h3>Timberland Premium 6-Inch Boot — Men's — $219.99 at Journeys</h3>
     <p class="note">The wheat boot that never goes out of style — waterproof leather, padded collar, built to last for years.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The wheat waterproof-leather boot that has held the same design for decades — padded collar, built to last for years.</p>
 <p><strong>Best for:</strong> A buy-once boot for work, winter, and everything between.</p>
 <p><strong>Skip if:</strong> You want a lightweight hiker — this is a heavy, stiff boot that needs break-in time.</p>
 <p><strong>Watch out for:</strong> It is the priciest item on this page, and Timberland sizing runs large for many buyers — check the fit notes.</p>
 </div>
-    <div class="price-row"><span class="price">$219.99</span><span class="prov">at Journeys — checked Nov 21, 2026</span></div>
+    <p class="prov">at Journeys — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.journeys.com/product/mens-timberland-premium-6-inch-boot-wheat-532400?pr_rd_page=2" target="_blank" rel="sponsored noopener">Get Deal at Journeys</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:567 / 1000;--sf:65.5%;--op:48.5% 50%;--opd:50.0% 79.2%"><img class="photo-bg" src="/assets/clothing-shoes/ugg-ultra-mini-platform.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/ugg-ultra-mini-platform.jpg" alt="UGG Classic Ultra Mini Platform Boot — Women&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/ugg-ultra-mini-platform.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/ugg-ultra-mini-platform.jpg" alt="UGG Classic Ultra Mini Platform Boot — Women&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$174.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/ugg-ultra-mini-platform.jpg')">
     <h3>UGG Classic Ultra Mini Platform Boot — Women's — $174.99 at Journeys</h3>
     <p class="note">The viral mini boot with the platform sole — the holiday-gift version of the UGG Classic.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The Classic mini boot with a platform sole — the viral holiday-gift version of the UGG Classic.</p>
 <p><strong>Best for:</strong> Gifting to someone who lives in UGGs and wants the updated silhouette.</p>
 <p><strong>Skip if:</strong> Platform soles are not your thing — the added height changes the feel of the boot entirely.</p>
 <p><strong>Watch out for:</strong> Chestnut moves fast in the holidays; confirm size stock at Journeys before you count on it.</p>
 </div>
-    <div class="price-row"><span class="price">$174.99</span><span class="prov">at Journeys — checked Nov 21, 2026</span></div>
+    <p class="prov">at Journeys — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE ground shipping for Journeys All Access members (free to join) · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.journeys.com/product/womens-ugg-classic-ultra-mini-platform-boot-chestnut-581425" target="_blank" rel="sponsored noopener">Get Deal at Journeys</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:547 / 1000;--sf:66.8%;--op:50.0% 50%;--opd:50.0% 52.2%"><img class="photo-bg" src="/assets/clothing-shoes/columbia-newton-ridge.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/columbia-newton-ridge.jpg" alt="Columbia Newton Ridge Plus II Waterproof Hiking Boot — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/columbia-newton-ridge.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/columbia-newton-ridge.jpg" alt="Columbia Newton Ridge Plus II Waterproof Hiking Boot — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$82.50</span><span class="was">$110</span><span class="save">Save 25%</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/columbia-newton-ridge.jpg')">
     <h3>Columbia Newton Ridge Plus II Waterproof Hiking Boot — Men's — $82.50 (was $110, Save 25%) at Macy's</h3>
     <p class="note">A real waterproof hiking boot at a Black Friday price — 25% off at Macy&#x27;s, checked today.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> A real waterproof hiking boot listed at $82.50 against a $110 list price at Macy's — the cheapest true hiking boot on this page.</p>
 <p><strong>Best for:</strong> Trail walkers who want waterproofing without paying full boot money.</p>
 <p><strong>Skip if:</strong> You hike technical terrain — this is a day-hike boot, not a mountaineering boot.</p>
 <p><strong>Watch out for:</strong> The page lists this as a Black Friday price at Macy's; sale prices end, so confirm the price at checkout.</p>
 </div>
-    <div class="price-row"><span class="price">$82.50</span><span class="was">$110</span><span class="save">Save 25%</span><span class="prov">at Macy&#x27;s — checked Nov 21, 2026</span></div>
+    <p class="prov">at Macy&#x27;s — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.macys.com/shop/product/columbia-mens-newton-ridge-plus-ii-waterproof-hiking-boots?ID=7003607" target="_blank" rel="sponsored noopener">Get Deal at Macy&#x27;s</a>
-  </div>
   </div>
 </section>
 <h2 class="sec-title" id="hoodies">Hoodies &amp; Tees</h2>
 <p class="sec-sub">The layers that live on the hook by the door — big-brand fleece and the workwear staples.</p>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:469 / 1000;--sf:71.5%;--op:67.5% 50%;--opd:50.0% 54.3%"><img class="photo-bg" src="/assets/clothing-shoes/champion-zip-hoodie.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/champion-zip-hoodie.jpg" alt="Champion Powerblend Fleece Full-Zip Hoodie — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/champion-zip-hoodie.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/champion-zip-hoodie.jpg" alt="Champion Powerblend Fleece Full-Zip Hoodie — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$27.50</span><span class="was">$55</span><span class="save">Save 50%</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/champion-zip-hoodie.jpg')">
     <h3>Champion Powerblend Fleece Full-Zip Hoodie — Men's — $27.50 (was $55, Save 50%) at Macy's</h3>
     <p class="note">Half price for Black Friday — a full-zip fleece hoodie for $27.50. The cheapest brand-name layer on this page.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> A full-zip fleece hoodie at $27.50, half its $55 list price at Macy's — the cheapest brand-name layer on this page.</p>
 <p><strong>Best for:</strong> An everyday layer and an easy gift at under $30.</p>
 <p><strong>Skip if:</strong> You want heavyweight warmth — Powerblend is a midweight fleece.</p>
 <p><strong>Watch out for:</strong> The half-price listing is a Black Friday price and sizes go fast at this level; confirm yours at Macy's.</p>
 </div>
-    <div class="price-row"><span class="price">$27.50</span><span class="was">$55</span><span class="save">Save 50%</span><span class="prov">at Macy&#x27;s — checked Nov 21, 2026</span></div>
+    <p class="prov">at Macy&#x27;s — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.macys.com/shop/product/champion-mens-powerblend-fleece-zip-hoodie?ID=2929645&amp;swatchColor=Granite+Heather&amp;swatchSize=S" target="_blank" rel="sponsored noopener">Get Deal at Macy&#x27;s</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:538 / 1000;--sf:67.3%;--op:26.5% 50%;--opd:50.0% 56.3%"><img class="photo-bg" src="/assets/clothing-shoes/nike-club-hoodie.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/nike-club-hoodie.jpg" alt="Nike Club Fleece Premium Embroidered Hoodie — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/nike-club-hoodie.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/nike-club-hoodie.jpg" alt="Nike Club Fleece Premium Embroidered Hoodie — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$70</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/nike-club-hoodie.jpg')">
     <h3>Nike Club Fleece Premium Embroidered Hoodie — Men's — $70 at JD Sports</h3>
     <p class="note">The everyday Club fleece — brushed soft inside, embroidered swoosh, braided drawcords. The hoodie that goes with everything.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING on orders over $75 · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The everyday Club fleece — brushed soft inside, embroidered swoosh, braided drawcords.</p>
 <p><strong>Best for:</strong> A daily-driver hoodie from a name brand that goes with everything.</p>
 <p><strong>Skip if:</strong> You want a full-zip — this is a pullover; the Champion on this page is the zip option.</p>
 <p><strong>Watch out for:</strong> This is the premium embroidered version; confirm colorway and size at JD Sports.</p>
 </div>
-    <div class="price-row"><span class="price">$70</span><span class="prov">at JD Sports — checked Nov 21, 2026</span></div>
+    <p class="prov">at JD Sports — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING on orders over $75 · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.jdsports.com/pdp/mens-nike-club-fleece-premium-embroidered-pullover-hoodie/prod2875230/FN3859/497" target="_blank" rel="sponsored noopener">Get Deal at JD Sports</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:538 / 1000;--sf:67.3%;--op:54.0% 50%;--opd:50.0% 52.4%"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-k121.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/carhartt-k121.jpg" alt="Carhartt K121 Midweight Hoodie — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-k121.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/carhartt-k121.jpg" alt="Carhartt K121 Midweight Hoodie — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$54.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/carhartt-k121.jpg')">
     <h3>Carhartt K121 Midweight Hoodie — Men's — $54.99 at Gempler's</h3>
     <p class="note">The work hoodie — 10.5-ounce fleece, loose fit, hand-warmer pocket. Holds up on the job and off it.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING at $149+ with code FS149 · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The work hoodie — 10.5-ounce fleece, loose fit, hand-warmer pocket — built to hold up on the job and off it.</p>
 <p><strong>Best for:</strong> Work and cold-weather layering that has to take abuse.</p>
 <p><strong>Skip if:</strong> You want a slim fashion fit — Carhartt's loose fit runs generous.</p>
 <p><strong>Watch out for:</strong> The code note on this card lists FS149 for free shipping on Gempler's orders $149+ — one code per order, and this hoodie alone will not reach the threshold.</p>
 </div>
-    <div class="price-row"><span class="price">$54.99</span><span class="prov">at Gempler&#x27;s — checked Nov 21, 2026</span></div>
+    <p class="prov">at Gempler&#x27;s — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING at $149+ with code FS149 · shipping checked Nov 21, 2026</p>
     <p class="code-note">Code <strong>FS149</strong> at Gempler&#x27;s: free shipping on orders $149+ — limit 1 code per order, exclusions may apply; checked Nov 21, 2026, and Gempler&#x27;s lists no end date.</p>
     <a class="buy" href="https://gemplers.com/products/carhartt-k121-hooded-pullover-sweatshirt?variant=21172188414041" target="_blank" rel="sponsored noopener">Get Deal at Gempler&#x27;s</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:622 / 1000;--sf:62.2%;--op:50.0% 50%;--opd:50.0% 52.1%"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-k87.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/carhartt-k87.jpg" alt="Carhartt K87 Pocket T-Shirt — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-k87.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/carhartt-k87.jpg" alt="Carhartt K87 Pocket T-Shirt — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$19.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/carhartt-k87.jpg')">
     <span class="badge ribbon">BUDGET PICK</span>
-    <span class="badge ribbon">BEST UNDER $25</span>
     <h3>Carhartt K87 Pocket T-Shirt — Men's — $19.99 at Gempler's</h3>
     <p class="note">The pocket tee that outsells everything on the workwear rack — heavyweight cotton with the chest pocket, under $20.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING at $149+ with code FS149 · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The heavyweight pocket tee that outsells everything on the workwear rack, with the chest pocket, under $20.</p>
 <p><strong>Best for:</strong> Work shirts bought in multiples.</p>
 <p><strong>Skip if:</strong> You want a light, soft fashion tee — the K87 is deliberately heavy cotton.</p>
 <p><strong>Watch out for:</strong> The original fit runs big; size down if you like a closer fit.</p>
 </div>
-    <div class="price-row"><span class="price">$19.99</span><span class="prov">at Gempler&#x27;s — checked Nov 21, 2026</span></div>
+    <p class="prov">at Gempler&#x27;s — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING at $149+ with code FS149 · shipping checked Nov 21, 2026</p>
     <a class="buy" href="http://www.gemplers.com/products/carhartt-k87-pocket-t-shirt-sizes-s-2xl-reg" target="_blank" rel="sponsored noopener">Get Deal at Gempler&#x27;s</a>
-  </div>
   </div>
 </section>
 <h2 class="sec-title" id="jeans">Jeans &amp; Pants</h2>
 <p class="sec-sub">Denim icons and the work pant that moves like a jean.</p>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:469 / 1000;--sf:71.5%;--op:38.0% 50%;--opd:50.0% 49.8%"><img class="photo-bg" src="/assets/clothing-shoes/levis-501.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/levis-501.jpg" alt="Levi&#x27;s 501 Original Shrink-to-Fit Jeans — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/levis-501.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/levis-501.jpg" alt="Levi&#x27;s 501 Original Shrink-to-Fit Jeans — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$50.97</span><span class="was">$84.95</span><span class="save">Save 40%</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/levis-501.jpg')">
     <h3>Levi's 501 Original Shrink-to-Fit Jeans — Men's — $50.97 (was $84.95, Save 40%) at Macy's</h3>
     <p class="note">The original button-fly jean — the one every other jean is measured against. 40% off at Macy&#x27;s right now.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The original button-fly jean — the one every other jean is measured against — listed at $50.97 against an $84.95 list price at Macy's.</p>
 <p><strong>Best for:</strong> Anyone who wants one pair of straight, non-stretch denim that breaks in to them.</p>
 <p><strong>Skip if:</strong> You will not manage shrink-to-fit sizing — these shrink on the first wash, so buy by Levi's shrink guidance, not your usual size.</p>
 <p><strong>Watch out for:</strong> The link lands on one color/size variant; sale pricing can vary by variant, so confirm your size's price at Macy's.</p>
 </div>
-    <div class="price-row"><span class="price">$50.97</span><span class="was">$84.95</span><span class="save">Save 40%</span><span class="prov">at Macy&#x27;s — checked Nov 21, 2026</span></div>
+    <p class="prov">at Macy&#x27;s — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.macys.com/shop/product/levis-mens-501-original-shrink-to-fit-non-stretch-jeans?ID=3022963&amp;swatchColor=Green+Stf&amp;swatchSize=32%20X%2034" target="_blank" rel="sponsored noopener">Get Deal at Macy&#x27;s</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:469 / 1000;--sf:71.5%;--op:40.0% 50%;--opd:50.0% 51.7%"><img class="photo-bg" src="/assets/clothing-shoes/levis-ribcage.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/levis-ribcage.jpg" alt="Levi&#x27;s Premium Ribcage High-Rise Straight Ankle Jeans — Women&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/levis-ribcage.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/levis-ribcage.jpg" alt="Levi&#x27;s Premium Ribcage High-Rise Straight Ankle Jeans — Women&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$66</span><span class="was">$110</span><span class="save">Save 40%</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/levis-ribcage.jpg')">
     <h3>Levi's Premium Ribcage High-Rise Straight Ankle Jeans — Women's — $66 (was $110, Save 40%) at Macy's</h3>
     <p class="note">Levi&#x27;s highest rise ever — the straight ankle fit that defines women&#x27;s denim right now. 40% off for Black Friday.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> Levi's highest rise ever in a straight ankle fit — the fit that defines women's denim right now — at $66 against a $110 list price.</p>
 <p><strong>Best for:</strong> Anyone who lives in high-rise denim and wants the defining current fit.</p>
 <p><strong>Skip if:</strong> High-rise is not comfortable for you — this is Levi's tallest waistband, not a mid-rise compromise.</p>
 <p><strong>Watch out for:</strong> The sale price is on the linked wash; confirm your size and wash at Macy's before ordering.</p>
 </div>
-    <div class="price-row"><span class="price">$66</span><span class="was">$110</span><span class="save">Save 40%</span><span class="prov">at Macy&#x27;s — checked Nov 21, 2026</span></div>
+    <p class="prov">at Macy&#x27;s — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.macys.com/shop/product/levis-womens-ribcage-high-rise-straight-ankle-jeans?ID=28111176&amp;swatchColor=My+Honor+No+Dx" target="_blank" rel="sponsored noopener">Get Deal at Macy&#x27;s</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:538 / 1000;--sf:67.3%;--op:50.5% 50%;--opd:50.0% 52.7%"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-work-pant.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/carhartt-work-pant.jpg" alt="Carhartt Rugged Flex Relaxed Fit Canvas Work Pant — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-work-pant.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/carhartt-work-pant.jpg" alt="Carhartt Rugged Flex Relaxed Fit Canvas Work Pant — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$54.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/carhartt-work-pant.jpg')">
     <h3>Carhartt Rugged Flex Relaxed Fit Canvas Work Pant — Men's — $54.99 at Gempler's</h3>
     <p class="note">Stretch canvas with a secure phone pocket — a work pant that bends, kneels, and moves like a jean.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING at $149+ with code FS149 · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> Stretch canvas with a secure phone pocket — a work pant that bends, kneels, and moves like a jean.</p>
 <p><strong>Best for:</strong> Trades and yard work where stiff canvas fights you.</p>
 <p><strong>Skip if:</strong> You want heavy duck canvas — Rugged Flex trades some toughness for stretch.</p>
 <p><strong>Watch out for:</strong> Relaxed fit; confirm waist and inseam availability at Gempler's.</p>
 </div>
-    <div class="price-row"><span class="price">$54.99</span><span class="prov">at Gempler&#x27;s — checked Nov 21, 2026</span></div>
+    <p class="prov">at Gempler&#x27;s — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING at $149+ with code FS149 · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://gemplers.com/products/carhartt-rugged-flex-relaxed-fit-canvas-work-pant" target="_blank" rel="sponsored noopener">Get Deal at Gempler&#x27;s</a>
-  </div>
   </div>
 </section>
 <h2 class="sec-title" id="jackets">Jackets</h2>
 <p class="sec-sub">Warmth that works — a long women&#x27;s coat on sale and two Carhartt jackets built for a Minnesota winter.</p>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:469 / 1000;--sf:71.5%;--op:89.5% 50%;--opd:50.0% 55.3%"><img class="photo-bg" src="/assets/clothing-shoes/columbia-heavenly.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/columbia-heavenly.jpg" alt="Columbia Heavenly Long Hooded Insulated Jacket — Women&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/columbia-heavenly.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/columbia-heavenly.jpg" alt="Columbia Heavenly Long Hooded Insulated Jacket — Women&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$131.25</span><span class="was">$175</span><span class="save">Save 25%</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/columbia-heavenly.jpg')">
     <h3>Columbia Heavenly Long Hooded Insulated Jacket — Women's — $131.25 (was $175, Save 25%) at Macy's</h3>
     <p class="note">The long coat that covers past the hips — water-resistant, hooded, and 25% off for Black Friday.</p>
-    <p class="note ship-cs" style="font-weight:700;margin-top:6px">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <div class="verdict">
 <p><strong>Why we picked it:</strong> The long coat that covers past the hips — water-resistant and hooded — listed at $131.25 against a $175 list price at Macy's.</p>
 <p><strong>Best for:</strong> Cold commutes and anyone tired of short jackets in real winter.</p>
 <p><strong>Skip if:</strong> You run warm or want a short, sporty cut — the length is the point, and the bulk comes with it.</p>
 <p><strong>Watch out for:</strong> The link lands on size S in black; confirm your size, and that the Black Friday price still holds, at Macy's.</p>
 </div>
-    <div class="price-row"><span class="price">$131.25</span><span class="was">$175</span><span class="save">Save 25%</span><span class="prov">at Macy&#x27;s — checked Nov 21, 2026</span></div>
+    <p class="prov">at Macy&#x27;s — checked Nov 21, 2026</p>
+    <p class="prov ship">FREE SHIPPING at $39+ for Star Rewards Bronze members · shipping checked Nov 21, 2026</p>
     <a class="buy" href="https://www.macys.com/shop/product/columbia-womens-heavenly-long-hooded-insulated-water-resistant-jacket?ID=28056754&amp;swatchColor=Black&amp;swatchSize=S" target="_blank" rel="sponsored noopener">Get Deal at Macy&#x27;s</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:555 / 1000;--sf:66.3%;--op:60.4% 50%;--opd:50.0% 53.3%"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-bartlett.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/carhartt-bartlett.jpg" alt="Carhartt Washed Duck Bartlett Jacket — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-bartlett.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/carhartt-bartlett.jpg" alt="Carhartt Washed Duck Bartlett Jacket — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$149.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/carhartt-bartlett.jpg')">
     <h3>Carhartt Washed Duck Bartlett Jacket — Men's — $149.99 at Blain's Farm &amp; Fleet</h3>
     <p class="note">Sherpa-lined washed duck with a hood — the warm work jacket that breaks in soft and stays tough.</p>
     <div class="verdict">
@@ -925,14 +877,13 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <p><strong>Skip if:</strong> You want light warmth — this is a heavy jacket; the Gilliam on this page is Carhartt's lightweight option.</p>
 <p><strong>Watch out for:</strong> Washed duck softens with wear; confirm size availability at Farm &amp; Fleet.</p>
 </div>
-    <div class="price-row"><span class="price">$149.99</span><span class="prov">at Blain&#x27;s Farm &amp; Fleet — checked Nov 21, 2026</span></div>
+    <p class="prov">at Blain&#x27;s Farm &amp; Fleet — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.farmandfleet.com/products/1250005-carhartt-mens-washed-duck-bartlett-jacket-with-sherpa-lining-and-hood.html" target="_blank" rel="sponsored noopener">Get Deal at Blain&#x27;s Farm &amp; Fleet</a>
   </div>
-  </div>
 </section>
-<section class="band has-verdict">
-  <div class="photo-frame" style="aspect-ratio:538 / 1000;--sf:67.3%;--op:29.0% 50%;--opd:50.0% 52.8%"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-gilliam.jpg" alt="" aria-hidden="true" loading="lazy"><div class="photo-sharp"><img class="photo" src="/assets/clothing-shoes/carhartt-gilliam.jpg" alt="Carhartt Gilliam Insulated Jacket — Men&#x27;s" loading="lazy"></div>
-  <div class="band-overlay">
+<section class="band frame-band h-md has-verdict">
+  <div class="photo-wrap"><div class="photo-frame"><img class="photo-bg" src="/assets/clothing-shoes/carhartt-gilliam.jpg" alt="" aria-hidden="true" loading="lazy"><img class="photo" src="/assets/clothing-shoes/carhartt-gilliam.jpg" alt="Carhartt Gilliam Insulated Jacket — Men&#x27;s" loading="lazy"></div><div class="price-pop"><span class="price">$109.99</span></div></div>
+  <div class="band-body melt-body" style="--bimg:url('/assets/clothing-shoes/carhartt-gilliam.jpg')">
     <h3>Carhartt Gilliam Insulated Jacket — Men's — $109.99 at Blain's Farm &amp; Fleet</h3>
     <p class="note">The lightweight one — Cordura nylon, Rain Defender water repellent, 100g insulation. Warm without the bulk.</p>
     <div class="verdict">
@@ -941,9 +892,8 @@ footer{background:#ffffff;margin-top:44px;border-top:6px solid var(--green)}
 <p><strong>Skip if:</strong> You work in deep cold standing still — step up to the sherpa-lined Bartlett on this page.</p>
 <p><strong>Watch out for:</strong> 100g is the light end of Carhartt's insulation range; match it to the temperatures you actually work in.</p>
 </div>
-    <div class="price-row"><span class="price">$109.99</span><span class="prov">at Blain&#x27;s Farm &amp; Fleet — checked Nov 21, 2026</span></div>
+    <p class="prov">at Blain&#x27;s Farm &amp; Fleet — checked Nov 21, 2026</p>
     <a class="buy" href="https://www.farmandfleet.com/products/1315316-carhartt-gilliam-mens-lightweight-water-repellent-insulated-jacket-with-cordura-nylon.html" target="_blank" rel="sponsored noopener">Get Deal at Blain&#x27;s Farm &amp; Fleet</a>
-  </div>
   </div>
 </section>
 <h2 class="sec-title">More Owners Inc. stores</h2>
