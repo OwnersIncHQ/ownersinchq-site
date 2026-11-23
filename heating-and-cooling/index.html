@@ -647,5 +647,8 @@ window.addEventListener('scroll',function(){var y=window.scrollY||0;
 if(y>140&&y>last+4){bar.classList.add('hide');}else if(y<last-4||y<140){bar.classList.remove('hide');}
 last=y;},{passive:true});})();
 </script>
+<script>
+(function(){if(window.__oiChat)return;window.__oiChat=1;window.OI_CHAT_MODE='store';var b=document.createElement('button');b.type='button';b.id='oiChatBtn';b.textContent='Questions? Chat here';b.setAttribute('aria-label','Open chat with the Owners Inc. helper');b.style.cssText='position:fixed;right:16px;bottom:16px;z-index:9990;background:#1d7a3a;color:#fff;font:700 15px/1.2 Arial,Helvetica,sans-serif;padding:13px 20px;border:0;border-radius:999px;box-shadow:0 8px 22px rgba(10,30,15,.35);cursor:pointer;min-height:48px';b.addEventListener('click',function(){try{sessionStorage.setItem('oiTeaser','1');}catch(e){}if(window.OIChat){window.OIChat.open();return;}b.disabled=true;b.textContent='Opening\u2026';var done=false;function go(){if(done)return;done=true;b.disabled=false;b.textContent='Questions? Chat here';if(window.OIChat)window.OIChat.open();}var l=document.createElement('link');l.rel='stylesheet';l.href='/assets/chat/chat.css';document.head.appendChild(l);var a=document.createElement('script');a.src='/assets/chat/answers.js';a.onload=function(){var c=document.createElement('script');c.src='/assets/chat/chat.js';c.onload=go;c.onerror=go;document.head.appendChild(c);};a.onerror=go;document.head.appendChild(a);});var st=document.createElement('style');st.textContent='footer{padding-bottom:88px}';document.head.appendChild(st);document.body.appendChild(b);})();
+</script>
 </body>
 </html>
