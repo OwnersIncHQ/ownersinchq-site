@@ -361,6 +361,13 @@ footer{background:#ffffff;margin-top:28px;border-top:6px solid var(--green)}
 .hero-bg{top:auto;bottom:0;height:auto}
 .hero-photo{position:absolute;left:50%;transform:translateX(-50%);top:36px;margin:0;width:37%}
 @media (max-width:640px){.hero-photo-wrap{height:calc(100vw*.56346 + 118px)}.hero-photo{top:14px;width:min(58%,300px)}}
+
+/* PRICE-BADGE CLEARANCE (Nov 24, 2026): photo bands taller + clear top zone
+   in the photo frame, so the price badge floats over blurred melt only and
+   the product photo stays fully visible at its previous size. */
+.h-xl .photo-wrap{height:536px}.h-lg .photo-wrap{height:486px}.h-md .photo-wrap{height:436px}.h-sm .photo-wrap{height:386px}.h-xs .photo-wrap{height:311px}
+.band .photo-frame{box-sizing:border-box;padding:96px 14px 0}
+@media (max-width:640px){.h-xl .photo-wrap{height:424px}.h-lg .photo-wrap{height:394px}.h-md .photo-wrap{height:369px}.h-sm .photo-wrap{height:339px}.h-xs .photo-wrap{height:304px}.band .photo-frame{padding:124px 10px 0}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7BY95H3C7"></script>
