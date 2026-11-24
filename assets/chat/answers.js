@@ -24,7 +24,7 @@ lead: {
   ],
   nodes: {
     cost: {
-      say: "Cleanup is a one-time paid job, priced by how far behind the books are: up to 6 months behind, $1,200–$1,500 · 7–12 months behind, $2,500–$3,200 · more than 12 months behind, from $5,000. The exact price is quoted in writing after the free 30-minute books review, before any work starts and before you pay anything. After a completed cleanup, ongoing bookkeeping is from $300/month.",
+      say: "Cleanup is a one-time paid job, priced by how far behind the books are: up to 6 months behind, $1,200–$1,500 · 7–12 months behind, $3,500–$5,000 · more than 12 months behind, from $5,000. The exact price is quoted in writing after the free 30-minute books review, before any work starts and before you pay anything. After a completed cleanup, ongoing bookkeeping is from $300/month.",
       links: [{ label: "See the pricing section", href: "/bookkeeping-services/#pricing" }],
       buttons: [
         { label: "What's in the free review?", go: "freereview" },
