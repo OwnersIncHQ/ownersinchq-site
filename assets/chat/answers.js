@@ -144,7 +144,8 @@ store: {
         { label: "Home & Kitchen Finds", href: "/home-kitchen-finds/" },
         { label: "Furniture Finds", href: "/furniture-finds/" },
         { label: "Cleaning Supplies", href: "/cleaning-supplies/" },
-        { label: "Home Security Finds", href: "/home-security-finds/" }
+        { label: "Home Security Finds", href: "/home-security-finds/" },
+        { label: "Smart Home Finds", href: "/smart-home-finds/" }
       ],
       buttons: [{ label: "Appliances", go: "appliances" }]
     },
@@ -183,7 +184,8 @@ store: {
         { label: "Fishing", href: "/fishing/" },
         { label: "Ice Fishing", href: "/ice-fishing/" },
         { label: "Golf Finds", href: "/golf-finds/" },
-        { label: "E-Bikes", href: "/e-bikes/" }
+        { label: "E-Bikes", href: "/e-bikes/" },
+        { label: "Winter Finds", href: "/winter-finds/" }
       ]
     },
     tech: {
@@ -227,7 +229,8 @@ store: {
         { label: "Preparedness", href: "/preparedness/" },
         { label: "Walmart Finds", href: "/walmart-finds/" },
         { label: "Temu Finds", href: "/temu-finds/" },
-        { label: "Ammunition", href: "/ammunition/" }
+        { label: "Ammunition", href: "/ammunition/" },
+        { label: "Finance Finds", href: "/finance-finds/" }
       ]
     },
     about: {
