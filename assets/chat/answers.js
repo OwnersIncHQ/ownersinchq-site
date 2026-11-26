@@ -20,6 +20,7 @@ lead: {
     { label: "What's in the free review?", go: "freereview" },
     { label: "I'm behind — where do I start?", go: "behind" },
     { label: "Do you do taxes?", go: "taxes" },
+    { label: "Build my whole business setup", go: "launch" },
     { label: "Talk to a person", go: "person" }
   ],
   nodes: {
@@ -67,6 +68,13 @@ lead: {
         { label: "Request the free review", go: "FORM" }
       ]
     },
+    launch: {
+      say: "Beyond bookkeeping, we build whole business setups for other companies — the same build we did for ourselves. Three packages: Merch Only $349 (your logo on merch, print-on-demand, no inventory) · Store Launch $849 (merch plus your online store) · Full Business Launch $1,299 (the whole setup). Optional managed service is $99/month on the first two, $199/month on the full launch. You own your store and keep 100% of your product margin — our money is the setup fee. To talk it over, call or text (651) 314-9387 or email hello@ownersinchq.com.",
+      buttons: [
+        { label: "Talk to a person", go: "person" },
+        { label: "What does cleanup cost?", go: "cost" }
+      ]
+    },
     person: {
       say: "This helper is automated, so nobody is watching this chat live. To reach a person: call or text (651) 314-9387, or email hello@ownersinchq.com. We reply within one business day. Or leave your info here and we'll reach out:",
       links: [{ label: "Call or text (651) 314-9387", href: "tel:+16513149387" }],
@@ -105,6 +113,7 @@ lead: {
     badContact: "That phone or email looks incomplete — mind checking it and typing it once more?"
   },
   keywords: [
+    { words: ["launch", "merch", "my own store", "store setup", "build my business", "website for my business"], go: "launch" },
     { words: ["cost", "price", "charge", "expensive", "fee"], go: "cost" },
     { words: ["tax", "cpa", "1099", "file"], go: "taxes" },
     { words: ["free", "review"], go: "freereview" },
@@ -123,6 +132,8 @@ store: {
     { label: "Tools & outdoors", go: "tools" },
     { label: "TVs, tech & gaming", go: "tech" },
     { label: "Kids & family", go: "kids" },
+    { label: "Our own products", go: "products" },
+    { label: "Sleep Club", go: "sleepclub" },
     { label: "More stores", go: "more" },
     { label: "About Owners Inc.", go: "about" }
   ],
@@ -185,8 +196,51 @@ store: {
         { label: "Ice Fishing", href: "/ice-fishing/" },
         { label: "Golf Finds", href: "/golf-finds/" },
         { label: "E-Bikes", href: "/e-bikes/" },
-        { label: "Winter Finds", href: "/winter-finds/" }
+        { label: "Winter Finds", href: "/winter-finds/" },
+        { label: "Farm & Animal Finds", href: "/farm-animal-finds/" }
       ]
+    },
+    farm: {
+      say: "Feed, tack, fencing, dairy, poultry, beekeeping and the rest of the working-animal catalog — checked the same way as everything else here:",
+      links: [{ label: "Farm & Animal Finds", href: "/farm-animal-finds/" }]
+    },
+    products: {
+      say: "Besides the finds, we make our own digital products, sold on our Ko-fi shop: Clean Up Your Own Books — our bookkeeping workbook, $37 · Bookkeeping Templates Pack $19 · the Workbook + Templates bundle $47 · Landlord Starter Pack $24. Plus made-for-you portraits and stories (next button). Every price there is ours, so what you see is what you pay.",
+      links: [{ label: "Our Ko-fi shop", href: "https://ko-fi.com/ownersinchq/shop" }],
+      buttons: [
+        { label: "Portraits & Santa videos", go: "portraits" },
+        { label: "Sleep Club", go: "sleepclub" }
+      ]
+    },
+    portraits: {
+      say: "Made from your own photo, delivered digitally: AI Doll Portraits — 3 portraits, $12 · AI Pet Portraits $15 · Couples Portraits $20 · Family Cartoon Portraits $25 · Memorial Pet Portraits $20 · a Personalized Bedtime Story for your kid, $18. And through Christmas: a personalized Santa video message, $19.99 standard or $29.99 deluxe — order by December 20 for Christmas delivery.",
+      links: [{ label: "Order on our Ko-fi shop", href: "https://ko-fi.com/ownersinchq/shop" }],
+      buttons: [{ label: "Our own products", go: "products" }]
+    },
+    sleepclub: {
+      say: "Sleep Club is our members' podcast feed — $5 a month on Ko-fi. Members get the Premium Library (10 full sleep episodes, about 11 hours, on a podcast feed for the first time), 8-hour All-Night rain and ocean cuts, and every new episode 7 days before the free feed. It works in the podcast app you already use — join, and the welcome post gives you a private feed link to add. Nothing that's free now is ever taken away.",
+      links: [{ label: "Sleep Club on Ko-fi", href: "https://ko-fi.com/ownersinchq/tiers" }],
+      buttons: [{ label: "Our own products", go: "products" }]
+    },
+    merch: {
+      say: "Owners Inc. hats and shirts are in the works — a print-on-demand store is being built now (no inventory, printed when you order). It isn't open yet, so there's nothing to buy today. Want first word when it opens? Join the free deals-by-email list:",
+      links: [{ label: "Deals by email — free", href: "/#deals-email" }]
+    },
+    launch: {
+      say: "Own a business? We sell the whole setup we built for ourselves: Merch Only $349 (your logo on merch, print-on-demand) · Store Launch $849 · Full Business Launch $1,299, with optional managed service from $99/month. You own your store and keep 100% of your product margin. Call or text (651) 314-9387 or email hello@ownersinchq.com and we'll walk you through it.",
+      buttons: [{ label: "Bookkeeping instead", go: "bk" }]
+    },
+    resources: {
+      say: "Our free Resources page lists help around Hastings and the Twin Cities — housing and shelter help, recovery resources, and crisis lines — for people in sober houses, shelters, or a hard spot. If it's an emergency, call 911. In a crisis, call or text 988 any time.",
+      links: [{ label: "Resources — free help page", href: "/resources/" }]
+    },
+    referrals: {
+      say: "Run a contracting business? We pay referral fees — 5–10% of the paid job, by trade — when a customer you send us hires a contractor through us. The full terms and disclosure are on the Referrals page:",
+      links: [{ label: "Referrals", href: "/referrals/" }]
+    },
+    dealsemail: {
+      say: "The best finds by email — free, no spam, unsubscribe any time. The sign-up is on the homepage:",
+      links: [{ label: "Get the best finds by email", href: "/#deals-email" }]
     },
     tech: {
       say: "Tech — pick a page:",
@@ -239,6 +293,7 @@ store: {
         { label: "How do prices work?", go: "price" },
         { label: "Do you ship?", go: "shipping" },
         { label: "Is it a good deal?", go: "buy" },
+        { label: "Our own products", go: "products" },
         { label: "Bookkeeping", go: "bk" }
       ]
     },
@@ -267,6 +322,15 @@ store: {
     }
   },
   keywords: [
+    { words: ["pet portrait", "portrait", "doll", "santa", "bedtime story"], go: "portraits" },
+    { words: ["sleep club", "sleep", "podcast feed", "membership"], go: "sleepclub" },
+    { words: ["workbook", "ko-fi", "kofi", "your products", "digital product", "templates pack", "landlord"], go: "products" },
+    { words: ["launch", "my business", "store setup", "merch store", "sell my logo"], go: "launch" },
+    { words: ["merch", "hats", "beanie", "shirt", "hoodie", "mug"], go: "merch" },
+    { words: ["farm", "horse", "livestock", "saddle", "feed store", "chicken"], go: "farm" },
+    { words: ["shelter", "homeless", "sober", "recovery", "crisis", "988"], go: "resources" },
+    { words: ["referral", "refer a", "referrals"], go: "referrals" },
+    { words: ["newsletter", "email list", "sign up", "deals by email", "alerts"], go: "dealsemail" },
     { words: ["price", "cost", "how much", "expensive", "cheap"], go: "price" },
     { words: ["ship", "deliver"], go: "shipping" },
     { words: ["gift", "christmas", "present", "holiday"], go: "gifts" },
@@ -283,7 +347,7 @@ store: {
 shared: {
   hello: ["hi", "hello", "hey"],
   sensitive: "Stop there — please don't share that here. We never ask for bank details, account numbers, passwords, or Social Security numbers in chat, and nothing you type here needs them. If you were trying to reach us about your books or an order, call or text (651) 314-9387 instead.",
-  fallback1: "I don't have that one — I can only answer the questions I've got buttons for. Try one of these, or type a word like “price”, “gift”, or “tools”:",
+  fallback1: "I don't have that one — I can only answer the questions I've got buttons for. Try one of these, or type a word like “price”, “gift”, “tools”, “sleep”, or “workbook”:",
   fallback2: "Still not one I can answer — I don't want to guess and give you something wrong. The fastest route to a person is call or text (651) 314-9387, or email hello@ownersinchq.com. Or pick a topic:",
   inputPlaceholder: "Or type a word…",
   sendLabel: "Send"
