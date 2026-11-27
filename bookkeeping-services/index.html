@@ -18,7 +18,7 @@
  "@graph": [
   {
    "@type": "WebPage",
-        "dateModified": "2026-11-23",
+        "dateModified": "2026-11-27",
    "name": "Bookkeeping in Hastings, MN — By Phone & Online",
    "url": "https://ownersinchq.com/bookkeeping-services/",
    "description": "Bookkeeping for Hastings-area businesses, done entirely by phone and online. Paid cleanup first, priced by how far behind the books are, then ongoing bookkeeping from $300/month.",
@@ -43,6 +43,68 @@
     {"@type": "ServiceChannel", "name": "Online", "serviceUrl": "https://ownersinchq.com/bookkeeping-services/"}
    ],
    "offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "price": "300", "priceCurrency": "USD", "description": "One-time paid cleanup, priced by how far behind the books are: up to 6 months behind $1,200-$1,500; 7-12 months behind $3,500-$5,000; more than 12 months behind from $5,000. Exact cleanup price quoted in writing after a free 30-minute books review. Ongoing bookkeeping from $300 per month after a completed paid cleanup; the first month of ongoing bookkeeping is free only after a completed paid cleanup and a committed ongoing term."}}
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://ownersinchq.com/#organization",
+   "name": "Owners Inc.",
+   "url": "https://ownersinchq.com/",
+   "logo": "https://ownersinchq.com/assets/brand/logo-painting.jpg",
+   "email": "hello@ownersinchq.com",
+   "telephone": "(651) 314-9387",
+   "founder": {"@type": "Person", "name": "Aaron Keeler"},
+   "address": {"@type": "PostalAddress", "streetAddress": "2136 Ford Parkway, Suite B #5470", "addressLocality": "Saint Paul", "addressRegion": "MN", "postalCode": "55116", "addressCountry": "US"},
+   "contactPoint": {"@type": "ContactPoint", "telephone": "+1-651-314-9387", "email": "hello@ownersinchq.com", "contactType": "customer service", "areaServed": "US"},
+   "sameAs": [
+    "https://www.youtube.com/@OwnersIncHQ",
+    "https://www.facebook.com/owners.inc.2026",
+    "https://www.instagram.com/aaron59914",
+    "https://www.tiktok.com/@owners.inc",
+    "https://ownersinc.substack.com"
+   ]
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://ownersinchq.com/bookkeeping-services/#business",
+   "name": "Owners Inc. Bookkeeping Services",
+   "url": "https://ownersinchq.com/bookkeeping-services/",
+   "telephone": "(651) 314-9387",
+   "email": "hello@ownersinchq.com",
+   "priceRange": "Cleanups $1,200-$5,000+; ongoing from $300/month",
+   "parentOrganization": {"@id": "https://ownersinchq.com/#organization"},
+   "address": {"@type": "PostalAddress", "streetAddress": "2136 Ford Parkway, Suite B #5470", "addressLocality": "Saint Paul", "addressRegion": "MN", "postalCode": "55116", "addressCountry": "US"},
+   "areaServed": [
+    {"@type": "City", "name": "Hastings, Minnesota"},
+    {"@type": "City", "name": "Prescott, Wisconsin"},
+    {"@type": "City", "name": "Cottage Grove, Minnesota"},
+    {"@type": "City", "name": "Rosemount, Minnesota"},
+    {"@type": "City", "name": "Farmington, Minnesota"},
+    {"@type": "City", "name": "Inver Grove Heights, Minnesota"},
+    {"@type": "City", "name": "South St. Paul, Minnesota"},
+    {"@type": "City", "name": "Woodbury, Minnesota"},
+    {"@type": "City", "name": "Red Wing, Minnesota"},
+    {"@type": "City", "name": "Cannon Falls, Minnesota"},
+    {"@type": "City", "name": "Hampton, Minnesota"},
+    {"@type": "City", "name": "Vermillion, Minnesota"},
+    {"@type": "City", "name": "Miesville, Minnesota"},
+    {"@type": "City", "name": "New Trier, Minnesota"},
+    {"@type": "City", "name": "Welch, Minnesota"}
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Bookkeeping services and prices",
+    "itemListElement": [
+     {"@type": "Offer", "name": "Free 30-minute books review", "price": "0", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Free 30-minute books review"}},
+     {"@type": "Offer", "name": "Bookkeeping cleanup — up to 6 months behind", "priceSpecification": {"@type": "PriceSpecification", "minPrice": "1200", "maxPrice": "1500", "priceCurrency": "USD"}, "itemOffered": {"@type": "Service", "name": "Bookkeeping cleanup (up to 6 months behind)"}},
+     {"@type": "Offer", "name": "Bookkeeping cleanup — 7-12 months behind", "priceSpecification": {"@type": "PriceSpecification", "minPrice": "3500", "maxPrice": "5000", "priceCurrency": "USD"}, "itemOffered": {"@type": "Service", "name": "Bookkeeping cleanup (7-12 months behind)"}},
+     {"@type": "Offer", "name": "Bookkeeping cleanup — more than 12 months behind", "priceSpecification": {"@type": "PriceSpecification", "minPrice": "5000", "priceCurrency": "USD"}, "itemOffered": {"@type": "Service", "name": "Bookkeeping cleanup (more than 12 months behind)"}},
+     {"@type": "Offer", "name": "Ongoing bookkeeping — from $300/month", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "300", "priceCurrency": "USD", "unitText": "MON"}, "itemOffered": {"@type": "Service", "name": "Ongoing bookkeeping (from $300/month)"}},
+     {"@type": "Offer", "name": "Payroll management — from $120/month", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "120", "priceCurrency": "USD", "unitText": "MON"}, "itemOffered": {"@type": "Service", "name": "Payroll management (from $120/month)"}},
+     {"@type": "Offer", "name": "Sales-tax filing — $90/month", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "90", "priceCurrency": "USD", "unitText": "MON"}, "itemOffered": {"@type": "Service", "name": "Sales-tax filing ($90/month)"}},
+     {"@type": "Offer", "name": "1099 prep — from $150/year", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "150", "priceCurrency": "USD", "unitText": "ANN"}, "itemOffered": {"@type": "Service", "name": "1099 prep (from $150/year)"}},
+     {"@type": "Offer", "name": "Extra account — $35/month", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "35", "priceCurrency": "USD", "unitText": "MON"}, "itemOffered": {"@type": "Service", "name": "Extra account ($35/month)"}}
+    ]
+   }
   }
  ]
 }</script>
@@ -332,7 +394,7 @@ footer{background:#ffffff;margin-top:28px;border-top:6px solid var(--green)}
 <footer><div class="foot-in">
 <span class="slogan">Owners Inc. Everybody's doing it.</span> <p class="fine mission">Owners Inc. is a family-owned home for the curious — where we wind down together, lift up local owners, and build something that lasts.</p>
 <p class="fine">Service note: This page describes Owners Inc.'s own bookkeeping service. There are no affiliate links or commissions on this page. Bookkeeping only — not tax filing, tax advice, or CPA services. Cleanup is a paid one-time job priced by how far behind the books are (up to 6 months behind: $1,200–$1,500; 7–12 months behind: $3,500–$5,000; more than 12 months behind: from $5,000), quoted in writing after a free 30-minute books review. Ongoing bookkeeping from $300/month after a completed paid cleanup; the first month of ongoing bookkeeping is free only after a completed paid cleanup and a committed ongoing term.</p>
-<p class="fine">Owners Inc. bookkeeping is provided by phone and online only. There is no walk-in office. Questions? Call or text (651) 314-9387 or email hello@ownersinchq.com.</p>
+<p class="fine">Owners Inc. bookkeeping is provided by phone and online only. There is no walk-in office. Questions? Call or text (651) 314-9387 or email hello@ownersinchq.com. Mailing address: Owners Inc., 2136 Ford Parkway, Suite B #5470, Saint Paul, MN 55116. Serving Hastings, Prescott, Cottage Grove, Rosemount, Farmington, Inver Grove Heights, South St. Paul, Woodbury, Red Wing, Cannon Falls, Hampton, Vermillion, Miesville, New Trier and Welch.</p>
 <p class="fine">Enjoying the finds? <a href="https://ko-fi.com/ownersinchq" target="_blank" rel="noopener">Tip us on Ko-fi — keep the lights on</a> · <a href="/privacy/">Privacy</a> · <a href="/share/">Share Owners Inc.</a></p>
 </div></footer>
 
