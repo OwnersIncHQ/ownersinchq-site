@@ -81,7 +81,7 @@
 
     var foot = el("div", "oi-foot");
     var fa = el("a");
-    if (MODE === "store") { fa.href = "/everything-store/"; fa.textContent = "Browse the Everything Store →"; }
+    if (MODE === "store") { fa.href = "/store/"; fa.textContent = "Browse the whole store →"; }
     else { fa.href = CFG.phoneHref; fa.textContent = "Call or text " + CFG.phoneDisplay; }
     foot.appendChild(fa);
     panel.appendChild(foot);
@@ -292,6 +292,8 @@
     misses++;
     clearChoices();
     botSay(misses >= 2 ? SH.fallback2 : SH.fallback1, function () {
+      if (MODE === "store") addLink("Search the whole store", "/store/");
+      else addLink("Bookkeeping services", "/bookkeeping-services/");
       TREE.rootButtons.forEach(function (b) {
         addChoice(b.label, function () { userSay(b.label); go(b.go); });
       });

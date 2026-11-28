@@ -218,7 +218,7 @@ store: {
       buttons: [{ label: "Our own products", go: "products" }]
     },
     sleepclub: {
-      say: "Sleep Club is our members' podcast feed — $5 a month on Ko-fi. Members get the Premium Library (10 full sleep episodes, about 11 hours, on a podcast feed for the first time), 8-hour All-Night rain and ocean cuts, and every new episode 7 days before the free feed. It works in the podcast app you already use — join, and the welcome post gives you a private feed link to add. Nothing that's free now is ever taken away.",
+      say: "Sleep Club is our members' podcast feed — $5 a month on Ko-fi. Members get the Premium Library (10 full sleep episodes, 10 hours 44 minutes, on a podcast feed for the first time), 8-hour All-Night rain and ocean cuts. It works in the podcast app you already use — join, and the welcome post gives you a private feed link to add. Nothing that's free now is ever taken away.",
       links: [{ label: "Sleep Club on Ko-fi", href: "https://ko-fi.com/ownersinchq/tiers" }],
       buttons: [{ label: "Our own products", go: "products" }]
     },
@@ -314,7 +314,7 @@ store: {
     },
     everything: {
       say: "Every find, in one place:",
-      links: [{ label: "The Everything Store", href: "/everything-store/" }]
+      links: [{ label: "Browse the whole store →", href: "/store/" }]
     },
     contact: {
       say: "This helper is automated, so nobody is watching this chat live. To reach a person: call or text (651) 314-9387, or email hello@ownersinchq.com.",
@@ -326,7 +326,7 @@ store: {
     { words: ["sleep club", "sleep", "podcast feed", "membership"], go: "sleepclub" },
     { words: ["workbook", "ko-fi", "kofi", "your products", "digital product", "templates pack", "landlord"], go: "products" },
     { words: ["launch", "my business", "store setup", "merch store", "sell my logo"], go: "launch" },
-    { words: ["merch", "hats", "beanie", "shirt", "hoodie", "mug"], go: "merch" },
+    { words: ["merch", "hats", "beanie", "shirt", "hoodie", "mug", "t-shirt", "tshirt", "tee", "tees", "cap", "caps", "sweatshirt", "apparel", "clothing"], go: "merch" },
     { words: ["farm", "horse", "livestock", "saddle", "feed store", "chicken"], go: "farm" },
     { words: ["shelter", "homeless", "sober", "recovery", "crisis", "988"], go: "resources" },
     { words: ["referral", "refer a", "referrals"], go: "referrals" },
@@ -347,7 +347,7 @@ store: {
 shared: {
   hello: ["hi", "hello", "hey"],
   sensitive: "Stop there — please don't share that here. We never ask for bank details, account numbers, passwords, or Social Security numbers in chat, and nothing you type here needs them. If you were trying to reach us about your books or an order, call or text (651) 314-9387 instead.",
-  fallback1: "I don't have that one — I can only answer the questions I've got buttons for. Try one of these, or type a word like “price”, “gift”, “tools”, “sleep”, or “workbook”:",
+  fallback1: "I can't find that item in what I can look up here — I only answer from a short list, and I don't want to guess wrong. The whole store is searchable on one page — try the store search:\nOr pick a topic:",
   fallback2: "Still not one I can answer — I don't want to guess and give you something wrong. The fastest route to a person is call or text (651) 314-9387, or email hello@ownersinchq.com. Or pick a topic:",
   inputPlaceholder: "Or type a word…",
   sendLabel: "Send"
